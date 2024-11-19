@@ -9,8 +9,8 @@ from tkinter import messagebox
 import winsound  # Para sonido en Windows
 
 # Configuración inicial
-TIEMPO_REFRESCO = 500  # Tiempo entre revisiones en segundos
-TIEMPO = 4  # Tiempo de espera tras cada paso
+TIEMPO_REFRESCO = 200  # Tiempo entre revisiones en segundos
+TIEMPO = 6  # Tiempo de espera tras cada paso
 
 def alerta_sonora():
     """Reproduce un sonido para alertar."""
@@ -75,6 +75,7 @@ try:
         boton.click()
         time.sleep(TIEMPO)
 
+
     # Navegar inicialmente al calendario
     navegar_a_calendario()
 
@@ -87,21 +88,22 @@ try:
 
     # Bucle principal para revisar cambios
     while True:
-        # Pulsar en el selector de mes hacia adelante
-        boton_hacia_adelante = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "//a[contains(@href, 'V9101')]"))
-        )
-        boton_hacia_adelante.click()
-        print("Mes hacia adelante pulsado.")
-        time.sleep(3)  # Esperar 3 segundos para que el calendario se actualice
 
-        # Pulsar en el selector de mes hacia atrás
-        boton_hacia_atras = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "//a[contains(@href, 'V9071')]"))
-        )
-        boton_hacia_atras.click()
-        print("Mes hacia atrás pulsado.")
-        time.sleep(3)  # Esperar 3 segundos para que el calendario se actualice
+        # Refrescar la página actual
+        driver.refresh()
+        print("Página refrescada.")
+        time.sleep(TIEMPO)
+
+        # Hacer clic en el botón para pasar al calendario nuevamente
+        try:
+            boton = WebDriverWait(driver, 10).until(
+                EC.element_to_be_clickable((By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
+            )
+            boton.click()
+            print("Botón para pasar al calendario pulsado.")
+            time.sleep(TIEMPO)
+        except Exception as e:
+            print(f"Error al hacer clic en el botón para pasar al calendario: {e}")
 
         # Obtener los días actuales tachados
         dias_tachados_actual = driver.find_elements(By.CSS_SELECTOR,
