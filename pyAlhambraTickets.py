@@ -2,16 +2,30 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys  # Importa Keys para poder usar ENTER
 import time
+import tkinter as tk
+from tkinter import simpledialog
 
+# Crear una ventana emergente para solicitar el tiempo
+# root = tk.Tk()
+# root.withdraw()  # Ocultar la ventana principal de tkinter
+
+# # Pedir al usuario que ingrese el tiempo
+# TIEMPO = int(simpledialog.askstring("Configurar Tiempo", "Introduce el tiempo en segundos para los intervalos cortos:",
+#                                     initialvalue="5"))
+# TIEMPOLARGO = int(
+#     simpledialog.askstring("Configurar Tiempo", "Introduce el tiempo en segundos para los intervalos largos:",
+#                            initialvalue="5"))
+
+# Pedir al usuario que ingrese el tiempo
 TIEMPO = 5
-
 TIEMPOLARGO = 5
+
 
 # Inicializa el controlador de Chrome
 driver = webdriver.Chrome()
 
 try:
-    # Accede a la URL
+    # Aquí va el resto del código que ya tienes
     driver.get('https://tickets.alhambra-patronato.es/')
 
     # Espera un poco para que la página cargue completamente
