@@ -13,33 +13,28 @@ def compare_excels(file1, file2, output_file):
     df2 = pd.read_excel(file2, header=1, engine="openpyxl")
 
     # Renombrar columnas no válidas
-
     df1.columns = [f"Col_{i}" if 'Unnamed' in col else col for i, col in enumerate(df1.columns)]
     df2.columns = [f"Col_{i}" if 'Unnamed' in col else col for i, col in enumerate(df2.columns)]
 
-    # Eliminar la primera columna "Col_0" si existe
-    if "Col_0" in df1.columns:
-        df1 = df1.drop(columns=["Col_0"])
-    if "Col_0" in df2.columns:
-        df2 = df2.drop(columns=["Col_0"])
+    # Identificar columnas de interés
+    cols_of_interest = [col for col in df1.columns if any(keyword in col.lower() for keyword in ["name", "nombre", "pass"])]
 
-    # Verificar columnas requeridas
-    required_columns = ["Name", "Sex"]
-    for col in required_columns:
-        if col not in df1.columns or col not in df2.columns:
-            raise ValueError(f"La columna requerida '{col}' no está presente en uno o ambos archivos Excel.")
+    # Verificar que ambas tablas tienen las columnas de interés
+    missing_cols = [col for col in cols_of_interest if col not in df2.columns]
+    if missing_cols:
+        raise ValueError(f"Faltan columnas requeridas en el archivo 2: {', '.join(missing_cols)}")
+
+    # Filtrar ambas tablas
+    df1_filtered = df1[cols_of_interest]
+    df2_filtered = df2[cols_of_interest]
 
     # Comparar los archivos Excel
-    diff_df = df1.copy()
-    for row in range(len(df1)):
-        if row < len(df2):
-            for col in required_columns:
-                if df1.at[row, col] != df2.at[row, col]:
-                    diff_df.at[row, col] = f'{df1.at[row, col]} --> {df2.at[row, col]}'
-
-    # Identificar filas adicionales únicas en el archivo 2
-    # Comparar las filas completas, no solo las columnas requeridas
-    additional_rows = df2[~df2.apply(tuple, axis=1).isin(df1.apply(tuple, axis=1))]
+    diff_df = df1_filtered.copy()
+    for row in range(len(df1_filtered)):
+        if row < len(df2_filtered):
+            for col in cols_of_interest:
+                if df1_filtered.at[row, col] != df2_filtered.at[row, col]:
+                    diff_df.at[row, col] = f'{df1_filtered.at[row, col]} --> {df2_filtered.at[row, col]}'
 
     # Guardar diferencias en un nuevo archivo
     diff_df.to_excel(output_file, index=False)
@@ -48,7 +43,6 @@ def compare_excels(file1, file2, output_file):
     wb = load_workbook(output_file)
     ws = wb.active
     red_fill = PatternFill(start_color="FFC7CE", end_color="FFC7CE", fill_type="solid")
-    yellow_fill = PatternFill(start_color="FFFF00", end_color="FFFF00", fill_type="solid")
 
     # Resaltar diferencias
     for row in range(2, ws.max_row + 1):
@@ -56,19 +50,6 @@ def compare_excels(file1, file2, output_file):
             cell = ws.cell(row=row, column=col)
             if '-->' in str(cell.value):
                 cell.fill = red_fill
-
-    # Verificar el número de filas en df1
-    last_row_in_df1 = len(df1)
-
-    # Solo agregar filas adicionales cuyo número de fila en df2 sea mayor que el último en df1
-    for _, additional_row in additional_rows.iterrows():
-        # Verificar el número de la fila en df2 (NO)
-        row_number_in_df2 = additional_row.name + 1  # La fila en df2
-        if row_number_in_df2 > last_row_in_df1:
-            # Agregar la fila al archivo de salida si es mayor
-            ws.append(additional_row.tolist())
-            for col in range(1, len(additional_row) + 1):
-                ws.cell(row=ws.max_row, column=col).fill = yellow_fill
 
     # Guardar el archivo final
     wb.save(output_file)
