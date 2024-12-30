@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="51815375-9cfe-40cc-9c65-0dd7afb0c83a" name="Changes" comment="Funcional moviendome entre calendarios">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyAlhambraNotifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyAlhambraNotifications.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mik9531&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mik9531/pyAlhambra.git&quot;,
+    &quot;accountId&quot;: &quot;5b97beb4-8513-47f9-a11d-fddd899a4960&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2p4bhuAWUDg7BBlkybbLHe2UPom" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.comparadorExcels.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pyAlhambraNotifications.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pyAlhambraTickets.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51815375-9cfe-40cc-9c65-0dd7afb0c83a" name="Changes" comment="" />
+      <created>1732028418573</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732028418573</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Funcional moviendome entre calendarios">
+      <option name="closed" value="true" />
+      <created>1732055389727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732055389727</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Funcional moviendome entre calendarios">
+      <option name="closed" value="true" />
+      <created>1732056994344</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732056994344</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Funcional moviendome entre calendarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funcional moviendome entre calendarios" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
+          <line>151</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
+          <line>123</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
+          <line>161</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
+          <line>174</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
+          <line>135</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="driver.find_elements(By.CSS_SELECTOR, &quot;td.calendario_padding no-dispo&quot;)" />
+        <watch expression="driver.find_elements(By.CSS_SELECTOR, &quot;calendario_padding no-dispo&quot;)" />
+        <watch expression="set(dias_tachados_ids_actual)" />
+        <watch expression="len(dias_tachados_ids_actual)" />
+        <watch expression="len({dias_tachados_ids_inicial})" />
+        <watch expression="dias_tachados_ids_inicial" />
+        <watch expression="dias_tachados_ids_inicial.__len__" />
+        <watch expression="{dias_tachados_ids_inicial}.__len__()" />
+        <watch expression="len(dias_tachados_ids_inicial)}" />
+        <watch expression="len(dias_tachados_ids_inicial)" />
+        <watch expression="            print(f&quot; Longitud Días tachados inicial: &quot; + str(len(dias_tachados_ids_inicial)))&#10;" />
+        <watch expression="print(f&quot; Longitud Días tachados inicial: &quot; + str(len(dias_tachados_ids_inicial)))" />
+        <watch expression="sheet1" />
+        <watch expression="additional_rows" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
