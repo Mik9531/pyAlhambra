@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51815375-9cfe-40cc-9c65-0dd7afb0c83a" name="Changes" comment="Solo muestra name y pass">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="51815375-9cfe-40cc-9c65-0dd7afb0c83a" name="Changes" comment="Cambios para comparar solo name y passport en todos los archivos probados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comparadorExcels.py" beforeDir="false" afterPath="$PROJECT_DIR$/comparadorExcels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20241226_091423.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20241226_095041.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20241226_095433.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20241226_100055.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/Analysis-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/EXE-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/PKG-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/PYZ-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/PYZ-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/comparadorExcels.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/comparadorExcels.pkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/warn-comparadorExcels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/warn-comparadorExcels.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/xref-comparadorExcels.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/xref-comparadorExcels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/comparadorExcels.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/comparadorExcels.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/comparadorExcels.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pyAlhambraTickets.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/roomingConDiferencias_20241226_092815.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735565341488</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Cambios para comparar solo name y passport en todos los archivos probados">
+      <option name="closed" value="true" />
+      <created>1735570588299</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735570588299</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -126,7 +139,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Funcional moviendome entre calendarios" />
     <MESSAGE value="Solo muestra name y pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solo muestra name y pass" />
+    <MESSAGE value="Cambios para comparar solo name y passport en todos los archivos probados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios para comparar solo name y passport en todos los archivos probados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
