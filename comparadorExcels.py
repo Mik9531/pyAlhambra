@@ -47,26 +47,29 @@ def compare_excels(file1, file2, output_file):
     dict1 = {str(row["Nombre/Apellido"]).strip().lower(): str(row["Pasaporte"]).strip() for _, row in df1_filtered.iterrows()}
     dict2 = {str(row["Nombre/Apellido"]).strip().lower(): str(row["Pasaporte"]).strip() for _, row in df2_filtered.iterrows()}
 
-    # Fusionar los nombres de ambos diccionarios
-    all_names = set(dict1.keys()).union(set(dict2.keys()))
-
-    # Preparar las filas para el resultado
+    # Inicializar las filas de resultado respetando el orden del archivo 1
     result_rows = []
-    for name in all_names:
-        passport1 = dict1.get(name, "")
-        passport2 = dict2.get(name, "")
-        if passport1 and passport2 and passport1 != passport2:
+    for name in dict1:
+        passport1 = dict1.get(name, "Vacío")
+        passport2 = dict2.get(name, "Vacío")
+        # Comprobar si el nombre es 'Nan' (NaN)
+        if "nan" in name.lower():  # Aquí verificamos si el nombre es 'Nan'
+            continue  # Si es 'Nan', no agregamos la fila
+
+        if passport1 != "Vacío" and passport2 != "Vacío" and passport1 != passport2:
             # Diferentes pasaportes
             result_rows.append([name.title(), f"{passport1} -> {passport2}"])
-        elif passport1 and not passport2:
+        elif passport1 != "Vacío" and passport2 == "Vacío":
             # Solo en archivo 1
-            result_rows.append([name.title(), f"{passport1} -> "])
-        elif passport2 and not passport1:
-            # Solo en archivo 2
-            result_rows.append([name.title(), f" -> {passport2}"])
+            result_rows.append([name.title(), f"{passport1} -> Vacío"])
         else:
-            # Igual pasaporte
-            result_rows.append([name.title(), passport1])
+            # Igual pasaporte o solo en archivo 2
+            result_rows.append([name.title(), f"Vacío -> {passport2}" if passport1 == "Vacío" else passport1])
+
+    # Añadir las filas exclusivas del archivo 2 (fuera del orden del archivo 1)
+    for name in dict2:
+        if name not in dict1 and "nan" not in name.lower():  # Filtrar 'Nan' también en el archivo 2
+            result_rows.append([name.title(), f"Vacío -> {dict2[name]}"])
 
     # Crear DataFrame de diferencias
     diff_df = pd.DataFrame(result_rows, columns=["Nombre/Apellido", "Pasaporte"])
@@ -82,11 +85,12 @@ def compare_excels(file1, file2, output_file):
     # Resaltar diferencias en las celdas donde hay cambios
     for row in range(2, ws.max_row + 1):
         cell = ws.cell(row=row, column=2)  # Columna de Pasaporte
-        if "->" in str(cell.value) and str(cell.value).strip() != "":
+        if "->" in str(cell.value) and "Vacío" not in str(cell.value):
             cell.fill = red_fill
 
     # Guardar el archivo final
     wb.save(output_file)
+
 
 
 def browse_file(label):
