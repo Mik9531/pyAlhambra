@@ -43,37 +43,33 @@ def compare_excels(file1, file2, output_file):
     # Normalizar nombres de columnas
     df1_filtered.columns = df2_filtered.columns = ["Nombre/Apellido", "Pasaporte"]
 
-    # Crear identificadores únicos para cada fila (normalizados)
-    df1_filtered = df1_filtered.copy()
-    df1_filtered["ID"] = df1_filtered.apply(
-        lambda x: f"{str(x['Nombre/Apellido']).strip().lower()}|{str(x['Pasaporte']).strip().lower()}", axis=1)
+    # Crear diccionarios para comparación
+    dict1 = {str(row["Nombre/Apellido"]).strip().lower(): str(row["Pasaporte"]).strip() for _, row in df1_filtered.iterrows()}
+    dict2 = {str(row["Nombre/Apellido"]).strip().lower(): str(row["Pasaporte"]).strip() for _, row in df2_filtered.iterrows()}
 
-    df2_filtered = df2_filtered.copy()
-    df2_filtered["ID"] = df2_filtered.apply(
-        lambda x: f"{str(x['Nombre/Apellido']).strip().lower()}|{str(x['Pasaporte']).strip().lower()}", axis=1)
+    # Fusionar los nombres de ambos diccionarios
+    all_names = set(dict1.keys()).union(set(dict2.keys()))
 
-    # Detectar filas únicas en cada archivo
-    set1 = set(df1_filtered["ID"])
-    set2 = set(df2_filtered["ID"])
-
-    only_in_file1 = set1 - set2
-    only_in_file2 = set2 - set1
-
-    # Preparar el DataFrame de diferencias
-    diff_rows = []
-
-    # Añadir filas únicas del archivo 1
-    for row_id in only_in_file1:
-        row = df1_filtered[df1_filtered["ID"] == row_id].iloc[0]
-        diff_rows.append([row["Nombre/Apellido"], row["Pasaporte"], "Solo en archivo 1"])
-
-    # Añadir filas únicas del archivo 2
-    for row_id in only_in_file2:
-        row = df2_filtered[df2_filtered["ID"] == row_id].iloc[0]
-        diff_rows.append([row["Nombre/Apellido"], row["Pasaporte"], "Solo en archivo 2"])
+    # Preparar las filas para el resultado
+    result_rows = []
+    for name in all_names:
+        passport1 = dict1.get(name, "")
+        passport2 = dict2.get(name, "")
+        if passport1 and passport2 and passport1 != passport2:
+            # Diferentes pasaportes
+            result_rows.append([name.title(), f"{passport1} -> {passport2}"])
+        elif passport1 and not passport2:
+            # Solo en archivo 1
+            result_rows.append([name.title(), f"{passport1} -> "])
+        elif passport2 and not passport1:
+            # Solo en archivo 2
+            result_rows.append([name.title(), f" -> {passport2}"])
+        else:
+            # Igual pasaporte
+            result_rows.append([name.title(), passport1])
 
     # Crear DataFrame de diferencias
-    diff_df = pd.DataFrame(diff_rows, columns=["Nombre/Apellido", "Pasaporte", "Comentario"])
+    diff_df = pd.DataFrame(result_rows, columns=["Nombre/Apellido", "Pasaporte"])
 
     # Guardar diferencias en un nuevo archivo
     diff_df.to_excel(output_file, index=False)
@@ -83,12 +79,11 @@ def compare_excels(file1, file2, output_file):
     ws = wb.active
     red_fill = PatternFill(start_color="FFC7CE", end_color="FFC7CE", fill_type="solid")
 
-    # Resaltar diferencias
+    # Resaltar diferencias en las celdas donde hay cambios
     for row in range(2, ws.max_row + 1):
-        for col in range(1, ws.max_column + 1):
-            cell = ws.cell(row=row, column=col)
-            if "Solo en archivo" in str(ws.cell(row=row, column=ws.max_column).value):
-                cell.fill = red_fill
+        cell = ws.cell(row=row, column=2)  # Columna de Pasaporte
+        if "->" in str(cell.value) and str(cell.value).strip() != "":
+            cell.fill = red_fill
 
     # Guardar el archivo final
     wb.save(output_file)

@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51815375-9cfe-40cc-9c65-0dd7afb0c83a" name="Changes" comment="Cambios para comparar solo name y passport en todos los archivos probados">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comparadorExcels.py" beforeDir="false" afterPath="$PROJECT_DIR$/comparadorExcels.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.comparadorExcels.executor": "Debug",
+    "Python.comparadorExcels.executor": "Run",
     "Python.pyAlhambraNotifications.executor": "Run",
     "Python.pyAlhambraTickets.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -162,11 +161,6 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
-          <line>89</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
           <line>33</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
@@ -184,11 +178,6 @@
           <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
           <line>25</line>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
-          <line>46</line>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
