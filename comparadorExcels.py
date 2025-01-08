@@ -43,28 +43,37 @@ def compare_excels(file1, file2, output_file):
     # Normalizar nombres de columnas
     df1_filtered.columns = df2_filtered.columns = ["Nombre/Apellido", "Pasaporte"]
 
-    # Comparar las filas comunes
-    differences = []
-    for idx, row1 in df1_filtered.iterrows():
-        if idx < len(df2_filtered):
-            row2 = df2_filtered.iloc[idx]
-            diff_row = []
-            for col in df1_filtered.columns:
-                if row1[col] != row2[col]:
-                    diff_row.append(f"{row1[col]} --> {row2[col]}")
-                else:
-                    diff_row.append(row1[col])
-            differences.append(diff_row)
-        else:
-            differences.append(list(row1) + ["(Solo en archivo 1)"])
+    # Crear identificadores únicos para cada fila (normalizados)
+    df1_filtered = df1_filtered.copy()
+    df1_filtered["ID"] = df1_filtered.apply(
+        lambda x: f"{str(x['Nombre/Apellido']).strip().lower()}|{str(x['Pasaporte']).strip().lower()}", axis=1)
 
-    # Detectar filas adicionales en el archivo 2
-    for idx in range(len(df1_filtered), len(df2_filtered)):
-        row2 = df2_filtered.iloc[idx]
-        differences.append(list(row2) + ["(Solo en archivo 2)"])
+    df2_filtered = df2_filtered.copy()
+    df2_filtered["ID"] = df2_filtered.apply(
+        lambda x: f"{str(x['Nombre/Apellido']).strip().lower()}|{str(x['Pasaporte']).strip().lower()}", axis=1)
 
-    # Crear un DataFrame de las diferencias
-    diff_df = pd.DataFrame(differences, columns=df1_filtered.columns.tolist() + ["Comentario"])
+    # Detectar filas únicas en cada archivo
+    set1 = set(df1_filtered["ID"])
+    set2 = set(df2_filtered["ID"])
+
+    only_in_file1 = set1 - set2
+    only_in_file2 = set2 - set1
+
+    # Preparar el DataFrame de diferencias
+    diff_rows = []
+
+    # Añadir filas únicas del archivo 1
+    for row_id in only_in_file1:
+        row = df1_filtered[df1_filtered["ID"] == row_id].iloc[0]
+        diff_rows.append([row["Nombre/Apellido"], row["Pasaporte"], "Solo en archivo 1"])
+
+    # Añadir filas únicas del archivo 2
+    for row_id in only_in_file2:
+        row = df2_filtered[df2_filtered["ID"] == row_id].iloc[0]
+        diff_rows.append([row["Nombre/Apellido"], row["Pasaporte"], "Solo en archivo 2"])
+
+    # Crear DataFrame de diferencias
+    diff_df = pd.DataFrame(diff_rows, columns=["Nombre/Apellido", "Pasaporte", "Comentario"])
 
     # Guardar diferencias en un nuevo archivo
     diff_df.to_excel(output_file, index=False)
@@ -76,9 +85,9 @@ def compare_excels(file1, file2, output_file):
 
     # Resaltar diferencias
     for row in range(2, ws.max_row + 1):
-        for col in range(1, ws.max_column):
+        for col in range(1, ws.max_column + 1):
             cell = ws.cell(row=row, column=col)
-            if '-->' in str(cell.value) or "Solo en archivo" in str(ws.cell(row=row, column=ws.max_column).value):
+            if "Solo en archivo" in str(ws.cell(row=row, column=ws.max_column).value):
                 cell.fill = red_fill
 
     # Guardar el archivo final
