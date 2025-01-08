@@ -32,31 +32,39 @@ def compare_excels(file1, file2, output_file):
 
     # Identificar columnas de interés
     cols_of_interest1 = [col for col in df1.columns if any(
-        keyword in col.lower() for keyword in ["name", "nombre", "pass", "영문명", "영문성함","여권번호"]) and "kor" not in col.lower()]
+        keyword in col.lower() for keyword in ["name", "nombre", "pass", "영문명", "영문성함", "여권번호"]) and "kor" not in col.lower()]
     cols_of_interest2 = [col for col in df2.columns if any(
-        keyword in col.lower() for keyword in ["name", "nombre", "pass", "영문명","영문성함","여권번호"]) and "kor" not in col.lower()]
-
-    # if len(cols_of_interest1) == 0 or len(cols_of_interest2) == 0:
-    #     result_label.config(text="No se encuentran las columnas de nombre o pasaporte en los archivos añadidos",
-    #                         fg="red")
-    #     return
+        keyword in col.lower() for keyword in ["name", "nombre", "pass", "영문명", "영문성함", "여권번호"]) and "kor" not in col.lower()]
 
     # Filtrar ambas tablas
     df1_filtered = df1[cols_of_interest1]
     df2_filtered = df2[cols_of_interest2]
 
-    # Comparar los archivos Excel
-    diff_df = df1_filtered.copy()
+    # Normalizar nombres de columnas
+    df1_filtered.columns = df2_filtered.columns = ["Nombre/Apellido", "Pasaporte"]
 
-    new_headers = ["Nombre/Apellido", "Pasaporte"]  # Ajusta según la cantidad de columnas
-    diff_df.columns = new_headers
+    # Comparar las filas comunes
+    differences = []
+    for idx, row1 in df1_filtered.iterrows():
+        if idx < len(df2_filtered):
+            row2 = df2_filtered.iloc[idx]
+            diff_row = []
+            for col in df1_filtered.columns:
+                if row1[col] != row2[col]:
+                    diff_row.append(f"{row1[col]} --> {row2[col]}")
+                else:
+                    diff_row.append(row1[col])
+            differences.append(diff_row)
+        else:
+            differences.append(list(row1) + ["(Solo en archivo 1)"])
 
-    for row in range(len(df1_filtered)):
-        if row < len(df2_filtered):
-            for i in range(len(cols_of_interest1)):
-                if df1_filtered.at[row, cols_of_interest1[i]] != df2_filtered.at[row, cols_of_interest2[i]]:
-                    diff_df.at[row, cols_of_interest1[
-                        i]] = f'{df1_filtered.at[row, cols_of_interest1[i]]} --> {df2_filtered.at[row, cols_of_interest2[i]]}'
+    # Detectar filas adicionales en el archivo 2
+    for idx in range(len(df1_filtered), len(df2_filtered)):
+        row2 = df2_filtered.iloc[idx]
+        differences.append(list(row2) + ["(Solo en archivo 2)"])
+
+    # Crear un DataFrame de las diferencias
+    diff_df = pd.DataFrame(differences, columns=df1_filtered.columns.tolist() + ["Comentario"])
 
     # Guardar diferencias en un nuevo archivo
     diff_df.to_excel(output_file, index=False)
@@ -68,9 +76,9 @@ def compare_excels(file1, file2, output_file):
 
     # Resaltar diferencias
     for row in range(2, ws.max_row + 1):
-        for col in range(1, ws.max_column + 1):
+        for col in range(1, ws.max_column):
             cell = ws.cell(row=row, column=col)
-            if '-->' in str(cell.value):
+            if '-->' in str(cell.value) or "Solo en archivo" in str(ws.cell(row=row, column=ws.max_column).value):
                 cell.fill = red_fill
 
     # Guardar el archivo final
