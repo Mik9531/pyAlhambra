@@ -6,7 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="51815375-9cfe-40cc-9c65-0dd7afb0c83a" name="Changes" comment="Cambios para comparar solo name y passport en todos los archivos probados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01 (3).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02 (3).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EJEMPLO.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/comparadorExcels.py" beforeDir="false" afterPath="$PROJECT_DIR$/comparadorExcels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_211127.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_211149.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_211406.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_211427.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_211620.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_213630.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_213755.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_214043.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_214137.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_214354.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_214547.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_214744.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_214853.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_214925.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,19 +62,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.comparadorExcels.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pyAlhambraNotifications.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pyAlhambraTickets.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/migue/Desktop/pyAlhambra/pyAlhambra&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.comparadorExcels.executor": "Run",
+    "Python.pyAlhambraNotifications.executor": "Run",
+    "Python.pyAlhambraTickets.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/migue/Desktop/pyAlhambra/pyAlhambra",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -160,16 +177,42 @@
           <line>135</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="df1.columns" />
-        <watch expression="df2.columns" />
-        <watch expression="pd.read_excel(file1, header=header_row1 - 1, engine=&quot;openpyxl&quot;)" />
-        <watch expression="pd.read_excel(file1, header=header_row1, engine=&quot;openpyxl&quot;)" />
-        <watch expression="cols_of_interest1" />
-        <watch expression="cols_of_interest2" />
+        <watch expression="str(col)" />
+        <watch expression="str(col).lower()" />
+        <watch expression="keyword" />
+        <watch expression="keywords" />
+        <watch expression="df.iloc[0]" />
+        <watch expression="cell" />
+        <watch expression="df1_filtered.shape[1]" />
       </configuration>
     </watches-manager>
   </component>
