@@ -3,6 +3,7 @@ import pandas as pd
 from openpyxl import load_workbook
 from openpyxl.styles import PatternFill
 from datetime import datetime
+from difflib import SequenceMatcher
 
 def find_header_row(file, keyword):
     """
@@ -45,31 +46,42 @@ def compare_excels(file1, file2, output_file):
     dict1 = {str(row["Nombre/Apellido"]).strip().lower(): str(row["Pasaporte"]).strip() for _, row in df1_filtered.iterrows()}
     dict2 = {str(row["Nombre/Apellido"]).strip().lower(): str(row["Pasaporte"]).strip() for _, row in df2_filtered.iterrows()}
 
+    # Función para calcular similitud entre cadenas
+    def nombres_similares(nombre1, nombre2, umbral=0.85):
+        return SequenceMatcher(None, nombre1, nombre2).ratio() >= umbral
+
     # Inicializar las filas de resultado respetando el orden del archivo 1
     result_rows = []
-    for name in dict1:
-        passport1 = dict1.get(name, "Vacío")
-        passport2 = dict2.get(name, "Vacío")
-        estado = ""
+    for name1 in dict1:
+        passport1 = dict1.get(name1, "Vacío")
+        match_found = False
 
-        if passport1 != "Vacío" and passport2 == "Vacío":
-            estado = "CANCELADO"
-        elif passport1 == "Vacío" and passport2 != "Vacío":
-            estado = "NUEVO"
-        elif passport1 != passport2:
-            estado = "MODIFICADO"
-        else:
-            estado = "MANTENIDO"
+        for name2 in dict2:
+            # Verificar si los nombres son similares
+            if nombres_similares(name1, name2):
+                passport2 = dict2[name2]
 
-        if "nan" in name.lower():
-            continue
+                # Si los pasaportes son diferentes, marcar como "MODIFICADO"
+                if passport1 != passport2:
+                    estado = "MODIFICADO"
+                    nombre_diff = f"{name1.title()} -> {name2.title()}"
+                    result_rows.append([nombre_diff, f"{passport1} -> {passport2}", estado])
+                    match_found = True
+                    break
+                else:  # Si el nombre y el pasaporte coinciden
+                    estado = "MANTENIDO"
+                    nombre_diff = name1.title()
+                    result_rows.append([nombre_diff, passport1, estado])
+                    match_found = True
+                    break
 
-        result_rows.append([name.title(), f"{passport1} -> {passport2}" if passport1 != passport2 else passport1, estado])
+        if not match_found:
+            result_rows.append([f"{name1.title()} -> Vacío", f"{passport1} -> Vacío", "CANCELADO"])
 
     # Añadir las filas exclusivas del archivo 2 (fuera del orden del archivo 1)
-    for name in dict2:
-        if name not in dict1 and "nan" not in name.lower():
-            result_rows.append([name.title(), f"Vacío -> {dict2[name]}", "NUEVO"])
+    for name2 in dict2:
+        if not any(nombres_similares(name2, name1) for name1 in dict1):
+            result_rows.append([f"Vacío -> {name2.title()}", f"Vacío -> {dict2[name2]}", "NUEVO"])
 
     # Crear DataFrame de diferencias con columna Estado
     diff_df = pd.DataFrame(result_rows, columns=["Nombre/Apellido", "Pasaporte", "Estado"])

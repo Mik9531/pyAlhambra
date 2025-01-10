@@ -7,21 +7,6 @@
     <list default="true" id="51815375-9cfe-40cc-9c65-0dd7afb0c83a" name="Changes" comment="Cambios para comparar solo name y passport en todos los archivos probados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comparadorExcels.py" beforeDir="false" afterPath="$PROJECT_DIR$/comparadorExcels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_172429.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_172457.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_173034.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_174038.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_174339.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_175043.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_175401.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_175727.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_175840.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_180635.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_181304.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_181637.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_181725.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_182017.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250108_182035.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,26 +159,6 @@
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
           <line>135</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
