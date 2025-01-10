@@ -4,7 +4,6 @@ from openpyxl import load_workbook
 from openpyxl.styles import PatternFill
 from datetime import datetime
 
-
 def find_header_row(file, keyword):
     """
     Encuentra la fila donde se encuentra una columna que contiene el keyword.
@@ -15,7 +14,6 @@ def find_header_row(file, keyword):
         if any(keyword.lower() in (str(cell).lower() if cell else "") for cell in row):
             return i
     return 1  # Por defecto, si no se encuentra, usar la primera fila
-
 
 def compare_excels(file1, file2, output_file):
     # Detectar la fila de encabezados en ambos archivos
@@ -52,27 +50,29 @@ def compare_excels(file1, file2, output_file):
     for name in dict1:
         passport1 = dict1.get(name, "Vacío")
         passport2 = dict2.get(name, "Vacío")
-        # Comprobar si el nombre es 'Nan' (NaN)
-        if "nan" in name.lower():  # Aquí verificamos si el nombre es 'Nan'
-            continue  # Si es 'Nan', no agregamos la fila
+        estado = ""
 
-        if passport1 != "Vacío" and passport2 != "Vacío" and passport1 != passport2:
-            # Diferentes pasaportes
-            result_rows.append([name.title(), f"{passport1} -> {passport2}"])
-        elif passport1 != "Vacío" and passport2 == "Vacío":
-            # Solo en archivo 1
-            result_rows.append([name.title(), f"{passport1} -> Vacío"])
+        if passport1 != "Vacío" and passport2 == "Vacío":
+            estado = "CANCELADO"
+        elif passport1 == "Vacío" and passport2 != "Vacío":
+            estado = "NUEVO"
+        elif passport1 != passport2:
+            estado = "MODIFICADO"
         else:
-            # Igual pasaporte o solo en archivo 2
-            result_rows.append([name.title(), f"Vacío -> {passport2}" if passport1 == "Vacío" else passport1])
+            estado = "MANTENIDO"
+
+        if "nan" in name.lower():
+            continue
+
+        result_rows.append([name.title(), f"{passport1} -> {passport2}" if passport1 != passport2 else passport1, estado])
 
     # Añadir las filas exclusivas del archivo 2 (fuera del orden del archivo 1)
     for name in dict2:
-        if name not in dict1 and "nan" not in name.lower():  # Filtrar 'Nan' también en el archivo 2
-            result_rows.append([name.title(), f"Vacío -> {dict2[name]}"])
+        if name not in dict1 and "nan" not in name.lower():
+            result_rows.append([name.title(), f"Vacío -> {dict2[name]}", "NUEVO"])
 
-    # Crear DataFrame de diferencias
-    diff_df = pd.DataFrame(result_rows, columns=["Nombre/Apellido", "Pasaporte"])
+    # Crear DataFrame de diferencias con columna Estado
+    diff_df = pd.DataFrame(result_rows, columns=["Nombre/Apellido", "Pasaporte", "Estado"])
 
     # Guardar diferencias en un nuevo archivo
     diff_df.to_excel(output_file, index=False)
@@ -80,18 +80,31 @@ def compare_excels(file1, file2, output_file):
     # Resaltar diferencias en el archivo generado
     wb = load_workbook(output_file)
     ws = wb.active
-    red_fill = PatternFill(start_color="FFC7CE", end_color="FFC7CE", fill_type="solid")
+    mod_fill = PatternFill(start_color="FFC7CE", end_color="FFC7CE", fill_type="solid")
+    cancel_fill = PatternFill(start_color="FF5050", end_color="FF5050", fill_type="solid")
+    new_fill = PatternFill(start_color="00FF00", end_color="00FF00", fill_type="solid")
 
     # Resaltar diferencias en las celdas donde hay cambios
     for row in range(2, ws.max_row + 1):
-        cell = ws.cell(row=row, column=2)  # Columna de Pasaporte
-        if "->" in str(cell.value) and "Vacío" not in str(cell.value):
-            cell.fill = red_fill
+        estado_cell = ws.cell(row=row, column=3)  # Columna de Estado
+        nombre_cell = ws.cell(row=row, column=1)  # Columna de Nombre/Apellido
+        pasaporte_cell = ws.cell(row=row, column=2)  # Columna de Pasaporte
+
+        if estado_cell.value == "MODIFICADO":
+            estado_cell.fill = mod_fill
+            nombre_cell.fill = mod_fill
+            pasaporte_cell.fill = mod_fill
+        elif estado_cell.value == "NUEVO":
+            estado_cell.fill = new_fill
+            nombre_cell.fill = new_fill
+            pasaporte_cell.fill = new_fill
+        elif estado_cell.value == "CANCELADO":
+            estado_cell.fill = cancel_fill
+            nombre_cell.fill = cancel_fill
+            pasaporte_cell.fill = cancel_fill
 
     # Guardar el archivo final
     wb.save(output_file)
-
-
 
 def browse_file(label):
     filename = filedialog.askopenfilename(filetypes=[["Excel files", "*.xlsx"]])
@@ -99,7 +112,6 @@ def browse_file(label):
         label.config(text=filename)
         return filename
     return None
-
 
 def run_comparator():
     file1 = label_file1.cget("text")
@@ -115,7 +127,6 @@ def run_comparator():
         result_label.config(text=f"Comparación completada. Archivo guardado como: {output_file}", fg="green")
     except ValueError as e:
         result_label.config(text=str(e), fg="red")
-
 
 # Crear la interfaz gráfica
 root = Tk()
