@@ -6,15 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="51815375-9cfe-40cc-9c65-0dd7afb0c83a" name="Changes" comment="Cambios para comparar solo name y passport en todos los archivos probados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/comparadorExcels.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/comparadorExcels.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/warn-comparadorExcels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/warn-comparadorExcels.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/xref-comparadorExcels.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/xref-comparadorExcels.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comparadorExcels.py" beforeDir="false" afterPath="$PROJECT_DIR$/comparadorExcels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/comparadorExcelsV4.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/comparadorExcelsV4.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/001.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/002.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/011.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/022.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/comparadorExcelsV6.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/comparadorExcelsv6.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_223833.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_224243.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_224347.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_224613.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_224738.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_224902.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_233752.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_233939.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250110_234002.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250114_203523.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250114_203923.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250114_204904.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250114_204933.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250114_205004.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomingConDiferencias_20250114_205023.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,33 +183,23 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
           <line>16</line>
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
           <line>19</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="30" />
+          <line>74</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
-          <line>69</line>
-          <option name="timeStamp" value="31" />
+          <line>57</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
