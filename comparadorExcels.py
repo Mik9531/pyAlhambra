@@ -30,7 +30,7 @@ def find_header_row(file, keywords):
 
 def compare_excels(file1, file2, output_file):
     # Lista de palabras clave para buscar en los encabezados
-    keywords = ["name", "nombre", "pass", "영문명", "영문이름", "영문성함", "여권번호"]
+    keywords = ["name", "nombre", "surname", "apellido", "passport", "pass", "영문명", "영문이름", "영문성함", "여권번호", "doc"]
 
     # Detectar la fila de encabezados en ambos archivos usando las palabras clave
     header_row1 = find_header_row(file1, keywords)
@@ -54,11 +54,28 @@ def compare_excels(file1, file2, output_file):
     cols_of_interest2 = [col for col in df2.columns if any(
         keyword in col.lower() for keyword in keywords) and "kor" not in col.lower()]
 
-    # Filtrar ambas tablas y verificar que las columnas de interés existen
-    if len(cols_of_interest1) == 0 or len(cols_of_interest2) == 0:
-        print("No se encontraron las columnas de interés en uno de los archivos.")
+    # Filtrar ambas tablas y manejar columnas redundantes
+    def filtrar_columnas(cols, keywords):
+        # Seleccionar columnas que contienen las palabras clave
+        seleccionadas = [col for col in cols if any(keyword in col.lower() for keyword in keywords)]
+        # Si hay más de dos columnas, eliminar la primera
+        if len(seleccionadas) > 2:
+            seleccionadas.pop(0)
+        return seleccionadas
+
+    # Lista de palabras clave
+    keywords_nombres_pasaportes = keywords
+
+    # Filtrar las columnas de interés
+    cols_of_interest1 = filtrar_columnas(df1.columns, keywords_nombres_pasaportes)
+    cols_of_interest2 = filtrar_columnas(df2.columns, keywords_nombres_pasaportes)
+
+    # Verificar que al menos haya dos columnas
+    if len(cols_of_interest1) != 2 or len(cols_of_interest2) != 2:
+        print("No se encontraron exactamente dos columnas de interés en uno de los archivos.")
         return
 
+    # Filtrar las tablas con las columnas seleccionadas
     df1_filtered = df1[cols_of_interest1]
     df2_filtered = df2[cols_of_interest2]
 
