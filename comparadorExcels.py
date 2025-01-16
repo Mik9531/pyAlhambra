@@ -30,7 +30,7 @@ def find_header_row(file, keywords):
 
 def compare_excels(file1, file2, output_file):
     # Lista de palabras clave para buscar en los encabezados
-    keywords = ["name", "nombre", "surname", "apellido", "passport", "pass", "영문성", "영문명", "영문이름", "영문성함", "여권번호", "doc"]
+    keywords = ["name", "nombre", "surname", "apellido", "passport","pasapor", "pass", "영문성", "영문명", "영문이름", "영문성함", "여권번호", "doc"]
 
     # Detectar la fila de encabezados en ambos archivos usando las palabras clave
     header_row1 = find_header_row(file1, keywords)
@@ -58,18 +58,22 @@ def compare_excels(file1, file2, output_file):
     df1_filtered = df1[cols_of_interest1]
     df2_filtered = df2[cols_of_interest2]
 
-    # Si hay más de dos columnas, concatenar las dos primeras
+    # Si hay más de dos columnas, concatenar las dos primeras si no están vacías
     if df1_filtered.shape[1] > 2:
-        df1_filtered.iloc[:, 0] = df1_filtered.iloc[:, 0].astype(str).str.strip() + " " + df1_filtered.iloc[:,
-                                                                                          1].astype(str).str.strip()
-        df1_filtered = df1_filtered.iloc[:,
-                       [0, 2]]  # Mantener solo la columna concatenada y la tercera (asumida como pasaporte)
+        df1_filtered.iloc[:, 0] = df1_filtered.iloc[:, 0].fillna("").astype(str).str.strip()
+        df1_filtered.iloc[:, 1] = df1_filtered.iloc[:, 1].fillna("").astype(str).str.strip()
+        df1_filtered.iloc[:, 0] = df1_filtered.iloc[:, 0] + " " + df1_filtered.iloc[:, 1]
+        df1_filtered.iloc[:, 0] = df1_filtered.iloc[:, 0].str.strip()
+        df1_filtered = df1_filtered[df1_filtered.iloc[:, 0] != ""]  # Eliminar filas con nombres vacíos
+        df1_filtered = df1_filtered.iloc[:, [0, 2]]  # Mantener solo la columna concatenada y la tercera
 
     if df2_filtered.shape[1] > 2:
-        df2_filtered.iloc[:, 0] = df2_filtered.iloc[:, 0].astype(str).str.strip() + " " + df2_filtered.iloc[:,
-                                                                                          1].astype(str).str.strip()
-        df2_filtered = df2_filtered.iloc[:,
-                       [0, 2]]  # Mantener solo la columna concatenada y la tercera (asumida como pasaporte)
+        df2_filtered.iloc[:, 0] = df2_filtered.iloc[:, 0].fillna("").astype(str).str.strip()
+        df2_filtered.iloc[:, 1] = df2_filtered.iloc[:, 1].fillna("").astype(str).str.strip()
+        df2_filtered.iloc[:, 0] = df2_filtered.iloc[:, 0] + " " + df2_filtered.iloc[:, 1]
+        df2_filtered.iloc[:, 0] = df2_filtered.iloc[:, 0].str.strip()
+        df2_filtered = df2_filtered[df2_filtered.iloc[:, 0] != ""]  # Eliminar filas con nombres vacíos
+        df2_filtered = df2_filtered.iloc[:, [0, 2]]  # Mantener solo la columna concatenada y la tercera
 
     # Verificar que las columnas filtradas tengan el tamaño esperado
     if df1_filtered.shape[1] != 2 or df2_filtered.shape[1] != 2:
@@ -80,8 +84,10 @@ def compare_excels(file1, file2, output_file):
     df1_filtered.columns = df2_filtered.columns = ["Nombre/Apellido", "Pasaporte"]
 
     # Crear diccionarios para comparación
-    dict1 = {str(row["Nombre/Apellido"]).strip().lower(): str(row["Pasaporte"]).strip() for _, row in df1_filtered.iterrows()}
-    dict2 = {str(row["Nombre/Apellido"]).strip().lower(): str(row["Pasaporte"]).strip() for _, row in df2_filtered.iterrows()}
+    dict1 = {str(row["Nombre/Apellido"]).strip().lower(): str(row["Pasaporte"]).strip() for _, row in
+             df1_filtered.iterrows()}
+    dict2 = {str(row["Nombre/Apellido"]).strip().lower(): str(row["Pasaporte"]).strip() for _, row in
+             df2_filtered.iterrows()}
 
     # Función para calcular similitud entre cadenas
     def nombres_similares(nombre1, nombre2, umbral=0.90):
@@ -103,14 +109,15 @@ def compare_excels(file1, file2, output_file):
             if nombres_similares(name1, name2):
                 passport2 = dict2[name2]
 
-                # Si los pasaportes son diferentes, marcar como "MODIFICADO"
-                if passport1 != passport2:
+                # Si los nombres no coinciden exactamente, marcar como "MODIFICADO" incluso si los pasaportes coinciden
+                if name1 != name2 or passport1 != passport2:
                     estado = "MODIFICADO"
                     nombre_diff = f"{name1.title()} -> {name2.title()}"
-                    result_rows.append([nombre_diff, f"{passport1} -> {passport2}", estado])
+                    pasaporte_diff = f"{passport1} -> {passport2}" if passport1 != passport2 else passport1
+                    result_rows.append([nombre_diff, pasaporte_diff, estado])
                     match_found = True
                     break
-                else:  # Si el nombre y el pasaporte coinciden
+                else:  # Si el nombre y el pasaporte coinciden exactamente
                     estado = "MANTENIDO"
                     nombre_diff = name1.title()
                     result_rows.append([nombre_diff, passport1, estado])
