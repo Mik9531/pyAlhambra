@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51815375-9cfe-40cc-9c65-0dd7afb0c83a" name="Changes" comment="Cambios para comparar solo name y passport en todos los archivos probados">
-      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/comparadorExcels.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/comparadorExcels.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/comparadorExcels/warn-comparadorExcels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/comparadorExcels/warn-comparadorExcels.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/PLANTILLAS/PLANTILLA_1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/dist/PLANTILLAS/PLANTILLA_1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/PLANTILLAS/PLANTILLA_2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/dist/PLANTILLAS/PLANTILLA_2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/comparadorExcelsv7.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/comparadorExcelsv7.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyAlhambraNotifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyAlhambraNotifications.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,19 +45,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.comparadorExcels.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pyAlhambraNotifications.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pyAlhambraTickets.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/migue/Desktop/pyAlhambra/pyAlhambra&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.comparadorExcels.executor": "Run",
+    "Python.pyAlhambraNotifications.executor": "Run",
+    "Python.pyAlhambraTickets.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/migue/Desktop/pyAlhambra/pyAlhambra",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -133,6 +126,17 @@
       </map>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Funcional moviendome entre calendarios" />
     <MESSAGE value="Solo muestra name y pass" />
@@ -142,31 +146,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>151</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>123</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>161</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>174</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>135</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/comparadorExcels.py</url>
           <line>16</line>
@@ -182,6 +161,21 @@
           <line>78</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
+          <line>310</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
+          <line>234</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
+          <line>242</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -196,6 +190,7 @@
         <watch expression="df1_filtered.iloc[:, 0].astype(str).str.strip()" />
         <watch expression="df1_filtered.iloc[:, 0]" />
         <watch expression="df1_filtered.iloc[:,&#10;                                                                                          1].astype(str).str.strip()" />
+        <watch expression="boton.is_displayed" />
       </configuration>
     </watches-manager>
   </component>
