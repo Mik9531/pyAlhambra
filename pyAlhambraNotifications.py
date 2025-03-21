@@ -136,7 +136,7 @@ def obtener_dias_tachados_completos(driver):
 
 # Configuración inicial
 TIEMPO_REFRESCO = 10  # Tiempo entre revisiones en segundos
-TIEMPO = 6  # Tiempo de espera tras cada paso
+TIEMPO = random.uniform(3, 6)  # Tiempo de espera tras cada paso
 DETENER = False  # Variable global para detener el script
 SCRIPT_THREAD = None  # Hilo de ejecución del script
 
@@ -185,23 +185,40 @@ def esperar_boton_activo(driver, by, value, timeout=15):
 def ejecutar_script():
     global DETENER, FALLOS_SEGUIDOS
 
-    chrome_options = Options()
-    chrome_options.add_argument("--incognito")
-    chrome_options.add_argument("--start-maximized")
-
-    # Opciones anti-detección
-    chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    chrome_options.add_experimental_option('useAutomationExtension', False)
-
-    # User-Agent realista
-    chrome_options.add_argument(
-        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/121.0.0.0 Safari/537.36"
-    )
+    # chrome_options = Options()
+    # chrome_options.add_argument("--incognito")
+    # chrome_options.add_argument("--start-maximized")
+    # # options.add_argument('--disable-blink-features=AutomationControlled')
+    #
+    # # Opciones anti-detección
+    # chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    # chrome_options.add_experimental_option('useAutomationExtension', False)
+    #
+    # # User-Agent realista
+    # chrome_options.add_argument(
+    #     "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    #     "AppleWebKit/537.36 (KHTML, like Gecko) "
+    #     "Chrome/121.0.0.0 Safari/537.36"
+    # )
 
     def iniciar_navegador():
+
         options = uc.ChromeOptions()
+
+        # Ruta a tu perfil de Chrome
+        user_data_dir = r"C:\Users\migue\AppData\Local\Google\Chrome\User Data"
+
+        # (opcional) Puedes especificar un perfil dentro del user data dir (como "Default" o "Profile 1")
+        profile_dir = "Default"
+
+        # options = uc.ChromeOptions()
+        # options.add_argument(f"--user-data-dir={user_data_dir}")
+        # options.add_argument(f"--profile-directory={profile_dir}")
+
+        # Otros flags útiles
+        options.add_argument("--disable-blink-features=AutomationControlled")
+        options.add_argument("--no-first-run --no-service-autorun --password-store=basic")
+
         options.add_argument("--incognito")
         options.add_argument("--start-maximized")
         options.add_argument(
@@ -250,10 +267,10 @@ def ejecutar_script():
         except Exception:
             print("Botón de cookies no encontrado o ya aceptado.")
 
-        # WebDriverWait(driver, 20).until(
-        #     EC.element_to_be_clickable((By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
-        # ).click()
-        # time.sleep(TIEMPO)
+        WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
+        ).click()
+        time.sleep(TIEMPO)
 
     driver = iniciar_navegador()
     navegar_y_preparar(driver)
@@ -282,9 +299,13 @@ def ejecutar_script():
                 print(f"Error obteniendo días tachados: {e}")
                 return []
 
-            enlace = driver.find_element(By.ID,
-                                         "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1")
-            enlace.click()
+            # enlace = driver.find_element(By.ID,
+            #                              "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1")
+            # enlace.click()
+
+            WebDriverWait(driver, 20).until(
+                EC.element_to_be_clickable((By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
+            ).click()
 
             time.sleep(TIEMPO)
 
@@ -308,7 +329,7 @@ def ejecutar_script():
             print(f"\n Intento #{counter}")
             counter += 1
             # Reiniciar navegador cada 10 ciclos
-            # if counter % 20 == 0:
+            # if counter % 5 == 0:
             #     print("Reiniciando navegador tras 10 intentos para evitar bloqueos.")
             #     try:
             #         driver.quit()
@@ -324,13 +345,13 @@ def ejecutar_script():
             driver.refresh()
             time.sleep(TIEMPO)
 
-            try:
-                WebDriverWait(driver, 10).until(
-                    EC.element_to_be_clickable((By.ID, "ctl00_lnkAceptarTodoCookies_Info"))
-                ).click()
-                time.sleep(TIEMPO)
-            except Exception:
-                print("Botón de cookies no encontrado o ya aceptado.")
+            # try:
+            #     WebDriverWait(driver, 10).until(
+            #         EC.element_to_be_clickable((By.ID, "ctl00_lnkAceptarTodoCookies_Info"))
+            #     ).click()
+            #     time.sleep(TIEMPO)
+            # except Exception:
+            #     print("Botón de cookies no encontrado o ya aceptado.")
 
             try:
                 boton = WebDriverWait(driver, 10).until(
@@ -342,7 +363,7 @@ def ejecutar_script():
                 time.sleep(TIEMPO)
 
                 # Verificamos que el calendario ha cargado
-                WebDriverWait(driver, 15).until(
+                WebDriverWait(driver, 10).until(
                     EC.presence_of_element_located((By.ID,
                                                     "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha"))
                 )
