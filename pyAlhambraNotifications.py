@@ -136,7 +136,7 @@ def obtener_dias_tachados_completos(driver):
 
 # Configuración inicial
 TIEMPO_REFRESCO = 10  # Tiempo entre revisiones en segundos
-TIEMPO = random.uniform(3, 6)  # Tiempo de espera tras cada paso
+TIEMPO = random.uniform(4, 6)  # Tiempo de espera tras cada paso
 DETENER = False  # Variable global para detener el script
 SCRIPT_THREAD = None  # Hilo de ejecución del script
 
@@ -303,9 +303,14 @@ def ejecutar_script():
             #                              "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1")
             # enlace.click()
 
-            WebDriverWait(driver, 20).until(
-                EC.element_to_be_clickable((By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
-            ).click()
+            try:
+                WebDriverWait(driver, 10).until(
+                    EC.element_to_be_clickable(
+                        (By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
+                ).click()
+                time.sleep(TIEMPO)
+            except Exception:
+                print("Botón de paso 1 ya pulsado.")
 
             time.sleep(TIEMPO)
 
@@ -345,6 +350,7 @@ def ejecutar_script():
             driver.refresh()
             time.sleep(TIEMPO)
 
+            # Muchos bloqueos si lo activo
             # try:
             #     WebDriverWait(driver, 10).until(
             #         EC.element_to_be_clickable((By.ID, "ctl00_lnkAceptarTodoCookies_Info"))
@@ -409,7 +415,7 @@ def ejecutar_script():
                 print(" Deteniendo el script.")
                 break
 
-            espera = random.uniform(120, 180)
+            espera = random.uniform(30, 60)
             print(f" Esperando {espera:.2f} segundos antes de volver a intentar...")
             time.sleep(espera)
     finally:
