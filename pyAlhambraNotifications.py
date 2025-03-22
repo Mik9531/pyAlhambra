@@ -254,10 +254,13 @@ def ejecutar_script():
         enlace.click()
         time.sleep(TIEMPO)
 
-        WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, f"//a[@href='{URL_RESERVAS}']"))
-        ).click()
-        time.sleep(TIEMPO)
+        try:
+            WebDriverWait(driver, 10).until(
+                EC.element_to_be_clickable((By.XPATH, f"//a[@href='{URL_RESERVAS}']"))
+            ).click()
+            time.sleep(TIEMPO)
+        except Exception:
+            print("Fallo al acceder a las reservas")
 
         try:
             WebDriverWait(driver, 10).until(
