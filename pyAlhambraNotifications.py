@@ -20,6 +20,8 @@ import tempfile
 import shutil  # para limpiar perfiles temporales antiguos
 import undetected_chromedriver as uc
 import atexit
+import pyttsx3
+
 
 parpadeo_evento = Event()
 
@@ -40,30 +42,31 @@ def borrar_archivo_estado():
 atexit.register(borrar_archivo_estado)
 
 
-def crear_icono_azul():
-    """Crea un icono azul para la bandeja del sistema."""
+def crear_icono_verde():
+    """Crea un icono verde para la bandeja del sistema."""
     width, height = 64, 64
-    image = Image.new("RGB", (width, height), "blue")
+    image = Image.new("RGBA", (width, height), (0, 0, 0, 0))  # Fondo transparente
     draw = ImageDraw.Draw(image)
-    draw.ellipse((0, 0, width, height), fill="blue")
+    draw.ellipse((0, 0, width, height), fill="green")  # Círculo rojo
     return image
 
 
 def crear_icono_amarillo():
-    """Crea un icono amarillo para la bandeja del sistema."""
+    """Crea un icono circular con fondo transparente para la bandeja del sistema."""
     width, height = 64, 64
-    image = Image.new("RGB", (width, height), "yellow")
+    image = Image.new("RGBA", (width, height), (0, 0, 0, 0))  # Fondo transparente
     draw = ImageDraw.Draw(image)
-    draw.ellipse((0, 0, width, height), fill="yellow")
+    draw.ellipse((0, 0, width, height), fill="yellow")  # Círculo rojo
     return image
 
 
 def crear_icono_rojo():
     """Crea un icono rojo para la bandeja del sistema."""
+    """Crea un icono circular con fondo transparente para la bandeja del sistema."""
     width, height = 64, 64
-    image = Image.new("RGB", (width, height), "red")
+    image = Image.new("RGBA", (width, height), (0, 0, 0, 0))  # Fondo transparente
     draw = ImageDraw.Draw(image)
-    draw.ellipse((0, 0, width, height), fill="red")
+    draw.ellipse((0, 0, width, height), fill="red")  # Círculo rojo
     return image
 
 
@@ -78,8 +81,8 @@ def crear_icono_alerta():
 
 def parpadear_icono(icono, repeticiones=6, intervalo=0.5):
     """Hace parpadear el icono de la bandeja alternando entre normal y alerta hasta que el usuario interactúe o se detenga."""
-    icono_normal = crear_icono_azul()
-    icono_alerta = crear_icono_rojo()
+    icono_normal = crear_icono_verde()
+    icono_alerta = crear_icono_amarillo()
 
     def _parpadear():
         while parpadeo_evento.is_set():  # Mientras el evento esté activado
@@ -112,8 +115,6 @@ def obtener_dias_tachados_completos(driver):
                                            "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo")
     dias_total.extend([dia.get_attribute("id") for dia in dias_mes_actual])
 
-
-
     # Pulsar el botón para ir al mes siguiente
     try:
         boton_mes_siguiente = driver.find_element(
@@ -142,22 +143,27 @@ SCRIPT_THREAD = None  # Hilo de ejecución del script
 
 
 def crear_icono():
-    """Crea un icono circular para la bandeja del sistema."""
+    borrar_archivo_estado()
+    """Crea un icono circular con fondo transparente para la bandeja del sistema."""
     width, height = 64, 64
-    image = Image.new("RGB", (width, height), "white")
+    image = Image.new("RGBA", (width, height), (0, 0, 0, 0))  # Fondo transparente
     draw = ImageDraw.Draw(image)
-    draw.ellipse((0, 0, width, height), fill="blue")
+    draw.ellipse((0, 0, width, height), fill="red")  # Círculo rojo
     return image
 
 
 def alerta_sonora_error():
-    """Reproduce un sonido para alertar."""
-    winsound.Beep(1000, 2000)  # Tono de 1000 Hz durante 500 ms
+    """Genera una alerta hablada con voz sintética."""
+    engine = pyttsx3.init()
+    engine.say("Botón bloqueado, reintentando")
+    engine.runAndWait()
 
 
 def alerta_sonora_acierto():
-    """Reproduce un sonido para alertar."""
-    winsound.Beep(1000, 500)  # Tono de 1000 Hz durante 500 ms
+    """Genera una alerta hablada con voz sintética."""
+    engine = pyttsx3.init()
+    engine.say("Días liberados para reservar")
+    engine.runAndWait()
 
 
 def notificar_popup(mensaje):
@@ -182,38 +188,12 @@ def esperar_boton_activo(driver, by, value, timeout=15):
     raise Exception(f"Botón {value} no se activó dentro del tiempo esperado.")
 
 
-def ejecutar_script():
+def ejecutar_script(icon):
     global DETENER, FALLOS_SEGUIDOS
-
-    # chrome_options = Options()
-    # chrome_options.add_argument("--incognito")
-    # chrome_options.add_argument("--start-maximized")
-    # # options.add_argument('--disable-blink-features=AutomationControlled')
-    #
-    # # Opciones anti-detección
-    # chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    # chrome_options.add_experimental_option('useAutomationExtension', False)
-    #
-    # # User-Agent realista
-    # chrome_options.add_argument(
-    #     "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    #     "AppleWebKit/537.36 (KHTML, like Gecko) "
-    #     "Chrome/121.0.0.0 Safari/537.36"
-    # )
 
     def iniciar_navegador():
 
         options = uc.ChromeOptions()
-
-        # Ruta a tu perfil de Chrome
-        user_data_dir = r"C:\Users\migue\AppData\Local\Google\Chrome\User Data"
-
-        # (opcional) Puedes especificar un perfil dentro del user data dir (como "Default" o "Profile 1")
-        profile_dir = "Default"
-
-        # options = uc.ChromeOptions()
-        # options.add_argument(f"--user-data-dir={user_data_dir}")
-        # options.add_argument(f"--profile-directory={profile_dir}")
 
         # Otros flags útiles
         options.add_argument("--disable-blink-features=AutomationControlled")
@@ -241,7 +221,7 @@ def ejecutar_script():
         time.sleep(TIEMPO)
 
         try:
-            WebDriverWait(driver, 10).until(
+            WebDriverWait(driver, 5).until(
                 EC.element_to_be_clickable((By.CSS_SELECTOR, ".mgbutton.moove-gdpr-infobar-allow-all.gdpr-fbo-0"))
             ).click()
             print("Botón 'ACEPTAR TODO' pulsado.")
@@ -255,7 +235,7 @@ def ejecutar_script():
         time.sleep(TIEMPO)
 
         try:
-            WebDriverWait(driver, 10).until(
+            WebDriverWait(driver, 5).until(
                 EC.element_to_be_clickable((By.XPATH, f"//a[@href='{URL_RESERVAS}']"))
             ).click()
             time.sleep(TIEMPO)
@@ -263,14 +243,14 @@ def ejecutar_script():
             print("Fallo al acceder a las reservas")
 
         try:
-            WebDriverWait(driver, 10).until(
+            WebDriverWait(driver, 5).until(
                 EC.element_to_be_clickable((By.ID, "ctl00_lnkAceptarTodoCookies_Info"))
             ).click()
             time.sleep(TIEMPO)
         except Exception:
             print("Botón de cookies no encontrado o ya aceptado.")
 
-        WebDriverWait(driver, 10).until(
+        WebDriverWait(driver, 5).until(
             EC.element_to_be_clickable((By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
         ).click()
         time.sleep(TIEMPO)
@@ -284,11 +264,6 @@ def ejecutar_script():
     if not dias_tachados_inicial:
         intentos = 0
         while True:
-
-            # WebDriverWait(driver, 20).until(
-            #     EC.element_to_be_clickable((By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
-            # ).click()
-
             try:
                 # Comprobar si aparece el mensaje de muchas peticiones
                 mensaje_error = driver.find_elements(By.CSS_SELECTOR, "h3.es")
@@ -302,12 +277,8 @@ def ejecutar_script():
                 print(f"Error obteniendo días tachados: {e}")
                 return []
 
-            # enlace = driver.find_element(By.ID,
-            #                              "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1")
-            # enlace.click()
-
             try:
-                WebDriverWait(driver, 10).until(
+                WebDriverWait(driver, 5).until(
                     EC.element_to_be_clickable(
                         (By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
                 ).click()
@@ -320,6 +291,7 @@ def ejecutar_script():
             dias_tachados_inicial = obtener_dias_tachados_completos(driver)
             if dias_tachados_inicial:
                 break
+            alerta_sonora_error()
             intentos += 1
             print(f"Intento {intentos}: No se encontraron días tachados. Recargando la página...")
             driver.refresh()
@@ -334,33 +306,13 @@ def ejecutar_script():
 
     try:
         while not DETENER:
+            icon.icon = crear_icono_verde()
+
             print(f"\n Intento #{counter}")
             counter += 1
-            # Reiniciar navegador cada 10 ciclos
-            # if counter % 5 == 0:
-            #     print("Reiniciando navegador tras 10 intentos para evitar bloqueos.")
-            #     try:
-            #         driver.quit()
-            #     except:
-            #         pass
-            #     try:
-            #         shutil.rmtree(driver.temp_profile_path, ignore_errors=True)
-            #     except:
-            #         pass
-            #     driver = iniciar_navegador()
-            #     navegar_y_preparar(driver)
-            #     continue  # Para evitar intentar doble clic en esta iteración
+
             driver.refresh()
             time.sleep(TIEMPO)
-
-            # Muchos bloqueos si lo activo
-            # try:
-            #     WebDriverWait(driver, 10).until(
-            #         EC.element_to_be_clickable((By.ID, "ctl00_lnkAceptarTodoCookies_Info"))
-            #     ).click()
-            #     time.sleep(TIEMPO)
-            # except Exception:
-            #     print("Botón de cookies no encontrado o ya aceptado.")
 
             try:
                 boton = WebDriverWait(driver, 10).until(
@@ -405,14 +357,13 @@ def ejecutar_script():
             if dias_liberados:
                 print(f" ¡Días liberados: {dias_liberados}!")
                 alerta_sonora_acierto()
+                # Cambiar el icono a rojo y comenzar a parpadear
+                icon.icon = crear_icono_verde()
+                parpadeo_evento.set()  # Activar el parpadeo
+                parpadear_icono(icon)  # Iniciar el parpadeo
                 mensaje = "¡Días disponibles detectados!\nDías que ya no están tachados: " + ", ".join(
                     sorted(dias_liberados, key=int))
                 notificar_popup(mensaje)
-
-                # Cambiar el icono a rojo y comenzar a parpadear
-                icon.icon = crear_icono_rojo()
-                parpadeo_evento.set()  # Activar el parpadeo
-                parpadear_icono(icon)  # Iniciar el parpadeo
 
             if DETENER:
                 print(" Deteniendo el script.")
@@ -435,7 +386,7 @@ def iniciar(icon, item):
 
     if SCRIPT_THREAD is None or not SCRIPT_THREAD.is_alive():  # Verifica si el hilo no está corriendo
         DETENER = False
-        SCRIPT_THREAD = threading.Thread(target=ejecutar_script, daemon=True)
+        SCRIPT_THREAD = threading.Thread(target=ejecutar_script, args=(icon,), daemon=True)
         SCRIPT_THREAD.start()
         print("Script iniciado.")
     else:
@@ -450,7 +401,7 @@ def detener(icon, item):
         parpadeo_evento.clear()  # Detener el parpadeo cuando se detiene el script
 
         # Cambiar el icono a azul al detener
-        icon.icon = crear_icono_azul()
+        icon.icon = crear_icono_rojo()
 
         print("Script detenido.")
 
@@ -470,6 +421,9 @@ menu = Menu(
 )
 
 icono = Icon("Alhambra Script", crear_icono(), "Gestor de Calendarios", menu)
+
+iniciar(icono, None)
+
 
 if __name__ == "__main__":
     icono.run()
