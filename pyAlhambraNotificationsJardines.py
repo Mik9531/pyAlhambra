@@ -31,7 +31,7 @@ parpadeo_evento = Event()
 
 FALLOS_SEGUIDOS = 0
 MAX_FALLOS = 2
-ESTADO_FILE = "dias_tachados_inicial_general.pkl"
+ESTADO_FILE = "dias_tachados_inicial_jardines.pkl"
 
 import time
 import win32gui
@@ -282,7 +282,7 @@ def ejecutar_script(icon):
 
     def navegar_y_preparar(driver):
         URL_INICIAL = 'https://tickets.alhambra-patronato.es/'
-        URL_RESERVAS_GENERAL = 'https://compratickets.alhambra-patronato.es/reservarEntradas.aspx?opc=142&gid=432&lg=es-ES&ca=0&m=GENERAL'
+        URL_RESERVAS_JARDINES = 'https://compratickets.alhambra-patronato.es/reservarEntradas.aspx?opc=143&gid=432&lg=es&ca=0&m=GENERAL'
 
         driver.get(URL_INICIAL)
         driver.delete_all_cookies()
@@ -300,13 +300,13 @@ def ejecutar_script(icon):
             print("Botón 'ACEPTAR TODO' no encontrado o ya aceptado.")
         #
         enlace = driver.find_element(By.XPATH,
-                                     "//a[@href='https://tickets.alhambra-patronato.es/producto/alhambra-general/']")
+                                     "//a[@href='https://tickets.alhambra-patronato.es/producto/jardines-generalife-y-alcazaba/']")
         enlace.click()
         time.sleep(TIEMPO)
 
         try:
             WebDriverWait(driver, 5).until(
-                EC.element_to_be_clickable((By.XPATH, f"//a[@href='{URL_RESERVAS_GENERAL}']"))
+                EC.element_to_be_clickable((By.XPATH, f"//a[@href='{URL_RESERVAS_JARDINES}']"))
             ).click()
             print("Botón 'Reservas' pulsado.")
             time.sleep(TIEMPO)
@@ -429,6 +429,9 @@ def ejecutar_script(icon):
             dias_tachados_actual = obtener_dias_tachados_completos(driver)
             print(f"Días tachados actuales: {len(dias_tachados_actual)}")
 
+            # dias_tachados_actual = ['', '', '', '', '', '', '', '', '', '', '2', '3', '4', '5', '13', '14', '15', '16',
+            #                         '17', '18', '19', '20', '21', '22', '23']
+
             set_inicial = set(dias_tachados_inicial)
             set_actual = set(dias_tachados_actual)
 
@@ -442,7 +445,8 @@ def ejecutar_script(icon):
                 parpadeo_evento.set()  # Activar el parpadeo
                 parpadear_icono(icon)  # Iniciar el parpadeo
 
-                enviar_telegram(f"¡Días liberados: {dias_liberados} en GENERAL detectados!")
+                # enviar_correo('¡Días liberados detectados!')
+                enviar_telegram(f"¡Días liberados: {dias_liberados} en JARDINES detectados!")
 
                 dias_tachados_inicial = dias_tachados_actual
 
@@ -508,7 +512,7 @@ menu = Menu(
     MenuItem("Salir", salir),
 )
 
-icono = Icon("Alhambra Script", crear_icono(), "Gestor de Calendarios General", menu)
+icono = Icon("Alhambra Script", crear_icono(), "Gestor de Calendarios Jardines", menu)
 
 iniciar(icono, None)
 
