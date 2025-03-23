@@ -21,13 +21,26 @@ import shutil  # para limpiar perfiles temporales antiguos
 import undetected_chromedriver as uc
 import atexit
 import pyttsx3
-
+import pygetwindow as gw
+import time
 
 parpadeo_evento = Event()
 
 FALLOS_SEGUIDOS = 0
 MAX_FALLOS = 2
 ESTADO_FILE = "dias_tachados_inicial.pkl"
+
+import time
+import win32gui
+import win32con
+
+def minimizar_ventana(driver):
+    time.sleep(2)  # Espera a que la ventana de Chrome abra
+    window_handle = driver.current_window_handle  # Obtiene el handle de la ventana de Selenium
+    hwnd = win32gui.GetForegroundWindow()  # Obtiene la ventana en primer plano
+
+    if hwnd:
+        win32gui.ShowWindow(hwnd, win32con.SW_MINIMIZE)  # Minimiza solo esa ventana
 
 
 def borrar_archivo_estado():
@@ -115,13 +128,12 @@ def obtener_dias_tachados_completos(driver):
                                            "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo")
     dias_total.extend([dia.get_attribute("id") for dia in dias_mes_actual])
 
-    # Pulsar el botón para ir al mes siguiente
+    # Pulsar el botón para ir al mes siguiente (si existe)
     try:
-        boton_mes_siguiente = driver.find_element(
-            By.XPATH,
-            "//td[@align='right' and contains(@style, 'width:15%')]//a[contains(@href,'__doPostBack')]"
+        boton_mes_siguiente = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, "//td[@align='right']//a[contains(@href,'__doPostBack')]"))
         )
-        boton_mes_siguiente.click()
+        driver.execute_script("arguments[0].click();", boton_mes_siguiente)  # Click con JavaScript
         time.sleep(TIEMPO)
     except Exception as e:
         print(f" No se pudo avanzar al mes siguiente: {e}")
@@ -151,6 +163,11 @@ def crear_icono():
     draw.ellipse((0, 0, width, height), fill="red")  # Círculo rojo
     return image
 
+def alerta_sonora_reinicio():
+    """Genera una alerta hablada con voz sintética."""
+    engine = pyttsx3.init()
+    engine.say("Reiniciando navegador")
+    engine.runAndWait()
 
 def alerta_sonora_error():
     """Genera una alerta hablada con voz sintética."""
@@ -200,7 +217,18 @@ def ejecutar_script(icon):
         options.add_argument("--no-first-run --no-service-autorun --password-store=basic")
 
         options.add_argument("--incognito")
-        options.add_argument("--start-maximized")
+        # options.add_argument("--start-maximized")
+        options.add_argument("--window-size=1920,1080")
+
+        options.add_argument("--disable-gpu")
+        options.add_argument("--disable-software-rasterizer")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--disable-extensions")
+        # options.add_argument("--remote-debugging-port=9222")
+        # options.add_argument("--disable-popup-blocking")
+        # options.add_argument("--headless=new")
+        options.add_argument("--start-minimized")
+
         options.add_argument(
             "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
             "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -208,6 +236,7 @@ def ejecutar_script(icon):
         )
 
         driver = uc.Chrome(options=options, headless=False)
+
         return driver
 
     def navegar_y_preparar(driver):
@@ -238,6 +267,7 @@ def ejecutar_script(icon):
             WebDriverWait(driver, 5).until(
                 EC.element_to_be_clickable((By.XPATH, f"//a[@href='{URL_RESERVAS}']"))
             ).click()
+            print("Botón 'Reservas' pulsado.")
             time.sleep(TIEMPO)
         except Exception:
             print("Fallo al acceder a las reservas")
@@ -246,6 +276,7 @@ def ejecutar_script(icon):
             WebDriverWait(driver, 5).until(
                 EC.element_to_be_clickable((By.ID, "ctl00_lnkAceptarTodoCookies_Info"))
             ).click()
+            print("Botón 'Aceptar cookies' pulsado.")
             time.sleep(TIEMPO)
         except Exception:
             print("Botón de cookies no encontrado o ya aceptado.")
@@ -253,9 +284,13 @@ def ejecutar_script(icon):
         WebDriverWait(driver, 5).until(
             EC.element_to_be_clickable((By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
         ).click()
+        print("Botón 'Paso 1' pulsado.")
+
         time.sleep(TIEMPO)
 
     driver = iniciar_navegador()
+    # minimizar_chrome(driver)  # Ocultar Chrome después de abrirlo
+
     navegar_y_preparar(driver)
 
     dias_tachados_inicial = cargar_dias_tachados()
@@ -337,9 +372,13 @@ def ejecutar_script(icon):
                 FALLOS_SEGUIDOS += 1
 
                 if FALLOS_SEGUIDOS >= MAX_FALLOS:
+                    icon.icon = crear_icono_amarillo()
                     print(" Reiniciando navegador por múltiples fallos...")
+                    alerta_sonora_reinicio()
                     driver.quit()
                     driver = iniciar_navegador()
+                    # minimizar_chrome(driver)  # Ocultar Chrome después de abrirlo
+
                     navegar_y_preparar(driver)
                     FALLOS_SEGUIDOS = 0
                     continue
