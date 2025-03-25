@@ -5,10 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51815375-9cfe-40cc-9c65-0dd7afb0c83a" name="Changes" comment="Cambios para comparar solo name y passport en todos los archivos probados">
-      <change afterPath="$PROJECT_DIR$/pyAlhambraNotificationsJardines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dias_tachados_inicial.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dias_tachados_inicial_general.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dias_tachados_inicial_jardines.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/01_08012025.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/01_09012025.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/01_10012025.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/01_130125.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/01_140125.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/01_150125.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/01_160125.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/01_30122024.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/02_08012025.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/02_09012025.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/02_10012025.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/02_130125.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/02_140125.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/02_150125.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/02_160125.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/02_30122024.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/1_23122024.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/2_23122024.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/EJEMPLO.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/PLANTILLAS/PLANTILLA_1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/PLANTILLAS/PLANTILLA_2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/comparadorExcelsv8.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/comparadorExcelsv8.rar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pyAlhambraNotifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyAlhambraNotifications.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyAlhambraNotificationsJardines.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyAlhambraNotificationsJardines.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +195,7 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>346</line>
+          <line>347</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
@@ -181,10 +205,10 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>276</line>
+          <line>277</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
           <line>228</line>
           <option name="timeStamp" value="43" />
@@ -201,10 +225,10 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>420</line>
+          <line>421</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
           <line>182</line>
           <option name="timeStamp" value="50" />
@@ -221,23 +245,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>450</line>
+          <line>458</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>448</line>
+          <line>456</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>437</line>
+          <line>445</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>431</line>
+          <line>439</line>
           <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
+          <line>437</line>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -256,6 +285,8 @@
         <watch expression="boton.is_displayed" />
         <watch expression="e" />
         <watch expression="dias_tachados_inicial" />
+        <watch expression="dias_liberados &gt; 0" />
+        <watch expression="set_inicial - set_actual" />
       </configuration>
     </watches-manager>
   </component>

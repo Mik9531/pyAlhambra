@@ -167,11 +167,18 @@ def obtener_dias_tachados_completos(driver):
                                            "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo")
     dias_total.extend([dia.get_attribute("id") for dia in dias_mes_actual])
 
+
+
     # Pulsar el botón para ir al mes siguiente (si existe)
     try:
         boton_mes_siguiente = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "//td[@align='right']//a[contains(@href,'__doPostBack')]"))
+            EC.presence_of_element_located((By.XPATH, "//td[@align='right']//a[contains(@href,'__doPostBack')]"))
         )
+
+        driver.execute_script("arguments[0].scrollIntoView();",
+                              boton_mes_siguiente)  # Asegura que el botón esté visible
+        time.sleep(0.5)  # Breve pausa para estabilizar la interfaz
+
         driver.execute_script("arguments[0].click();", boton_mes_siguiente)  # Click con JavaScript
         time.sleep(TIEMPO)
     except Exception as e:
@@ -267,8 +274,9 @@ def ejecutar_script(icon):
         options.add_argument("--disable-extensions")
         # options.add_argument("--remote-debugging-port=9222")
         # options.add_argument("--disable-popup-blocking")
-        # options.add_argument("--headless=new")
         options.add_argument("--start-minimized")
+        options.add_argument(f"--remote-debugging-port=9223")
+        # options.add_argument("--headless=new")
 
         options.add_argument(
             "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -276,7 +284,7 @@ def ejecutar_script(icon):
             "Chrome/121.0.0.0 Safari/537.36"
         )
 
-        driver = uc.Chrome(options=options, headless=False)
+        driver = uc.Chrome(options=options)
 
         return driver
 
