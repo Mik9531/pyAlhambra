@@ -37,6 +37,15 @@ import time
 import win32gui
 import win32con
 
+import logging
+
+# Configurar el logging
+logging.basicConfig(
+    filename="general.log",  # Nombre del archivo donde se guardará el log
+    level=logging.INFO,  # Nivel mínimo de mensajes a registrar (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    format="%(asctime)s - %(levelname)s - %(message)s",  # Formato del mensaje de log
+    datefmt="%Y-%m-%d %H:%M:%S"  # Formato de fecha
+)
 
 def enviar_telegram(mensaje):
     url = f"https://api.telegram.org/bot7908020608:AAEGRux_wQ8tlKxPoMEGLR5vMtG1X3LW2WY/sendMessage"
@@ -165,7 +174,7 @@ def obtener_dias_tachados_completos(driver):
     # Obtener días tachados del mes actual
     dias_mes_actual = driver.find_elements(By.CSS_SELECTOR,
                                            "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo")
-    dias_total.extend([dia.get_attribute("id") for dia in dias_mes_actual])
+    dias_total.extend([dia.text.strip() for dia in dias_mes_actual if dia.text.strip()])
 
     # Pulsar el botón para ir al mes siguiente (si existe)
     try:
@@ -181,14 +190,19 @@ def obtener_dias_tachados_completos(driver):
         time.sleep(TIEMPO)
     except Exception as e:
         print(f" No se pudo avanzar al mes siguiente: {e}")
-        return dias_total
+        # return dias_total
 
     # Obtener días tachados del mes siguiente
-    dias_mes_siguiente = driver.find_elements(By.CSS_SELECTOR,
-                                              "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo")
-    dias_total.extend([dia.text.strip() for dia in dias_mes_siguiente if dia.text.strip()])
+    try:
+        dias_mes_siguiente = driver.find_elements(By.CSS_SELECTOR,
+                                                  "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo")
+        dias_total.extend([dia.text.strip() for dia in dias_mes_siguiente if dia.text.strip()])
 
-    return dias_total
+        return dias_total
+
+    except Exception as e:
+        print(f" No se pudo obtener fechas del mes siguiente: {e}")
+        # return dias_total
 
 
 # Configuración inicial
@@ -381,7 +395,9 @@ def ejecutar_script(icon):
 
         guardar_dias_tachados(dias_tachados_inicial)
 
-    print(f"Días tachados inicialmente: {len(dias_tachados_inicial)}")
+    print(f"Días tachados inicialmente: {dias_tachados_inicial}")
+    logging.info(f"Días tachados inicialmente: {dias_tachados_inicial}")
+
 
     counter = 1
     counter_diasTachados = 1
@@ -391,6 +407,8 @@ def ejecutar_script(icon):
             icon.icon = crear_icono_verde()
 
             print(f"\n Intento #{counter}")
+            logging.info(f"\n Intento #{counter}")
+
             counter += 1
 
             driver.refresh()
@@ -414,6 +432,8 @@ def ejecutar_script(icon):
                 FALLOS_SEGUIDOS = 0  # reiniciar contador
             except Exception as e:
                 print(f" Fallo al ir a Paso 1: {e}")
+                logging.info(f" Fallo al ir a Paso 1: {e}")
+
                 # alerta_sonora_error()
                 # notificar_popup("¡Error al ir al paso 1!")
                 FALLOS_SEGUIDOS += 1
@@ -421,6 +441,7 @@ def ejecutar_script(icon):
                 if FALLOS_SEGUIDOS >= MAX_FALLOS:
                     icon.icon = crear_icono_amarillo()
                     print(" Reiniciando navegador por múltiples fallos...")
+                    logging.info(" Reiniciando navegador por múltiples fallos...")
                     # alerta_sonora_reinicio()
                     driver.quit()
                     driver = iniciar_navegador()
@@ -433,7 +454,8 @@ def ejecutar_script(icon):
                     continue
 
             dias_tachados_actual = obtener_dias_tachados_completos(driver)
-            print(f"Días tachados actuales: {len(dias_tachados_actual)}")
+            print(f"Días tachados actuales: {dias_tachados_actual}")
+            logging.info(f"Días tachados actuales: {dias_tachados_actual}")
 
             set_inicial = set(dias_tachados_inicial)
             set_actual = set(dias_tachados_actual)
@@ -442,6 +464,7 @@ def ejecutar_script(icon):
 
             if dias_liberados:
                 print(f" ¡Días liberados: {dias_liberados}!")
+                logging.info(f" ¡Días liberados: {dias_liberados}!")
                 alerta_sonora_acierto()
                 # Cambiar el icono a rojo y comenzar a parpadear
                 icon.icon = crear_icono_verde()

@@ -1,0 +1,32 @@
+2025-03-26 14:48:01 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 14:48:59 - INFO - Días tachados inicialmente: 13
+2025-03-26 14:48:59 - INFO - 
+ Intento #1
+2025-03-26 14:49:17 - INFO - Días tachados actuales: ['', '', '', '', '', '1', '14', '15', '16', '17', '18', '19', '20']
+2025-03-26 14:50:09 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 14:51:04 - INFO - Días tachados inicialmente: ['', '', '', '', '', '1', '14', '15', '16', '17', '18', '19', '20', '21']
+2025-03-26 14:51:04 - INFO - 
+ Intento #1
+2025-03-26 14:51:22 - INFO - Días tachados actuales: ['', '', '', '', '', '1', '14', '15', '16', '17', '18', '19', '20', '21']
+2025-03-26 14:52:22 - INFO - 
+ Intento #2
+2025-03-26 14:52:40 - INFO - Días tachados actuales: ['', '', '', '', '', '1', '14', '15', '16', '17', '18', '19', '21']
+2025-03-26 14:52:40 - INFO -  ¡Días liberados: {'20'}!
+2025-03-26 14:52:40 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\migue\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-26 14:52:40 - INFO - Using writeable comtypes cache directory: 'C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-03-26 14:53:25 - INFO - 
+ Intento #3
+2025-03-26 14:53:43 - INFO - Días tachados actuales: None
+2025-03-26 14:57:52 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 14:58:50 - INFO - Días tachados inicialmente: ['26', '27', '28', '29', '30', '31', '1', '14', '15', '16', '17', '21']
+2025-03-26 14:58:50 - INFO - 
+ Intento #1
+2025-03-26 14:59:08 - INFO - Días tachados actuales: ['26', '28', '29', '30', '31', '1', '14', '15', '16', '17', '20', '21']
+2025-03-26 14:59:08 - INFO -  ¡Días liberados: {'27'}!
+2025-03-26 14:59:08 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\migue\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-26 14:59:08 - INFO - Using writeable comtypes cache directory: 'C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2025-03-26 14:59:57 - INFO - 
+ Intento #2
+2025-03-26 15:00:14 - INFO - Días tachados actuales: ['26', '28', '29', '30', '31', '1', '14', '15', '16', '17', '20', '21']
+2025-03-26 15:00:54 - INFO - 
+ Intento #3
