@@ -227,7 +227,7 @@ def alerta_sonora_error():
 def alerta_sonora_acierto():
     """Genera una alerta hablada con voz sintética."""
     engine = pyttsx3.init()
-    engine.say("Días liberados para reservar")
+    engine.say("Días liberados para reservar en Jardines")
     engine.runAndWait()
 
 
