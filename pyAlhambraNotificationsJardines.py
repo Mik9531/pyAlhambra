@@ -1,7 +1,8 @@
 import threading
 import tkinter as tk
 from tkinter import messagebox
-
+from datetime import datetime
+import calendar
 from PyInstaller.building import icon
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -189,39 +190,46 @@ def cargar_dias_tachados():
 def obtener_dias_tachados_completos(driver):
     dias_total = []
 
+    # 🔹 Obtener el mes actual en formato "Enero", "Febrero", etc.
+    mes_actual_num = datetime.now().month  # Ejemplo: 3 (marzo)
+    mes_actual_nombre = calendar.month_name[mes_actual_num]  # "March"
+
     # Obtener días tachados del mes actual
     dias_mes_actual = driver.find_elements(By.CSS_SELECTOR,
                                            "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo")
-    dias_total.extend([dia.text.strip() for dia in dias_mes_actual if dia.text.strip()])
 
-    # Pulsar el botón para ir al mes siguiente (si existe)
+    dias_total.extend([f"{mes_actual_nombre}-{dia.text.strip()}" for dia in dias_mes_actual if dia.text.strip()])
+
+    # 🔹 Avanzar al mes siguiente
     try:
         boton_mes_siguiente = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, "//td[@align='right']//a[contains(@href,'__doPostBack')]"))
         )
 
-        driver.execute_script("arguments[0].scrollIntoView();",
-                              boton_mes_siguiente)  # Asegura que el botón esté visible
-        time.sleep(0.5)  # Breve pausa para estabilizar la interfaz
-
-        driver.execute_script("arguments[0].click();", boton_mes_siguiente)  # Click con JavaScript
-        time.sleep(TIEMPO)
+        driver.execute_script("arguments[0].scrollIntoView();", boton_mes_siguiente)
+        time.sleep(0.5)
+        driver.execute_script("arguments[0].click();", boton_mes_siguiente)
+        time.sleep(2)
     except Exception as e:
-        print(f" No se pudo avanzar al mes siguiente: {e}")
-        # return dias_total
+        print(f"No se pudo avanzar al mes siguiente: {e}")
 
-    # Obtener días tachados del mes siguiente
+    # 🔹 Obtener el mes siguiente
+    mes_siguiente_num = mes_actual_num + 1 if mes_actual_num < 12 else 1  # Si es diciembre, pasa a enero
+    mes_siguiente_nombre = calendar.month_name[mes_siguiente_num]
+
     try:
         dias_mes_siguiente = driver.find_elements(By.CSS_SELECTOR,
                                                   "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo")
-        dias_total.extend([dia.text.strip() for dia in dias_mes_siguiente if dia.text.strip()])
+
+        dias_total.extend(
+            [f"{mes_siguiente_nombre}-{dia.text.strip()}" for dia in dias_mes_siguiente if dia.text.strip()])
 
         return dias_total
 
     except Exception as e:
-        print(f" No se pudo obtener fechas del mes siguiente: {e}")
-        # return dias_total
+        print(f"No se pudo obtener fechas del mes siguiente: {e}")
 
+    return dias_total
 
 # Configuración inicial
 TIEMPO_REFRESCO = 10  # Tiempo entre revisiones en segundos
@@ -329,34 +337,34 @@ def ejecutar_script(icon):
         URL_INICIAL = 'https://tickets.alhambra-patronato.es/'
         URL_RESERVAS_JARDINES = 'https://compratickets.alhambra-patronato.es/reservarEntradas.aspx?opc=143&gid=432&lg=es&ca=0&m=GENERAL'
 
-        driver.get(URL_INICIAL)
+        driver.get(URL_RESERVAS_JARDINES)
         driver.delete_all_cookies()
         driver.execute_script("window.localStorage.clear();")
         driver.execute_script("window.sessionStorage.clear();")
         time.sleep(TIEMPO)
 
-        try:
-            WebDriverWait(driver, 5).until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, ".mgbutton.moove-gdpr-infobar-allow-all.gdpr-fbo-0"))
-            ).click()
-            print("Botón 'ACEPTAR TODO' pulsado.")
-            time.sleep(TIEMPO)
-        except Exception:
-            print("Botón 'ACEPTAR TODO' no encontrado o ya aceptado.")
+        # try:
+        #     WebDriverWait(driver, 5).until(
+        #         EC.element_to_be_clickable((By.CSS_SELECTOR, ".mgbutton.moove-gdpr-infobar-allow-all.gdpr-fbo-0"))
+        #     ).click()
+        #     print("Botón 'ACEPTAR TODO' pulsado.")
+        #     time.sleep(TIEMPO)
+        # except Exception:
+        #     print("Botón 'ACEPTAR TODO' no encontrado o ya aceptado.")
+        # #
+        # enlace = driver.find_element(By.XPATH,
+        #                              "//a[@href='https://tickets.alhambra-patronato.es/producto/jardines-generalife-y-alcazaba/']")
+        # enlace.click()
+        # time.sleep(TIEMPO)
         #
-        enlace = driver.find_element(By.XPATH,
-                                     "//a[@href='https://tickets.alhambra-patronato.es/producto/jardines-generalife-y-alcazaba/']")
-        enlace.click()
-        time.sleep(TIEMPO)
-
-        try:
-            WebDriverWait(driver, 5).until(
-                EC.element_to_be_clickable((By.XPATH, f"//a[@href='{URL_RESERVAS_JARDINES}']"))
-            ).click()
-            print("Botón 'Reservas' pulsado.")
-            time.sleep(TIEMPO)
-        except Exception:
-            print("Fallo al acceder a las reservas")
+        # try:
+        #     WebDriverWait(driver, 5).until(
+        #         EC.element_to_be_clickable((By.XPATH, f"//a[@href='{URL_RESERVAS_JARDINES}']"))
+        #     ).click()
+        #     print("Botón 'Reservas' pulsado.")
+        #     time.sleep(TIEMPO)
+        # except Exception:
+        #     print("Fallo al acceder a las reservas")
 
         try:
             WebDriverWait(driver, 5).until(

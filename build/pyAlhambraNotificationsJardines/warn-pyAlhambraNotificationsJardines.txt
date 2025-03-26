@@ -15,7 +15,7 @@ IMPORTANT: Do NOT post this list to the issue-tracker. Use it as a basis for
             tracking down the missing module yourself. Thanks!
 
 missing module named pyimod02_importers - imported by C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\PyInstaller\hooks\rthooks\pyi_rth_pkgutil.py (delayed), C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\PyInstaller\hooks\rthooks\pyi_rth_pkgres.py (delayed)
-missing module named pwd - imported by posixpath (delayed, conditional, optional), shutil (delayed, optional), tarfile (optional), pathlib._local (optional), subprocess (delayed, conditional, optional), http.server (delayed, optional), setuptools._distutils.util (delayed, conditional, optional), netrc (delayed, conditional), getpass (delayed, optional), setuptools._vendor.backports.tarfile (optional), setuptools._distutils.archive_util (optional)
+missing module named pwd - imported by posixpath (delayed, conditional, optional), shutil (delayed, optional), tarfile (optional), pathlib._local (optional), subprocess (delayed, conditional, optional), http.server (delayed, optional), setuptools._distutils.util (delayed, conditional, optional), netrc (delayed, conditional), getpass (delayed, optional), setuptools._vendor.backports.tarfile (optional), setuptools._distutils.archive_util (optional), psutil (optional)
 missing module named grp - imported by shutil (delayed, optional), tarfile (optional), pathlib._local (optional), subprocess (delayed, conditional, optional), setuptools._vendor.backports.tarfile (optional), setuptools._distutils.archive_util (optional)
 missing module named _posixsubprocess - imported by subprocess (conditional), multiprocessing.util (delayed)
 missing module named fcntl - imported by subprocess (optional), _pyrepl.unix_console (top-level)
@@ -31,7 +31,7 @@ missing module named asyncio.DefaultEventLoopPolicy - imported by asyncio (delay
 missing module named _posixshmem - imported by multiprocessing.resource_tracker (conditional), multiprocessing.shared_memory (conditional)
 missing module named multiprocessing.set_start_method - imported by multiprocessing (top-level), multiprocessing.spawn (top-level)
 missing module named multiprocessing.get_start_method - imported by multiprocessing (top-level), multiprocessing.spawn (top-level)
-missing module named posix - imported by posixpath (optional), shutil (conditional), importlib._bootstrap_external (conditional), os (conditional, optional), _pyrepl.unix_console (delayed, optional)
+missing module named posix - imported by os (conditional, optional), posixpath (optional), shutil (conditional), importlib._bootstrap_external (conditional), _pyrepl.unix_console (delayed, optional)
 missing module named resource - imported by posix (top-level)
 missing module named _frozen_importlib_external - imported by importlib._bootstrap (delayed), importlib (optional), importlib.abc (optional), zipimport (top-level)
 missing module named multiprocessing.get_context - imported by multiprocessing (top-level), multiprocessing.pool (top-level), multiprocessing.managers (top-level), multiprocessing.sharedctypes (top-level)
@@ -181,7 +181,6 @@ missing module named numpy._core.arcsin - imported by numpy._core (conditional),
 missing module named numpy._core.arccosh - imported by numpy._core (conditional), numpy (conditional)
 missing module named numpy._core.arccos - imported by numpy._core (conditional), numpy (conditional)
 missing module named threadpoolctl - imported by numpy.lib._utils_impl (delayed, optional)
-missing module named psutil - imported by numpy.testing._private.utils (delayed, optional)
 missing module named _dummy_thread - imported by cffi.lock (conditional, optional), numpy._core.arrayprint (optional)
 missing module named numpy._core.ones - imported by numpy._core (top-level), numpy.lib._polynomial_impl (top-level), numpy (conditional)
 missing module named numpy._core.hstack - imported by numpy._core (top-level), numpy.lib._polynomial_impl (top-level), numpy (conditional)
