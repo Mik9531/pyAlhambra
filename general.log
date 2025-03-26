@@ -1,0 +1,108 @@
+2025-03-26 18:19:45 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:21:21 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:21:43 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:44:58 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:45:24 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 19:48:29 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 19:48:47 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C957C52A50>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/4603ade808e79f2073ac3b8f25a1824c/element
+2025-03-26 19:48:51 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C957CA96D0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/4603ade808e79f2073ac3b8f25a1824c/element
+2025-03-26 19:48:55 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C957CA9590>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/4603ade808e79f2073ac3b8f25a1824c/element
+2025-03-26 19:51:09 - ERROR - An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
+    return int(icon._message_handlers.get(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        uMsg, lambda w, l: 0)(wParam, lParam) or 0)
+        ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
+    descriptors[index - 1](self)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 328, in inner
+    callback(self)
+    ~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 453, in __call__
+    return self._action(icon, self)
+           ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotifications.py", line 533, in salir
+    def salir(icon, item):
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotifications.py", line 528, in detener
+    icon.icon = crear_icono_rojo()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+2025-03-26 19:51:13 - ERROR - An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
+    return int(icon._message_handlers.get(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        uMsg, lambda w, l: 0)(wParam, lParam) or 0)
+        ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
+    descriptors[index - 1](self)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 328, in inner
+    callback(self)
+    ~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 453, in __call__
+    return self._action(icon, self)
+           ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotifications.py", line 533, in salir
+    def salir(icon, item):
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotifications.py", line 528, in detener
+    icon.icon = crear_icono_rojo()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+2025-03-26 19:51:36 - ERROR - An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
+    return int(icon._message_handlers.get(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        uMsg, lambda w, l: 0)(wParam, lParam) or 0)
+        ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
+    descriptors[index - 1](self)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 328, in inner
+    callback(self)
+    ~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 453, in __call__
+    return self._action(icon, self)
+           ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotifications.py", line 535, in salir
+    detener(icon, item)
+    ~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotifications.py", line 530, in detener
+    print("Script detenido.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+2025-03-26 19:52:13 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 19:53:33 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 19:53:49 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000173305D2A50>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/76a3820f920c172569d7424e74ecdb07/element
+2025-03-26 19:53:53 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017330628F50>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/76a3820f920c172569d7424e74ecdb07/element
+2025-03-26 19:53:57 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000173306296D0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/76a3820f920c172569d7424e74ecdb07/element
+2025-03-26 19:54:01 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 19:54:11 - ERROR - An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
+    return int(icon._message_handlers.get(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        uMsg, lambda w, l: 0)(wParam, lParam) or 0)
+        ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
+    descriptors[index - 1](self)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 328, in inner
+    callback(self)
+    ~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 453, in __call__
+    return self._action(icon, self)
+           ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotifications.py", line 535, in salir
+    detener(icon, item)
+    ~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotifications.py", line 530, in detener
+    print("Script detenido.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+2025-03-26 20:00:18 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe

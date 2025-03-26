@@ -39,6 +39,23 @@ import win32con
 
 import logging
 
+import os
+import winreg
+
+def obtener_ruta_chrome():
+    try:
+        # Intentar acceder a la clave del registro que contiene la ruta de Chrome
+        ruta_chrome = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+        return ruta_chrome
+    except FileNotFoundError:
+        print("La clave del registro no existe. Chrome puede no estar instalado o tener una ruta diferente.")
+        return None
+    except Exception as e:
+        print(f"Error al acceder al registro: {e}")
+        return None
+
+
+
 # Configurar el logging
 logging.basicConfig(
     filename="jardines.log",  # Nombre del archivo donde se guardará el log
@@ -271,6 +288,8 @@ def ejecutar_script(icon):
 
     def iniciar_navegador():
 
+        ruta_perfil_chrome = os.path.join(os.getenv("LOCALAPPDATA"), "Google", "Chrome", "User Data","Perfil2")
+
         options = uc.ChromeOptions()
 
         # Otros flags útiles
@@ -278,7 +297,7 @@ def ejecutar_script(icon):
         options.add_argument("--no-first-run --no-service-autorun --password-store=basic")
 
         options.add_argument("--incognito")
-        # options.add_argument("--start-maximized")
+        options.add_argument("--start-maximized")
         options.add_argument("--window-size=1920,1080")
 
         options.add_argument("--disable-gpu")
@@ -287,8 +306,8 @@ def ejecutar_script(icon):
         options.add_argument("--disable-extensions")
         # options.add_argument("--remote-debugging-port=9222")
         # options.add_argument("--disable-popup-blocking")
-        options.add_argument("--start-minimized")
-        options.add_argument(f"--remote-debugging-port=9223")
+        # options.add_argument("--start-minimized")
+        options.add_argument(f"--remote-debugging-port=9301")
         # options.add_argument("--headless=new")
 
         options.add_argument(
@@ -297,8 +316,13 @@ def ejecutar_script(icon):
             "Chrome/121.0.0.0 Safari/537.36"
         )
 
-        driver = uc.Chrome(options=options)
+        options.add_argument(f"--user-data-dir={ruta_perfil_chrome}")  # <-- Asegurar que está bien escrito
 
+        # 🔹 Usar una carpeta separada para cada instancia de ChromeDriver
+        custom_chromedriver_path = os.path.join(os.getenv("LOCALAPPDATA"), "undetected_chromedriver_jardines")
+        os.makedirs(custom_chromedriver_path, exist_ok=True)
+
+        driver = uc.Chrome(options=options, user_data_dir=custom_chromedriver_path)
         return driver
 
     def navegar_y_preparar(driver):

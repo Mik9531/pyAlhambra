@@ -30,3 +30,160 @@
 2025-03-26 15:00:14 - INFO - Días tachados actuales: ['26', '28', '29', '30', '31', '1', '14', '15', '16', '17', '20', '21']
 2025-03-26 15:00:54 - INFO - 
  Intento #3
+2025-03-26 18:21:22 - WARNING - could not detect version_main.therefore, we are assuming it is chrome 108 or higher
+2025-03-26 18:21:43 - WARNING - could not detect version_main.therefore, we are assuming it is chrome 108 or higher
+2025-03-26 18:33:13 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:34:07 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:34:22 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:36:54 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:37:32 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:41:33 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:42:18 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:42:57 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:43:20 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:43:29 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:44:27 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:44:39 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:51:40 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:51:54 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:55:32 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:56:46 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:57:50 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 18:58:44 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 19:48:53 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 19:49:47 - INFO - Días tachados inicialmente: ['26', '27', '28', '29', '30', '31', '1', '2', '14', '15', '16', '17', '18', '19', '20']
+2025-03-26 19:49:47 - INFO - 
+ Intento #1
+2025-03-26 19:50:09 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020505A3ABA0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/aae144d448b3f2660f329ef28349ac6f/elements
+2025-03-26 19:50:13 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020505ACD6D0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/aae144d448b3f2660f329ef28349ac6f/elements
+2025-03-26 19:50:17 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020505ACD590>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/aae144d448b3f2660f329ef28349ac6f/elements
+2025-03-26 19:51:01 - ERROR - An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
+    return int(icon._message_handlers.get(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        uMsg, lambda w, l: 0)(wParam, lParam) or 0)
+        ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
+    descriptors[index - 1](self)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 328, in inner
+    callback(self)
+    ~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 453, in __call__
+    return self._action(icon, self)
+           ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 552, in salir
+    """Cierra completamente el programa."""
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 547, in detener
+OSError: [Errno 22] Invalid argument
+2025-03-26 19:51:11 - ERROR - An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 116, in borrar_archivo_estado
+    print(f"Archivo temporal '{ESTADO_FILE}' eliminado.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
+    return int(icon._message_handlers.get(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        uMsg, lambda w, l: 0)(wParam, lParam) or 0)
+        ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
+    descriptors[index - 1](self)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 328, in inner
+    callback(self)
+    ~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 453, in __call__
+    return self._action(icon, self)
+           ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 553, in salir
+    detener(icon, item)
+    ~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 118, in borrar_archivo_estado
+    print(f"Error al eliminar el archivo '{ESTADO_FILE}': {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+2025-03-26 19:51:12 - ERROR - An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
+    return int(icon._message_handlers.get(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        uMsg, lambda w, l: 0)(wParam, lParam) or 0)
+        ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
+    descriptors[index - 1](self)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 328, in inner
+    callback(self)
+    ~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 453, in __call__
+    return self._action(icon, self)
+           ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 552, in salir
+    """Cierra completamente el programa."""
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 547, in detener
+OSError: [Errno 22] Invalid argument
+2025-03-26 19:51:24 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 19:51:37 - ERROR - An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
+    return int(icon._message_handlers.get(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        uMsg, lambda w, l: 0)(wParam, lParam) or 0)
+        ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
+    descriptors[index - 1](self)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 328, in inner
+    callback(self)
+    ~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 453, in __call__
+    return self._action(icon, self)
+           ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 553, in salir
+    detener(icon, item)
+    ~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 548, in detener
+    print("Script detenido.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+2025-03-26 19:52:44 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CD15530E10>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/cdbc408c075a50672b6721384c780495/element
+2025-03-26 19:52:48 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CD15531590>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/cdbc408c075a50672b6721384c780495/element
+2025-03-26 19:52:52 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CD15564FC0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/cdbc408c075a50672b6721384c780495/element
+2025-03-26 19:53:00 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CD154939B0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/cdbc408c075a50672b6721384c780495/element
+2025-03-26 19:53:04 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CD15513240>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/cdbc408c075a50672b6721384c780495/element
+2025-03-26 19:53:08 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CD15513570>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/cdbc408c075a50672b6721384c780495/element
+2025-03-26 19:54:10 - ERROR - An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
+    return int(icon._message_handlers.get(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        uMsg, lambda w, l: 0)(wParam, lParam) or 0)
+        ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
+    descriptors[index - 1](self)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 328, in inner
+    callback(self)
+    ~~~~~~~~^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\pystray\_base.py", line 453, in __call__
+    return self._action(icon, self)
+           ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 553, in salir
+    detener(icon, item)
+    ~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 548, in detener
+    print("Script detenido.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+2025-03-26 19:59:17 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 19:59:26 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 20:00:54 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-26 20:01:04 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
