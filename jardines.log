@@ -6521,3 +6521,1131 @@ Stacktrace:
 2025-03-29 20:32:41 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
 2025-03-29 20:33:38 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
 2025-03-29 20:34:51 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-29 23:03:20 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:11:15 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:11:15 - INFO - Días tachados inicialmente: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:11:15 - INFO - 
+ Intento #1
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:12:40 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:12:40 - INFO - Días tachados inicialmente: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:12:40 - INFO - 
+ Intento #1
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:12:58 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:12:58 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:13:44 - INFO - 
+ Intento #2
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:14:03 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:14:03 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:14:45 - INFO - 
+ Intento #3
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:15:03 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:15:03 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:15:48 - INFO - 
+ Intento #4
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:16:06 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:16:06 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:16:45 - INFO - 
+ Intento #5
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:17:03 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:17:03 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:17:53 - INFO - 
+ Intento #6
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:18:11 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:18:11 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:19:02 - INFO - 
+ Intento #7
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:19:20 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:19:20 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:20:19 - INFO - 
+ Intento #8
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:20:37 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:20:37 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:21:11 - INFO - 
+ Intento #9
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:21:29 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:21:29 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:22:15 - INFO - 
+ Intento #10
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:22:32 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:22:33 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:22:33 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:22:33 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:22:33 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:22:33 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:22:33 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:22:33 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:22:33 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:23:17 - INFO - 
+ Intento #11
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:23:35 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:23:35 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:24:19 - INFO - 
+ Intento #12
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:24:37 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:24:37 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:25:35 - INFO - 
+ Intento #13
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:25:53 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:25:53 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:26:33 - INFO - 
+ Intento #14
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:26:51 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:26:51 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:27:36 - INFO - 
+ Intento #15
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:27:53 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:27:53 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:28:53 - INFO - 
+ Intento #16
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:29:11 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:29:11 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:29:58 - INFO - 
+ Intento #17
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:30:16 - INFO - Día extraído (innerText): '26'
+2025-03-29 23:30:16 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26']
+2025-03-29 23:31:04 - INFO - 
+ Intento #18
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:31:22 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:31:22 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:32:03 - INFO - 
+ Intento #19
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:32:21 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:32:21 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:33:07 - INFO - 
+ Intento #20
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:33:25 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:33:25 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:34:00 - INFO - 
+ Intento #21
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:34:18 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:34:18 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:34:59 - INFO - 
+ Intento #22
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:35:17 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:35:17 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:35:51 - INFO - 
+ Intento #23
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:36:09 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:36:09 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:36:48 - INFO - 
+ Intento #24
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:37:06 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:37:06 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:37:50 - INFO - 
+ Intento #25
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:38:08 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:38:08 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:38:43 - INFO - 
+ Intento #26
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:39:01 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:39:01 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:40:01 - INFO - 
+ Intento #27
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:40:19 - INFO - Día extraído (innerText): '26'
+2025-03-29 23:40:19 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26']
+2025-03-29 23:40:58 - INFO - 
+ Intento #28
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:41:16 - INFO - Día extraído (innerText): '26'
+2025-03-29 23:41:16 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26']
+2025-03-29 23:42:13 - INFO - 
+ Intento #29
+2025-03-29 23:42:31 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25']
+2025-03-29 23:43:03 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-29 23:43:37 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '26'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '27'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '28'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '29'
+2025-03-29 23:43:57 - INFO - Día extraído (innerText): '30'
+2025-03-29 23:43:57 - INFO - Días tachados inicialmente: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30']
+2025-03-29 23:43:57 - INFO - 
+ Intento #1
+2025-03-29 23:44:01 - INFO -  Fallo al ir a Paso 1: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=134.0.6998.178)
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x002BFEC0]
+	(No symbol) [0x002DDFDF]
+	(No symbol) [0x003446AF]
+	(No symbol) [0x0035EB19]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-29 23:44:01 - INFO - 
+ Intento #2
+2025-03-29 23:44:19 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-29 23:47:42 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-29 23:48:45 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-29 23:50:40 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-29 23:51:58 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-29 23:53:06 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-29 23:53:51 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-29 23:55:05 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:55:29 - INFO - Día extraído (innerText): '26'
+2025-03-29 23:55:29 - INFO - Días tachados inicialmente: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26']
+2025-03-29 23:55:29 - INFO - 
+ Intento #1
+2025-03-29 23:55:47 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0055C7F3+24435]
+	(No symbol) [0x004E2074]
+	(No symbol) [0x003B06E3]
+	(No symbol) [0x003F8B39]
+	(No symbol) [0x003F8E8B]
+	(No symbol) [0x00441AC2]
+	(No symbol) [0x0041D804]
+	(No symbol) [0x0043F20A]
+	(No symbol) [0x0041D5B6]
+	(No symbol) [0x003EC54F]
+	(No symbol) [0x003ED894]
+	GetHandleVerifier [0x008670A3+3213347]
+	GetHandleVerifier [0x0087B0C9+3295305]
+	GetHandleVerifier [0x0087558C+3271948]
+	GetHandleVerifier [0x005F7360+658144]
+	(No symbol) [0x004EB27D]
+	(No symbol) [0x004E8208]
+	(No symbol) [0x004E83A9]
+	(No symbol) [0x004DAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-29 23:55:47 - INFO - 
+ Intento #2
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '1'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '2'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '3'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '4'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '5'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '6'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '7'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '8'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '9'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '10'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '11'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '12'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '13'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '14'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '15'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '16'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '17'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '18'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '19'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '20'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '21'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '22'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '23'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '24'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '25'
+2025-03-29 23:56:02 - INFO - Día extraído (innerText): '26'
+2025-03-29 23:56:02 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-2', 'April-3', 'April-4', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26']
+2025-03-29 23:56:43 - INFO - 
+ Intento #3
+2025-03-29 23:57:01 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0055C7F3+24435]
+	(No symbol) [0x004E2074]
+	(No symbol) [0x003B06E3]
+	(No symbol) [0x003F8B39]
+	(No symbol) [0x003F8E8B]
+	(No symbol) [0x00441AC2]
+	(No symbol) [0x0041D804]
+	(No symbol) [0x0043F20A]
+	(No symbol) [0x0041D5B6]
+	(No symbol) [0x003EC54F]
+	(No symbol) [0x003ED894]
+	GetHandleVerifier [0x008670A3+3213347]
+	GetHandleVerifier [0x0087B0C9+3295305]
+	GetHandleVerifier [0x0087558C+3271948]
+	GetHandleVerifier [0x005F7360+658144]
+	(No symbol) [0x004EB27D]
+	(No symbol) [0x004E8208]
+	(No symbol) [0x004E83A9]
+	(No symbol) [0x004DAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-29 23:57:01 - INFO - 
+ Intento #4
+2025-03-29 23:57:19 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0055C7F3+24435]
+	(No symbol) [0x004E2074]
+	(No symbol) [0x003B06E3]
+	(No symbol) [0x003F8B39]
+	(No symbol) [0x003F8E8B]
+	(No symbol) [0x00441AC2]
+	(No symbol) [0x0041D804]
+	(No symbol) [0x0043F20A]
+	(No symbol) [0x0041D5B6]
+	(No symbol) [0x003EC54F]
+	(No symbol) [0x003ED894]
+	GetHandleVerifier [0x008670A3+3213347]
+	GetHandleVerifier [0x0087B0C9+3295305]
+	GetHandleVerifier [0x0087558C+3271948]
+	GetHandleVerifier [0x005F7360+658144]
+	(No symbol) [0x004EB27D]
+	(No symbol) [0x004E8208]
+	(No symbol) [0x004E83A9]
+	(No symbol) [0x004DAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-29 23:57:33 - INFO - 
+ Intento #5
+2025-03-29 23:57:52 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0055C7F3+24435]
+	(No symbol) [0x004E2074]
+	(No symbol) [0x003B06E3]
+	(No symbol) [0x003F8B39]
+	(No symbol) [0x003F8E8B]
+	(No symbol) [0x00441AC2]
+	(No symbol) [0x0041D804]
+	(No symbol) [0x0043F20A]
+	(No symbol) [0x0041D5B6]
+	(No symbol) [0x003EC54F]
+	(No symbol) [0x003ED894]
+	GetHandleVerifier [0x008670A3+3213347]
+	GetHandleVerifier [0x0087B0C9+3295305]
+	GetHandleVerifier [0x0087558C+3271948]
+	GetHandleVerifier [0x005F7360+658144]
+	(No symbol) [0x004EB27D]
+	(No symbol) [0x004E8208]
+	(No symbol) [0x004E83A9]
+	(No symbol) [0x004DAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-29 23:57:52 - INFO - 
+ Intento #6
+2025-03-29 23:58:11 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0055C7F3+24435]
+	(No symbol) [0x004E2074]
+	(No symbol) [0x003B06E3]
+	(No symbol) [0x003F8B39]
+	(No symbol) [0x003F8E8B]
+	(No symbol) [0x00441AC2]
+	(No symbol) [0x0041D804]
+	(No symbol) [0x0043F20A]
+	(No symbol) [0x0041D5B6]
+	(No symbol) [0x003EC54F]
+	(No symbol) [0x003ED894]
+	GetHandleVerifier [0x008670A3+3213347]
+	GetHandleVerifier [0x0087B0C9+3295305]
+	GetHandleVerifier [0x0087558C+3271948]
+	GetHandleVerifier [0x005F7360+658144]
+	(No symbol) [0x004EB27D]
+	(No symbol) [0x004E8208]
+	(No symbol) [0x004E83A9]
+	(No symbol) [0x004DAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-29 23:58:18 - INFO - 
+ Intento #7
+2025-03-29 23:58:28 - INFO -  Fallo al ir a Paso 1: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=134.0.6998.178)
+Stacktrace:
+	GetHandleVerifier [0x0055C7F3+24435]
+	(No symbol) [0x004E2074]
+	(No symbol) [0x003B06E3]
+	(No symbol) [0x0039FEC0]
+	(No symbol) [0x003BDFDF]
+	(No symbol) [0x004246AF]
+	(No symbol) [0x0043EB19]
+	(No symbol) [0x0041D5B6]
+	(No symbol) [0x003EC54F]
+	(No symbol) [0x003ED894]
+	GetHandleVerifier [0x008670A3+3213347]
+	GetHandleVerifier [0x0087B0C9+3295305]
+	GetHandleVerifier [0x0087558C+3271948]
+	GetHandleVerifier [0x005F7360+658144]
+	(No symbol) [0x004EB27D]
+	(No symbol) [0x004E8208]
+	(No symbol) [0x004E83A9]
+	(No symbol) [0x004DAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-29 23:58:28 - INFO - 
+ Intento #8
+2025-03-30 00:31:03 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-30 00:32:39 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-30 00:33:16 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-30 00:34:47 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe

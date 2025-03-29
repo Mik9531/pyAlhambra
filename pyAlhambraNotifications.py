@@ -325,9 +325,11 @@ def ejecutar_script(icon):
         #     "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
 
 
-        options.add_argument(r"--user-data-dir=C:\Users\migue\AppData\Local\Google\Chrome\User Data")
+        # options.add_argument(r"--user-data-dir=C:\Users\migue\AppData\Local\Google\Chrome\User Data")
 
-        options.debugger_address = "127.0.0.1:9222"
+        options.add_argument(r"--user-data-dir=C:\Users\migue\AppData\Local\Google\Chrome\UserData1")  # Perfil 1
+
+        options.debugger_address = "127.0.0.1:9223"
 
         # options.add_argument(f"--user-data-dir={ruta_perfil_chrome}")  # <-- Asegurar que está bien escrito
 
@@ -341,7 +343,7 @@ def ejecutar_script(icon):
         URL_RESERVAS_GENERAL = 'https://compratickets.alhambra-patronato.es/reservarEntradas.aspx?opc=142&gid=432&lg=es-ES&ca=0&m=GENERAL'
 
         driver.get(URL_RESERVAS_GENERAL)
-        # driver.delete_all_cookies()
+        driver.delete_all_cookies()
         # driver.execute_script("window.localStorage.clear();")
         # driver.execute_script("window.sessionStorage.clear();")
 
@@ -363,7 +365,6 @@ def ejecutar_script(icon):
         #
         # driver.refresh()  # Recargar la página con las cookies añadidas
 
-        time.sleep(TIEMPO)
 
 
         # try:
@@ -388,6 +389,7 @@ def ejecutar_script(icon):
         #     time.sleep(TIEMPO)
         # except Exception:
         #     print("Fallo al acceder a las reservas")
+        time.sleep(TIEMPO)
 
         try:
             WebDriverWait(driver, 10).until(
