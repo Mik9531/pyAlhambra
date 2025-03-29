@@ -234,7 +234,6 @@ def obtener_dias_tachados_completos(driver):
 
             for dia in dias_mes_siguiente:
                 texto_dia = dia.get_attribute("innerText").strip()
-                print(f"Día extraído (innerText): '{texto_dia}'")  # Depuración
                 logging.info(f"Día extraído (innerText): '{texto_dia}'")
                 if texto_dia.isdigit():
                     dias_total.append(f"{mes_siguiente_nombre}-{texto_dia}")
@@ -390,12 +389,12 @@ def ejecutar_script(icon):
         except Exception:
             print("Botón de cookies no encontrado o ya aceptado.")
 
-        WebDriverWait(driver, 5).until(
-            EC.element_to_be_clickable((By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
-        ).click()
-        print("Botón 'Paso 1' pulsado.")
+        # WebDriverWait(driver, 5).until(
+        #     EC.element_to_be_clickable((By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
+        # ).click()
+        # print("Botón 'Paso 1' pulsado.")
 
-        time.sleep(TIEMPO)
+        # time.sleep(TIEMPO)
 
     driver = iniciar_navegador()
     # minimizar_chrome(driver)  # Ocultar Chrome después de abrirlo
@@ -421,14 +420,15 @@ def ejecutar_script(icon):
                 print(f"Error obteniendo días tachados: {e}")
                 return []
 
-            # try:
-            #     WebDriverWait(driver, 5).until(
-            #         EC.element_to_be_clickable(
-            #             (By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
-            #     ).click()
-            #     time.sleep(TIEMPO)
-            # except Exception:
-            #     print("Botón de paso 1 ya pulsado.")
+
+            try:
+                WebDriverWait(driver, 5).until(
+                    EC.element_to_be_clickable(
+                        (By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
+                ).click()
+                time.sleep(TIEMPO)
+            except Exception:
+                print("Botón de paso 1 ya pulsado.")
 
             # time.sleep(TIEMPO)
 
@@ -460,6 +460,8 @@ def ejecutar_script(icon):
             counter += 1
             driver.refresh()
             # time.sleep(TIEMPO)
+
+            WebDriverWait(driver, 10).until(EC.invisibility_of_element_located((By.ID, "divCargando")))
 
             try:
                 WebDriverWait(driver, 5).until(
