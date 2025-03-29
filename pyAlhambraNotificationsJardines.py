@@ -200,40 +200,54 @@ def obtener_dias_tachados_completos(driver):
 
     dias_total.extend([f"{mes_actual_nombre}-{dia.text.strip()}" for dia in dias_mes_actual if dia.text.strip()])
 
-    # 🔹 Avanzar al mes siguiente
-    try:
-        boton_mes_siguiente = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//td[@align='right']//a[contains(@href,'__doPostBack')]"))
-        )
+    if (dias_mes_actual):
 
-        driver.execute_script("arguments[0].scrollIntoView();", boton_mes_siguiente)
-        time.sleep(0.5)
-        driver.execute_script("arguments[0].click();", boton_mes_siguiente)
-        time.sleep(2)
-    except Exception as e:
-        print(f"No se pudo avanzar al mes siguiente: {e}")
+        # 🔹 Avanzar al mes siguiente
+        try:
+            boton_mes_siguiente = WebDriverWait(driver, 20).until(
+                EC.element_to_be_clickable((By.XPATH, "//td[@align='right']//a[contains(@href,'__doPostBack')]"))
+            )
 
-    # 🔹 Obtener el mes siguiente
-    mes_siguiente_num = mes_actual_num + 1 if mes_actual_num < 12 else 1  # Si es diciembre, pasa a enero
-    mes_siguiente_nombre = calendar.month_name[mes_siguiente_num]
+            driver.execute_script("arguments[0].scrollIntoView();", boton_mes_siguiente)
+            time.sleep(1)
+            driver.execute_script("arguments[0].click();", boton_mes_siguiente)
 
-    try:
-        dias_mes_siguiente = driver.find_elements(By.CSS_SELECTOR,
-                                                  "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo")
+            # 🔹 Esperar a que los nuevos elementos se carguen después del cambio de mes
+            time.sleep(3)  # Pequeña pausa para asegurar la carga de la página
+            WebDriverWait(driver, 20).until(
+                EC.presence_of_all_elements_located((By.CSS_SELECTOR,
+                                                     "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo"))
+            )
+        except Exception as e:
+            print(f"No se pudo avanzar al mes siguiente: {e}")
+            return 0  # Devolver lo que ya se recopiló en caso de error
 
-        dias_total.extend(
-            [f"{mes_siguiente_nombre}-{dia.text.strip()}" for dia in dias_mes_siguiente if dia.text.strip()])
+        # 🔹 Obtener el mes siguiente
+        mes_siguiente_num = mes_actual_num + 1 if mes_actual_num < 12 else 1  # Si es diciembre, pasa a enero
+        mes_siguiente_nombre = calendar.month_name[mes_siguiente_num]
 
-        return dias_total
+        try:
+            dias_mes_siguiente = driver.find_elements(By.CSS_SELECTOR,
+                                                      "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo")
 
-    except Exception as e:
-        print(f"No se pudo obtener fechas del mes siguiente: {e}")
+            time.sleep(3)  # Pequeña pausa para asegurar la carga de la página
+
+            for dia in dias_mes_siguiente:
+                texto_dia = dia.get_attribute("innerText").strip()
+                print(f"Día extraído (innerText): '{texto_dia}'")  # Depuración
+                logging.info(f"Día extraído (innerText): '{texto_dia}'")
+                if texto_dia.isdigit():
+                    dias_total.append(f"{mes_siguiente_nombre}-{texto_dia}")
+        except Exception as e:
+            print(f"No se pudo obtener fechas del mes siguiente: {e}")
+            return 0
 
     return dias_total
 
+
 # Configuración inicial
 TIEMPO_REFRESCO = 10  # Tiempo entre revisiones en segundos
-TIEMPO = random.uniform(4, 6)  # Tiempo de espera tras cada paso
+TIEMPO = random.uniform(3, 5)  # Tiempo de espera tras cada paso
 DETENER = False  # Variable global para detener el script
 SCRIPT_THREAD = None  # Hilo de ejecución del script
 
@@ -296,7 +310,7 @@ def ejecutar_script(icon):
 
     def iniciar_navegador():
 
-        ruta_perfil_chrome = os.path.join(os.getenv("LOCALAPPDATA"), "Google", "Chrome", "User Data","Perfil2")
+        ruta_perfil_chrome = os.path.join(os.getenv("LOCALAPPDATA"), "Google", "Chrome", "User Data","Perfil1")
 
         options = uc.ChromeOptions()
 
@@ -304,7 +318,7 @@ def ejecutar_script(icon):
         options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_argument("--no-first-run --no-service-autorun --password-store=basic")
 
-        options.add_argument("--incognito")
+        # options.add_argument("--incognito")
         options.add_argument("--start-maximized")
         options.add_argument("--window-size=1920,1080")
 
@@ -318,19 +332,19 @@ def ejecutar_script(icon):
         options.add_argument(f"--remote-debugging-port=9301")
         # options.add_argument("--headless=new")
 
-        options.add_argument(
-            "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/121.0.0.0 Safari/537.36"
-        )
+        # options.add_argument(
+        #     "-- user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        #     "-- AppleWebKit/537.36 (KHTML, like Gecko) "
+        #     "-- Chrome/121.0.0.0 Safari/537.36"
+        # )
 
         options.add_argument(f"--user-data-dir={ruta_perfil_chrome}")  # <-- Asegurar que está bien escrito
 
-        # 🔹 Usar una carpeta separada para cada instancia de ChromeDriver
-        custom_chromedriver_path = os.path.join(os.getenv("LOCALAPPDATA"), "undetected_chromedriver_jardines")
-        os.makedirs(custom_chromedriver_path, exist_ok=True)
+        # # 🔹 Usar una carpeta separada para cada instancia de ChromeDriver
+        # custom_chromedriver_path = os.path.join(os.getenv("LOCALAPPDATA"), "undetected_chromedriver_jardines")
+        # os.makedirs(custom_chromedriver_path, exist_ok=True)
 
-        driver = uc.Chrome(options=options, user_data_dir=custom_chromedriver_path)
+        driver = uc.Chrome(options=options)
         return driver
 
     def navegar_y_preparar(driver):
@@ -342,6 +356,7 @@ def ejecutar_script(icon):
         driver.execute_script("window.localStorage.clear();")
         driver.execute_script("window.sessionStorage.clear();")
         time.sleep(TIEMPO)
+
 
         # try:
         #     WebDriverWait(driver, 5).until(
@@ -367,7 +382,7 @@ def ejecutar_script(icon):
         #     print("Fallo al acceder a las reservas")
 
         try:
-            WebDriverWait(driver, 5).until(
+            WebDriverWait(driver, 10).until(
                 EC.element_to_be_clickable((By.ID, "ctl00_lnkAceptarTodoCookies_Info"))
             ).click()
             print("Botón 'Aceptar cookies' pulsado.")
@@ -415,7 +430,7 @@ def ejecutar_script(icon):
             except Exception:
                 print("Botón de paso 1 ya pulsado.")
 
-            time.sleep(TIEMPO)
+            # time.sleep(TIEMPO)
 
             dias_tachados_inicial = obtener_dias_tachados_completos(driver)
             if dias_tachados_inicial:
@@ -434,6 +449,7 @@ def ejecutar_script(icon):
     counter = 1
     counter_diasTachados = 1
 
+
     try:
         while not DETENER:
             icon.icon = crear_icono_verde()
@@ -442,12 +458,20 @@ def ejecutar_script(icon):
             logging.info(f"\n Intento #{counter}")
 
             counter += 1
-
             driver.refresh()
-            time.sleep(TIEMPO)
+            # time.sleep(TIEMPO)
 
             try:
-                boton = WebDriverWait(driver, 10).until(
+                WebDriverWait(driver, 5).until(
+                    EC.element_to_be_clickable((By.ID, "ctl00_lnkAceptarTodoCookies_Info"))
+                ).click()
+                print("Botón 'Aceptar cookies' pulsado.")
+                time.sleep(TIEMPO)
+            except Exception:
+                print("Botón de cookies no encontrado o ya aceptado.")
+
+            try:
+                boton = WebDriverWait(driver, 5).until(
                     EC.element_to_be_clickable(
                         (By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
                 )
@@ -461,7 +485,7 @@ def ejecutar_script(icon):
                                                     "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha"))
                 )
 
-                FALLOS_SEGUIDOS = 0  # reiniciar contador
+                FALLOS_SEGUIDOS = 1  # reiniciar contador
             except Exception as e:
                 print(f" Fallo al ir a Paso 1: {e}")
                 logging.info(f" Fallo al ir a Paso 1: {e}")
@@ -474,17 +498,27 @@ def ejecutar_script(icon):
                     icon.icon = crear_icono_amarillo()
                     print(" Reiniciando navegador por múltiples fallos...")
                     # alerta_sonora_reinicio()
-                    driver.quit()
-                    driver = iniciar_navegador()
+                    # driver.quit()
+                    # driver = iniciar_navegador()
                     # minimizar_chrome(driver)  # Ocultar Chrome después de abrirlo
 
-                    navegar_y_preparar(driver)
+                    # navegar_y_preparar(driver)
+
+                    driver.delete_all_cookies()
+                    driver.execute_script("window.localStorage.clear();")
+                    driver.execute_script("window.sessionStorage.clear();")
+                    driver.get('https://compratickets.alhambra-patronato.es/reservarEntradas.aspx?opc=143&gid=432&lg=es&ca=0&m=GENERAL')
+
                     FALLOS_SEGUIDOS = 0
                     continue
                 else:
                     continue
 
             dias_tachados_actual = obtener_dias_tachados_completos(driver)
+
+            if (dias_tachados_actual == 0):
+                dias_tachados_actual = dias_tachados_inicial
+
             print(f"Días tachados actuales: {dias_tachados_actual}")
             logging.info(f"Días tachados actuales: {dias_tachados_actual}")
 
