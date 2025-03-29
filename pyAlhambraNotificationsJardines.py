@@ -421,14 +421,14 @@ def ejecutar_script(icon):
                 print(f"Error obteniendo días tachados: {e}")
                 return []
 
-            try:
-                WebDriverWait(driver, 5).until(
-                    EC.element_to_be_clickable(
-                        (By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
-                ).click()
-                time.sleep(TIEMPO)
-            except Exception:
-                print("Botón de paso 1 ya pulsado.")
+            # try:
+            #     WebDriverWait(driver, 5).until(
+            #         EC.element_to_be_clickable(
+            #             (By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
+            #     ).click()
+            #     time.sleep(TIEMPO)
+            # except Exception:
+            #     print("Botón de paso 1 ya pulsado.")
 
             # time.sleep(TIEMPO)
 
@@ -485,7 +485,7 @@ def ejecutar_script(icon):
                                                     "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha"))
                 )
 
-                FALLOS_SEGUIDOS = 1  # reiniciar contador
+                FALLOS_SEGUIDOS = 0  # reiniciar contador
             except Exception as e:
                 print(f" Fallo al ir a Paso 1: {e}")
                 logging.info(f" Fallo al ir a Paso 1: {e}")
