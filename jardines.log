@@ -12607,3 +12607,1810 @@ Stacktrace:
 2025-03-30 14:22:56 - INFO - Días tachados actuales: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26']
 2025-03-30 14:23:44 - INFO - 
  Intento #69
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:29:47 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:29:47 - INFO - Días tachados inicialmente: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26']
+2025-03-30 14:29:47 - INFO - 
+ Intento #1
+2025-03-30 14:29:59 - INFO - Días tachados actuales: []
+2025-03-30 14:30:47 - INFO - 
+ Intento #2
+2025-03-30 14:30:59 - INFO - Días tachados actuales: []
+2025-03-30 14:31:33 - INFO - 
+ Intento #3
+2025-03-30 14:31:44 - INFO - Días tachados actuales: []
+2025-03-30 14:32:43 - INFO - 
+ Intento #4
+2025-03-30 14:32:55 - INFO - Días tachados actuales: []
+2025-03-30 14:36:41 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:39:24 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:39:24 - INFO - Días tachados inicialmente: ['April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26']
+2025-03-30 14:39:24 - INFO - 
+ Intento #1
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:39:43 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:39:43 - INFO - Días tachados actuales: ['April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26']
+2025-03-30 14:40:15 - INFO - 
+ Intento #2
+2025-03-30 14:40:38 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 14:40:38 - INFO - 
+ Intento #3
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:40:58 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:40:58 - INFO - Días tachados actuales: ['April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26']
+2025-03-30 14:41:55 - INFO - 
+ Intento #4
+2025-03-30 14:42:17 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 14:42:17 - INFO - 
+ Intento #5
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:42:37 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:42:37 - INFO - Días tachados actuales: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26']
+2025-03-30 14:43:14 - INFO - 
+ Intento #6
+2025-03-30 14:43:37 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 14:43:37 - INFO - 
+ Intento #7
+2025-03-30 14:43:56 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:43:56 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:43:56 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:43:56 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:43:57 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:43:57 - INFO - Días tachados actuales: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26']
+2025-03-30 14:44:32 - INFO - 
+ Intento #8
+2025-03-30 14:44:54 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 14:44:54 - INFO - 
+ Intento #9
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:45:14 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:45:14 - INFO - Días tachados actuales: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26']
+2025-03-30 14:45:50 - INFO - 
+ Intento #10
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:46:10 - INFO - Día extraído (innerText): '27'
+2025-03-30 14:46:10 - INFO - Días tachados actuales: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 14:46:54 - INFO - 
+ Intento #11
+2025-03-30 14:47:17 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 14:47:17 - INFO - 
+ Intento #12
+2025-03-30 14:47:40 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 14:47:51 - INFO - 
+ Intento #13
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:48:15 - INFO - Día extraído (innerText): '27'
+2025-03-30 14:48:15 - INFO - Días tachados actuales: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 14:48:51 - INFO - 
+ Intento #14
+2025-03-30 14:49:14 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 14:49:14 - INFO - 
+ Intento #15
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:49:33 - INFO - Día extraído (innerText): '27'
+2025-03-30 14:49:33 - INFO - Días tachados actuales: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 14:50:28 - INFO - 
+ Intento #16
+2025-03-30 14:50:47 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:50:47 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:50:47 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:50:47 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:50:47 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:50:47 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:50:47 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:50:47 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:50:47 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:50:47 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:50:47 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:50:48 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:50:48 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:50:48 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:50:48 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:50:48 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:50:48 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:50:48 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:50:48 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:50:48 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:50:48 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:50:48 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:50:48 - INFO - Día extraído (innerText): '27'
+2025-03-30 14:50:48 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 14:51:27 - INFO - 
+ Intento #17
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:51:47 - INFO - Día extraído (innerText): '27'
+2025-03-30 14:51:47 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 14:52:47 - INFO - 
+ Intento #18
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:53:07 - INFO - Día extraído (innerText): '27'
+2025-03-30 14:53:07 - INFO - Días tachados actuales: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 14:53:41 - INFO - 
+ Intento #19
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:54:00 - INFO - Día extraído (innerText): '27'
+2025-03-30 14:54:00 - INFO - Días tachados actuales: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 14:54:53 - INFO - 
+ Intento #20
+2025-03-30 14:55:15 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 14:55:15 - INFO - 
+ Intento #21
+2025-03-30 14:55:38 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 14:55:49 - INFO - 
+ Intento #22
+2025-03-30 14:56:16 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 14:56:16 - INFO - 
+ Intento #23
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:56:35 - INFO - Día extraído (innerText): '27'
+2025-03-30 14:56:35 - INFO - Días tachados actuales: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 14:57:31 - INFO - 
+ Intento #24
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:57:51 - INFO - Día extraído (innerText): '27'
+2025-03-30 14:57:51 - INFO - Días tachados actuales: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 14:58:47 - INFO - 
+ Intento #25
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '5'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '6'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '7'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '8'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '9'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '10'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '11'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '12'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '13'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '14'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '15'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '16'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '17'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '18'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '19'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '20'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '21'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '22'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '23'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '24'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '25'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '26'
+2025-03-30 14:59:07 - INFO - Día extraído (innerText): '27'
+2025-03-30 14:59:07 - INFO - Días tachados actuales: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 14:59:45 - INFO - 
+ Intento #26
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:00:05 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:00:05 - INFO - Días tachados actuales: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:00:53 - INFO - 
+ Intento #27
+2025-03-30 15:01:16 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:01:16 - INFO - 
+ Intento #28
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:01:35 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:01:36 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:01:36 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:01:36 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:01:36 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:01:36 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:01:36 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:01:36 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:01:36 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:01:36 - INFO - Días tachados actuales: ['March-30', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:02:06 - INFO - 
+ Intento #29
+2025-03-30 15:02:28 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:02:28 - INFO - 
+ Intento #30
+2025-03-30 15:02:51 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:03:02 - INFO - 
+ Intento #31
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:03:26 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:03:26 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:04:16 - INFO - 
+ Intento #32
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:04:35 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:04:35 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:05:06 - INFO - 
+ Intento #33
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:05:26 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:05:26 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:06:06 - INFO - 
+ Intento #34
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:06:25 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:06:25 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:06:56 - INFO - 
+ Intento #35
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:07:16 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:07:16 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:08:15 - INFO - 
+ Intento #36
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:08:37 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:08:37 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:09:32 - INFO - 
+ Intento #37
+2025-03-30 15:09:54 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:09:54 - INFO - 
+ Intento #38
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:10:15 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:10:15 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:11:04 - INFO - 
+ Intento #39
+2025-03-30 15:11:26 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:11:26 - INFO - 
+ Intento #40
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:11:46 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:11:46 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:12:41 - INFO - 
+ Intento #41
+2025-03-30 15:13:03 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:13:03 - INFO - 
+ Intento #42
+2025-03-30 15:13:26 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:13:37 - INFO - 
+ Intento #43
+2025-03-30 15:14:04 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:14:04 - INFO - 
+ Intento #44
+2025-03-30 15:14:26 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:14:37 - INFO - 
+ Intento #45
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:15:00 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:15:00 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:15:37 - INFO - 
+ Intento #46
+2025-03-30 15:15:59 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:15:59 - INFO - 
+ Intento #47
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '1'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:16:19 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:16:19 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:17:02 - INFO - 
+ Intento #48
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '1'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:17:21 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:17:21 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:18:18 - INFO - 
+ Intento #49
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '1'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:18:37 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:18:37 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:19:29 - INFO - 
+ Intento #50
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '1'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:19:49 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:19:49 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:20:47 - INFO - 
+ Intento #51
+2025-03-30 15:21:09 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:21:09 - INFO - 
+ Intento #52
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '1'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:21:29 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:21:29 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:22:28 - INFO - 
+ Intento #53
+2025-03-30 15:22:51 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:22:51 - INFO - 
+ Intento #54
+2025-03-30 15:23:13 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:23:24 - INFO - 
+ Intento #55
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '1'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:23:48 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:23:48 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-1', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:24:41 - INFO - 
+ Intento #56
+2025-03-30 15:25:04 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0047C7F3+24435]
+	(No symbol) [0x00402074]
+	(No symbol) [0x002D06E3]
+	(No symbol) [0x00318B39]
+	(No symbol) [0x00318E8B]
+	(No symbol) [0x00361AC2]
+	(No symbol) [0x0033D804]
+	(No symbol) [0x0035F20A]
+	(No symbol) [0x0033D5B6]
+	(No symbol) [0x0030C54F]
+	(No symbol) [0x0030D894]
+	GetHandleVerifier [0x007870A3+3213347]
+	GetHandleVerifier [0x0079B0C9+3295305]
+	GetHandleVerifier [0x0079558C+3271948]
+	GetHandleVerifier [0x00517360+658144]
+	(No symbol) [0x0040B27D]
+	(No symbol) [0x00408208]
+	(No symbol) [0x004083A9]
+	(No symbol) [0x003FAAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:25:04 - INFO - 
+ Intento #57
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:25:23 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:25:23 - INFO - Días tachados actuales: ['March-30', 'March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:26:20 - INFO - 
+ Intento #58
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:26:40 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:26:40 - INFO - Días tachados actuales: ['March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:27:11 - INFO - 
+ Intento #59
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:27:31 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:27:31 - INFO - Días tachados actuales: ['March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '5'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '6'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '7'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '8'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '9'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '10'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '11'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '12'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '13'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '14'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '15'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '16'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '17'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '18'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '19'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '20'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '21'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '22'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '23'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '24'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '25'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '26'
+2025-03-30 15:29:40 - INFO - Día extraído (innerText): '27'
+2025-03-30 15:29:40 - INFO - Días tachados inicialmente: ['March-30', 'March-31', 'April-5', 'April-6', 'April-7', 'April-8', 'April-9', 'April-10', 'April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27']
+2025-03-30 15:29:40 - INFO - 
+ Intento #1
+2025-03-30 15:30:02 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0039C7F3+24435]
+	(No symbol) [0x00322074]
+	(No symbol) [0x001F06E3]
+	(No symbol) [0x00238B39]
+	(No symbol) [0x00238E8B]
+	(No symbol) [0x00281AC2]
+	(No symbol) [0x0025D804]
+	(No symbol) [0x0027F20A]
+	(No symbol) [0x0025D5B6]
+	(No symbol) [0x0022C54F]
+	(No symbol) [0x0022D894]
+	GetHandleVerifier [0x006A70A3+3213347]
+	GetHandleVerifier [0x006BB0C9+3295305]
+	GetHandleVerifier [0x006B558C+3271948]
+	GetHandleVerifier [0x00437360+658144]
+	(No symbol) [0x0032B27D]
+	(No symbol) [0x00328208]
+	(No symbol) [0x003283A9]
+	(No symbol) [0x0031AAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:30:02 - INFO - 
+ Intento #2
+2025-03-30 15:30:24 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0039C7F3+24435]
+	(No symbol) [0x00322074]
+	(No symbol) [0x001F06E3]
+	(No symbol) [0x00238B39]
+	(No symbol) [0x00238E8B]
+	(No symbol) [0x00281AC2]
+	(No symbol) [0x0025D804]
+	(No symbol) [0x0027F20A]
+	(No symbol) [0x0025D5B6]
+	(No symbol) [0x0022C54F]
+	(No symbol) [0x0022D894]
+	GetHandleVerifier [0x006A70A3+3213347]
+	GetHandleVerifier [0x006BB0C9+3295305]
+	GetHandleVerifier [0x006B558C+3271948]
+	GetHandleVerifier [0x00437360+658144]
+	(No symbol) [0x0032B27D]
+	(No symbol) [0x00328208]
+	(No symbol) [0x003283A9]
+	(No symbol) [0x0031AAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:30:34 - INFO - 
+ Intento #3
+2025-03-30 15:31:00 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0039C7F3+24435]
+	(No symbol) [0x00322074]
+	(No symbol) [0x001F06E3]
+	(No symbol) [0x00238B39]
+	(No symbol) [0x00238E8B]
+	(No symbol) [0x00281AC2]
+	(No symbol) [0x0025D804]
+	(No symbol) [0x0027F20A]
+	(No symbol) [0x0025D5B6]
+	(No symbol) [0x0022C54F]
+	(No symbol) [0x0022D894]
+	GetHandleVerifier [0x006A70A3+3213347]
+	GetHandleVerifier [0x006BB0C9+3295305]
+	GetHandleVerifier [0x006B558C+3271948]
+	GetHandleVerifier [0x00437360+658144]
+	(No symbol) [0x0032B27D]
+	(No symbol) [0x00328208]
+	(No symbol) [0x003283A9]
+	(No symbol) [0x0031AAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:31:00 - INFO - 
+ Intento #4
+2025-03-30 15:31:21 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0039C7F3+24435]
+	(No symbol) [0x00322074]
+	(No symbol) [0x001F06E3]
+	(No symbol) [0x00238B39]
+	(No symbol) [0x00238E8B]
+	(No symbol) [0x00281AC2]
+	(No symbol) [0x0025D804]
+	(No symbol) [0x0027F20A]
+	(No symbol) [0x0025D5B6]
+	(No symbol) [0x0022C54F]
+	(No symbol) [0x0022D894]
+	GetHandleVerifier [0x006A70A3+3213347]
+	GetHandleVerifier [0x006BB0C9+3295305]
+	GetHandleVerifier [0x006B558C+3271948]
+	GetHandleVerifier [0x00437360+658144]
+	(No symbol) [0x0032B27D]
+	(No symbol) [0x00328208]
+	(No symbol) [0x003283A9]
+	(No symbol) [0x0031AAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:31:32 - INFO - 
+ Intento #5
+2025-03-30 15:31:57 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0039C7F3+24435]
+	(No symbol) [0x00322074]
+	(No symbol) [0x001F06E3]
+	(No symbol) [0x00238B39]
+	(No symbol) [0x00238E8B]
+	(No symbol) [0x00281AC2]
+	(No symbol) [0x0025D804]
+	(No symbol) [0x0027F20A]
+	(No symbol) [0x0025D5B6]
+	(No symbol) [0x0022C54F]
+	(No symbol) [0x0022D894]
+	GetHandleVerifier [0x006A70A3+3213347]
+	GetHandleVerifier [0x006BB0C9+3295305]
+	GetHandleVerifier [0x006B558C+3271948]
+	GetHandleVerifier [0x00437360+658144]
+	(No symbol) [0x0032B27D]
+	(No symbol) [0x00328208]
+	(No symbol) [0x003283A9]
+	(No symbol) [0x0031AAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 15:31:57 - INFO - 
+ Intento #6
+2025-03-30 15:32:19 - INFO -  Fallo al ir a Paso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0039C7F3+24435]
+	(No symbol) [0x00322074]
+	(No symbol) [0x001F06E3]
+	(No symbol) [0x00238B39]
+	(No symbol) [0x00238E8B]
+	(No symbol) [0x00281AC2]
+	(No symbol) [0x0025D804]
+	(No symbol) [0x0027F20A]
+	(No symbol) [0x0025D5B6]
+	(No symbol) [0x0022C54F]
+	(No symbol) [0x0022D894]
+	GetHandleVerifier [0x006A70A3+3213347]
+	GetHandleVerifier [0x006BB0C9+3295305]
+	GetHandleVerifier [0x006B558C+3271948]
+	GetHandleVerifier [0x00437360+658144]
+	(No symbol) [0x0032B27D]
+	(No symbol) [0x00328208]
+	(No symbol) [0x003283A9]
+	(No symbol) [0x0031AAC0]
+	BaseThreadInitThunk [0x76B75D49+25]
+	RtlInitializeExceptionChain [0x77B1CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77B1CE91+561]
+
+2025-03-30 16:01:10 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-30 16:02:37 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-03-30 16:04:25 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe

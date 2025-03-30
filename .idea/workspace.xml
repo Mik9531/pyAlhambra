@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51815375-9cfe-40cc-9c65-0dd7afb0c83a" name="Changes" comment="Cambios para comparar solo name y passport en todos los archivos probados">
-      <change beforePath="$PROJECT_DIR$/dias_tachados_inicial_jardines.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/general.log" beforeDir="false" afterPath="$PROJECT_DIR$/general.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jardines.log" beforeDir="false" afterPath="$PROJECT_DIR$/jardines.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyAlhambraNotifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyAlhambraNotifications.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyAlhambraNotificationsJardines.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyAlhambraNotificationsJardines.py" afterDir="false" />
     </list>
@@ -47,21 +48,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.comparadorExcels.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pyAlhambraBot.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pyAlhambraNotifications.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pyAlhambraNotificationsJardines.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pyAlhambraTickets.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/migue/Desktop/pyAlhambra/pyAlhambra&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.comparadorExcels.executor": "Run",
+    "Python.pyAlhambraBot.executor": "Run",
+    "Python.pyAlhambraNotifications.executor": "Run",
+    "Python.pyAlhambraNotificationsJardines.executor": "Debug",
+    "Python.pyAlhambraTickets.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/migue/Desktop/pyAlhambra/pyAlhambra",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\migue\Desktop\pyAlhambra\pyAlhambra" />
@@ -202,22 +203,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>547</line>
+          <line>550</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>545</line>
+          <line>548</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>532</line>
+          <line>535</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>526</line>
+          <line>529</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
@@ -232,27 +233,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>477</line>
+          <line>480</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>355</line>
+          <line>358</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>387</line>
+          <line>390</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>403</line>
+          <line>406</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>516</line>
+          <line>519</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
@@ -275,15 +276,30 @@
           <line>344</line>
           <option name="timeStamp" value="95" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>428</line>
+          <line>431</line>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
           <line>188</line>
           <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
+          <line>208</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
+          <line>190</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
+          <line>205</line>
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -186,7 +186,7 @@ def obtener_dias_tachados_completos(driver):
 
     dias_total.extend([f"{mes_actual_nombre}-{dia.text.strip()}" for dia in dias_mes_actual if dia.text.strip()])
 
-    if (dias_mes_actual):
+    if (True):
         # 🔹 Avanzar al mes siguiente
         try:
             boton_mes_siguiente = WebDriverWait(driver, 5).until(
@@ -547,7 +547,7 @@ def ejecutar_script(icon):
 
 
 
-            if dias_liberados and len(dias_tachados_actual) != 0:
+            if dias_liberados:
                 print(f" ¡Días liberados: {dias_liberados}!")
                 logging.info(f" ¡Días liberados: {dias_liberados}!")
                 alerta_sonora_acierto()
