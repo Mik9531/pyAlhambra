@@ -214,13 +214,13 @@ def obtener_dias_tachados_completos(driver):
 
             # 🔹 Esperar a que los nuevos elementos se carguen después del cambio de mes
             time.sleep(3)  # Pequeña pausa para asegurar la carga de la página
-            WebDriverWait(driver, 20).until(
+            WebDriverWait(driver, 10).until(
                 EC.presence_of_all_elements_located((By.CSS_SELECTOR,
                                                      "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo"))
             )
         except Exception as e:
             print(f"No se pudo avanzar al mes siguiente: {e}")
-            return 0  # Devolver lo que ya se recopiló en caso de error
+            return []
 
         # 🔹 Obtener el mes siguiente
         mes_siguiente_num = mes_actual_num + 1 if mes_actual_num < 12 else 1  # Si es diciembre, pasa a enero
@@ -309,41 +309,41 @@ def ejecutar_script(icon):
 
     def iniciar_navegador():
 
-        # ruta_perfil_chrome = os.path.join(os.getenv("LOCALAPPDATA"), "Google", "Chrome", "User Data", "Perfil2")
+        ruta_perfil_chrome = os.path.join(os.getenv("LOCALAPPDATA"), "Google", "Chrome", "User Data", "Perfil2")
 
         options = uc.ChromeOptions()
 
         # Otros flags útiles
-        # options.add_argument("--disable-blink-features=AutomationControlled")
-        # # options.add_argument("--no-first-run --no-service-autorun --password-store=basic")
+        options.add_argument("--disable-blink-features=AutomationControlled")
+        options.add_argument("--no-first-run --no-service-autorun --password-store=basic")
         #
-        # # options.add_argument("--incognito")
+        # options.add_argument("--incognito")
         options.add_argument("--start-maximized")
         # options.add_argument("--window-size=1280,800")
-        # options.add_argument("--disable-blink-features=AutomationControlled")
-        # # options.add_argument("--no-sandbox")
+        options.add_argument("--disable-blink-features=AutomationControlled")
+        # options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--disable-gpu")
+        options.add_argument("--disable-software-rasterizer")
         # options.add_argument("--disable-dev-shm-usage")
-        # options.add_argument("--disable-gpu")
-        # options.add_argument("--disable-software-rasterizer")
-        # options.add_argument("--disable-dev-shm-usage")
-        # options.add_argument("--disable-extensions")
+        options.add_argument("--disable-extensions")
         # # options.add_argument("Accept-Language: en-US,en;q=0.9")
         # # options.add_argument("Accept-Encoding: gzip, deflate, br")
         # # options.add_argument("Connection: keep-alive")
         # options.add_argument("--remote-debugging-port=9222")
-        # options.add_argument("--disable-popup-blocking")
+        options.add_argument("--disable-popup-blocking")
         # options.add_argument("--start-minimized")
-        # options.add_argument(f"--remote-debugging-port=9300")
+        options.add_argument(f"--remote-debugging-port=9302")
         # options.add_argument("--headless=new")
 
         # options.add_argument(
         #     "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
 
-        options.add_argument(r"--user-data-dir=C:\Users\migue\AppData\Local\Google\Chrome\UserData2")
+        # options.add_argument(r"--user-data-dir=C:\Users\migue\AppData\Local\Google\Chrome\UserData2")
 
-        options.debugger_address = "127.0.0.1:9222"
+        # options.debugger_address = "127.0.0.1:9223"
 
-        # options.add_argument(f"--user-data-dir={ruta_perfil_chrome}")  # <-- Asegurar que está bien escrito
+        options.add_argument(f"--user-data-dir={ruta_perfil_chrome}")  # <-- Asegurar que está bien escrito
 
         driver = uc.Chrome(options=options)
 
@@ -351,12 +351,12 @@ def ejecutar_script(icon):
 
     def navegar_y_preparar(driver):
         URL_INICIAL = 'https://tickets.alhambra-patronato.es/'
-        URL_RESERVAS_JARDINES = 'https://compratickets.alhambra-patronato.es/reservarEntradas.aspx?opc=141&gid=432&lg=es&ca=0&m=GENERAL'
+        URL_RESERVAS_JARDINES = 'https://compratickets.alhambra-patronato.es/reservarEntradas.aspx?opc=143&gid=432&lg=es&ca=0&m=GENERAL'
 
         driver.get(URL_RESERVAS_JARDINES)
         driver.delete_all_cookies()
-        # driver.execute_script("window.localStorage.clear();")
-        # driver.execute_script("window.sessionStorage.clear();")
+        driver.execute_script("window.localStorage.clear();")
+        driver.execute_script("window.sessionStorage.clear();")
         # time.sleep(TIEMPO)
 
 
@@ -383,7 +383,7 @@ def ejecutar_script(icon):
         # except Exception:
         #     print("Fallo al acceder a las reservas")
 
-        time.sleep(TIEMPO)
+        # time.sleep(TIEMPO)
 
         try:
             WebDriverWait(driver, 10).until(
@@ -444,7 +444,7 @@ def ejecutar_script(icon):
             intentos += 1
             print(f"Intento {intentos}: No se encontraron días tachados. Recargando la página...")
             driver.refresh()
-            time.sleep(random.uniform(3, 5))  # Pausa para simular comportamiento humano o evitar bloqueos
+            time.sleep(random.uniform(5, 7))  # Pausa para simular comportamiento humano o evitar bloqueos
 
         guardar_dias_tachados(dias_tachados_inicial)
 
@@ -464,16 +464,16 @@ def ejecutar_script(icon):
 
             counter += 1
             driver.refresh()
-            time.sleep(TIEMPO)
+            # time.sleep(TIEMPO)
 
-            # try:
-            #     WebDriverWait(driver, 5).until(
-            #         EC.element_to_be_clickable((By.ID, "ctl00_lnkAceptarTodoCookies_Info"))
-            #     ).click()
-            #     print("Botón 'Aceptar cookies' pulsado.")
-            #     time.sleep(TIEMPO)
-            # except Exception:
-            #     print("Botón de cookies no encontrado o ya aceptado.")
+            try:
+                WebDriverWait(driver, 5).until(
+                    EC.element_to_be_clickable((By.ID, "ctl00_lnkAceptarTodoCookies_Info"))
+                ).click()
+                print("Botón 'Aceptar cookies' pulsado.")
+                time.sleep(TIEMPO)
+            except Exception:
+                print("Botón de cookies no encontrado o ya aceptado.")
 
             try:
                 boton = WebDriverWait(driver, 5).until(
@@ -532,7 +532,7 @@ def ejecutar_script(icon):
 
             dias_liberados = set_inicial - set_actual
 
-            if dias_liberados:
+            if dias_liberados and len(dias_tachados_actual) != 0:
                 print(f" ¡Días liberados: {dias_liberados}!")
                 logging.info(f" ¡Días liberados: {dias_liberados}!")
 
