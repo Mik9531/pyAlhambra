@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51815375-9cfe-40cc-9c65-0dd7afb0c83a" name="Changes" comment="Cambios para comparar solo name y passport en todos los archivos probados">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotifications/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotifications/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotifications/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotifications/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotifications/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotifications/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotifications/pyAlhambraNotifications.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotifications/pyAlhambraNotifications.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/pyAlhambraNotificationsJardines.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/pyAlhambraNotificationsJardines.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dist.rar" beforeDir="false" afterPath="$PROJECT_DIR$/dist/dist.rar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pyAlhambraNotifications.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/pyAlhambraNotifications.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pyAlhambraNotificationsJardines.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/pyAlhambraNotificationsJardines.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dias_tachados_inicial_jardines.pkl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/general.log" beforeDir="false" afterPath="$PROJECT_DIR$/general.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jardines.log" beforeDir="false" afterPath="$PROJECT_DIR$/jardines.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyAlhambraNotifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyAlhambraNotifications.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyAlhambraNotificationsJardines.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyAlhambraNotificationsJardines.py" afterDir="false" />
     </list>
@@ -267,7 +255,7 @@
           <line>516</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
           <line>436</line>
           <option name="timeStamp" value="84" />
@@ -320,6 +308,7 @@
         <watch expression="dias_tachados_actual" />
         <watch expression="set(map(int, dias_tachados_inicial))" />
         <watch expression="set(map(int, dias_tachados_actual))" />
+        <watch expression="len(dias_tachados_actual)" />
       </configuration>
     </watches-manager>
   </component>
