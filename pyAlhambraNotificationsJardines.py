@@ -214,7 +214,7 @@ def obtener_dias_tachados_completos(driver):
 
             # 🔹 Esperar a que los nuevos elementos se carguen después del cambio de mes
             time.sleep(3)  # Pequeña pausa para asegurar la carga de la página
-            WebDriverWait(driver, 10).until(
+            WebDriverWait(driver, 20).until(
                 EC.presence_of_all_elements_located((By.CSS_SELECTOR,
                                                      "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo"))
             )

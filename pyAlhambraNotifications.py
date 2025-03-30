@@ -190,7 +190,7 @@ def obtener_dias_tachados_completos(driver):
         # 🔹 Avanzar al mes siguiente
         try:
             boton_mes_siguiente = WebDriverWait(driver, 5).until(
-                EC.element_to_be_clickable((By.XPATH, "//td[@align='right']//a[contains(@href,'__doPostBack1')]"))
+                EC.element_to_be_clickable((By.XPATH, "//td[@align='right']//a[contains(@href,'__doPostBack')]"))
             )
 
             driver.execute_script("arguments[0].scrollIntoView();", boton_mes_siguiente)
@@ -199,7 +199,7 @@ def obtener_dias_tachados_completos(driver):
 
             # 🔹 Esperar a que los nuevos elementos se carguen después del cambio de mes
             time.sleep(3)  # Pequeña pausa para asegurar la carga de la página
-            WebDriverWait(driver, 10).until(
+            WebDriverWait(driver, 20).until(
                 EC.presence_of_all_elements_located((By.CSS_SELECTOR,
                                                      "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo"))
             )
