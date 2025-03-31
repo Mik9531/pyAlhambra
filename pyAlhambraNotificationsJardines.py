@@ -242,7 +242,7 @@ def obtener_dias_tachados_completos(driver):
                     dias_total.append(f"{mes_siguiente_nombre}-{texto_dia}")
         except Exception as e:
             print(f"No se pudo obtener fechas del mes siguiente: {e}")
-            return 0
+            return []
 
     return dias_total
 
@@ -558,7 +558,7 @@ def ejecutar_script(icon):
                 print(" Deteniendo el script.")
                 break
 
-            espera = random.uniform(30, 60)
+            espera = random.uniform(40, 60)
             print(f" Esperando {espera:.2f} segundos antes de volver a intentar...")
             time.sleep(espera)
             parpadeo_evento.clear()  # Detener el parpadeo
