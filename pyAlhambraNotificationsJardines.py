@@ -544,12 +544,12 @@ def ejecutar_script(icon):
 
             dias_liberados = set_inicial - set_actual
 
-            if dias_tachados_actual and len(dias_tachados_actual > 3):
+            if dias_tachados_actual and len(set_actual) > 3:
                 dias_tachados_inicial = dias_tachados_actual
-                logging.info(f" Días tachados actualizados: {dias_tachados_inicial}")
+                logging.info(f" Días tachados actualizados con tamaño: {len(set_actual)}")
 
 
-            if dias_liberados and dias_tachados_actual and len(dias_tachados_actual) > 3:
+            if dias_liberados and dias_tachados_actual and len(set_actual) > 3:
                 print(f" ¡Días liberados: {dias_liberados}!")
                 logging.info(f" ¡Días liberados: {dias_liberados}!")
 
