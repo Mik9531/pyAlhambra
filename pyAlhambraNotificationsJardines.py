@@ -197,11 +197,17 @@ def obtener_dias_tachados_completos(driver):
     mes_actual_num = datetime.now().month  # Ejemplo: 3 (marzo)
     mes_actual_nombre = calendar.month_name[mes_actual_num]  # "March"
 
+    time.sleep(2)
+
+
     # Obtener días tachados del mes actual
     dias_mes_actual = driver.find_elements(By.CSS_SELECTOR,
                                            "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo")
 
     dias_total.extend([f"{mes_actual_nombre}-{dia.text.strip()}" for dia in dias_mes_actual if dia.text.strip()])
+
+    logging.info(f"Días extraído del mes actual (innerText): '{dias_total}'")
+
 
     if (True):
 
@@ -212,11 +218,11 @@ def obtener_dias_tachados_completos(driver):
             )
 
             driver.execute_script("arguments[0].scrollIntoView();", boton_mes_siguiente)
-            time.sleep(1)
+            time.sleep(2)
             driver.execute_script("arguments[0].click();", boton_mes_siguiente)
 
             # 🔹 Esperar a que los nuevos elementos se carguen después del cambio de mes
-            time.sleep(3)  # Pequeña pausa para asegurar la carga de la página
+            time.sleep(2)  # Pequeña pausa para asegurar la carga de la página
             WebDriverWait(driver, 20).until(
                 EC.presence_of_all_elements_located((By.CSS_SELECTOR,
                                                      "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo"))
@@ -229,6 +235,9 @@ def obtener_dias_tachados_completos(driver):
         mes_siguiente_num = mes_actual_num + 1 if mes_actual_num < 12 else 1  # Si es diciembre, pasa a enero
         mes_siguiente_nombre = calendar.month_name[mes_siguiente_num]
 
+        time.sleep(2)  # Pequeña pausa para asegurar la carga de la página
+
+
         try:
             dias_mes_siguiente = driver.find_elements(By.CSS_SELECTOR,
                                                       "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo")
@@ -237,7 +246,7 @@ def obtener_dias_tachados_completos(driver):
 
             for dia in dias_mes_siguiente:
                 texto_dia = dia.get_attribute("innerText").strip()
-                logging.info(f"Día extraído (innerText): '{texto_dia}'")
+                logging.info(f"Día extraído del mes siguiente (innerText): '{texto_dia}'")
                 if texto_dia.isdigit():
                     dias_total.append(f"{mes_siguiente_nombre}-{texto_dia}")
         except Exception as e:
@@ -535,7 +544,12 @@ def ejecutar_script(icon):
 
             dias_liberados = set_inicial - set_actual
 
-            if dias_liberados:
+            if dias_tachados_actual and len(dias_tachados_actual > 3):
+                dias_tachados_inicial = dias_tachados_actual
+                logging.info(f" Días tachados actualizados: {dias_tachados_inicial}")
+
+
+            if dias_liberados and dias_tachados_actual and len(dias_tachados_actual) > 3:
                 print(f" ¡Días liberados: {dias_liberados}!")
                 logging.info(f" ¡Días liberados: {dias_liberados}!")
 
@@ -548,7 +562,6 @@ def ejecutar_script(icon):
                 # enviar_correo('¡Días liberados detectados!')
                 enviar_telegram(f"¡Días liberados: {dias_liberados} en JARDINES detectados!")
 
-                dias_tachados_inicial = dias_tachados_actual
 
                 # mensaje = "¡Días disponibles detectados!\nDías que ya no están tachados: " + ", ".join(
                 #     sorted(dias_liberados, key=int))
