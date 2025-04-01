@@ -202,7 +202,7 @@ def obtener_dias_tachados_completos(driver):
             driver.execute_script("arguments[0].click();", boton_mes_siguiente)
 
             # 🔹 Esperar a que los nuevos elementos se carguen después del cambio de mes
-            time.sleep(5)  # Pequeña pausa para asegurar la carga de la página
+            time.sleep(7)  # Pequeña pausa para asegurar la carga de la página
             # WebDriverWait(driver, 20).until(
             #     EC.presence_of_all_elements_located((By.CSS_SELECTOR,
             #                                          "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo"))
@@ -297,6 +297,8 @@ def esperar_boton_activo(driver, by, value, timeout=15):
 def ejecutar_script(icon):
     global DETENER, FALLOS_SEGUIDOS
 
+    random_port = random.randint(9300, 9400)
+
     def iniciar_navegador():
 
         ruta_perfil_chrome = os.path.join(os.getenv("LOCALAPPDATA"), "Google", "Chrome", "User Data", "Perfil1")
@@ -323,7 +325,7 @@ def ejecutar_script(icon):
         # options.add_argument("--remote-debugging-port=9222")
         options.add_argument("--disable-popup-blocking")
         # options.add_argument("--start-minimized")
-        options.add_argument(f"--remote-debugging-port=9301")
+        options.add_argument(f"--remote-debugging-port={random_port}")
         # options.add_argument("--headless=new")
 
         # options.add_argument(
