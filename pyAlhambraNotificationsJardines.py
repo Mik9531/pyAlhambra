@@ -222,11 +222,11 @@ def obtener_dias_tachados_completos(driver):
             driver.execute_script("arguments[0].click();", boton_mes_siguiente)
 
             # 🔹 Esperar a que los nuevos elementos se carguen después del cambio de mes
-            time.sleep(2)  # Pequeña pausa para asegurar la carga de la página
-            WebDriverWait(driver, 20).until(
-                EC.presence_of_all_elements_located((By.CSS_SELECTOR,
-                                                     "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo"))
-            )
+            time.sleep(5)  # Pequeña pausa para asegurar la carga de la página
+            # WebDriverWait(driver, 20).until(
+            #     EC.presence_of_all_elements_located((By.CSS_SELECTOR,
+            #                                          "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo"))
+            # )
         except Exception as e:
             print(f"No se pudo avanzar al mes siguiente: {e}")
             return []
@@ -345,7 +345,7 @@ def ejecutar_script(icon):
         # options.add_argument("--remote-debugging-port=9222")
         options.add_argument("--disable-popup-blocking")
         # options.add_argument("--start-minimized")
-        options.add_argument(f"--remote-debugging-port=9302")
+        options.add_argument(f"--remote-debugging-port=9303")
         # options.add_argument("--headless=new")
 
         # options.add_argument(
@@ -533,9 +533,6 @@ def ejecutar_script(icon):
 
             dias_tachados_actual = obtener_dias_tachados_completos(driver)
 
-            if (dias_tachados_actual == 0):
-                dias_tachados_actual = dias_tachados_inicial
-
             print(f"Días tachados actuales: {dias_tachados_actual}")
             logging.info(f"Días tachados actuales: {dias_tachados_actual}")
 
@@ -543,6 +540,9 @@ def ejecutar_script(icon):
             set_actual = set(dias_tachados_actual)
 
             dias_liberados = set_inicial - set_actual
+
+            if (len(set_actual) == 0):
+                dias_tachados_actual = dias_tachados_inicial
 
             if dias_tachados_actual and len(set_actual) > 3:
                 dias_tachados_inicial = dias_tachados_actual
