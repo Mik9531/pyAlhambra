@@ -52,19 +52,23 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S"  # Formato de fecha
 )
 
-def enviar_telegram(mensaje):
-    url = f"https://api.telegram.org/bot7908020608:AAEGRux_wQ8tlKxPoMEGLR5vMtG1X3LW2WY/sendMessage"
-    datos = {"chat_id": str(780778418), "text": mensaje}  # Miguel
-    # datos = {"chat_id": str(8120620954), "text": mensaje}  # Belén
 
-    try:
-        respuesta = requests.post(url, data=datos)
-        if respuesta.status_code == 200:
-            print("Mensaje enviado por Telegram.")
-        else:
-            print("Error al enviar mensaje:", respuesta.text)
-    except Exception as e:
-        print("Error en la conexión:", e)
+def enviar_telegram(mensaje):
+    url = "https://api.telegram.org/bot7908020608:AAEGRux_wQ8tlKxPoMEGLR5vMtG1X3LW2WY/sendMessage"
+    chat_ids = [8120620954, 7225762073]  # Belén (dos IDs diferentes)
+
+    for chat_id in chat_ids:
+        datos = {"chat_id": str(chat_id), "text": mensaje}
+
+        try:
+            respuesta = requests.post(url, data=datos)
+
+            if respuesta.status_code == 200:
+                print(f"Mensaje enviado a {chat_id}.")
+            else:
+                print(f"Error al enviar mensaje a {chat_id}: {respuesta.text}")
+        except Exception as e:
+            print(f"Error en la conexión con {chat_id}: {e}")
 
 
 def enviar_correo(mensaje):
@@ -297,7 +301,7 @@ def esperar_boton_activo(driver, by, value, timeout=15):
 def ejecutar_script(icon):
     global DETENER, FALLOS_SEGUIDOS
 
-    random_port = random.randint(9300, 9400)
+    random_port = random.randint(9200, 9400)
 
     def iniciar_navegador():
 
@@ -579,7 +583,7 @@ def ejecutar_script(icon):
                 print(" Deteniendo el script.")
                 break
 
-            espera = random.uniform(40, 60)
+            espera = random.uniform(50, 60)
             print(f" Esperando {espera:.2f} segundos antes de volver a intentar...")
             time.sleep(espera)
             parpadeo_evento.clear()  # Detener el parpadeo
