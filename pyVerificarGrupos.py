@@ -1,438 +1,247 @@
-import threading
+import os
+import random
+import subprocess
+import time
+import io
 import tkinter as tk
 from tkinter import messagebox
-from datetime import datetime
-import calendar
-
-from selenium.webdriver.common.action_chains import ActionChains
+import fitz  # PyMuPDF
 
 
-from PyInstaller.building import icon
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-import time
-import winsound
-from selenium.webdriver.chrome.options import Options
-from pystray import Icon, MenuItem, Menu
-from PIL import Image, ImageDraw
-import random  # Asegúrate de tener esto arriba del todo
-import pickle
-import os
-from threading import Event
-import tempfile
-import shutil  # para limpiar perfiles temporales antiguos
+
+from PIL import Image, ImageEnhance, ImageOps, ImageTk
+import pytesseract
 import undetected_chromedriver as uc
-import atexit
-import pyttsx3
-import pygetwindow as gw
-import time
-import smtplib
-from email.mime.text import MIMEText
-import requests
-
-def ejecutar_script(icon):
-    global DETENER, FALLOS_SEGUIDOS
-
-    random_port = random.randint(9200, 9400)
-
-    def iniciar_navegador():
-
-        ruta_perfil_chrome = os.path.join(os.getenv("LOCALAPPDATA"), "Google", "Chrome", "User Data", "Perfil1")
-
-        options = uc.ChromeOptions()
-
-        # Otros flags útiles
-        options.add_argument("--disable-blink-features=AutomationControlled")
-        options.add_argument("--no-first-run --no-service-autorun --password-store=basic")
-        #
-        # options.add_argument("--incognito")
-        options.add_argument("--start-maximized")
-        # options.add_argument("--window-size=1280,800")
-        options.add_argument("--disable-blink-features=AutomationControlled")
-        options.add_argument("--no-sandbox")
-        options.add_argument("--disable-dev-shm-usage")
-        options.add_argument("--disable-gpu")
-        options.add_argument("--disable-software-rasterizer")
-        # options.add_argument("--disable-dev-shm-usage")
-        options.add_argument("--disable-extensions")
-        # # options.add_argument("Accept-Language: en-US,en;q=0.9")
-        # # options.add_argument("Accept-Encoding: gzip, deflate, br")
-        # options.add_argument("Connection: keep-alive")
-        # options.add_argument("--remote-debugging-port=9222")
-        options.add_argument("--disable-popup-blocking")
-        # options.add_argument("--start-minimized")
-        options.add_argument(f"--remote-debugging-port={random_port}")
-        # options.add_argument("--headless=new")
-
-        # options.add_argument(
-        #     "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
+from selenium.webdriver.common.by import By
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+import os
 
 
-        # options.add_argument(r"--user-data-dir=C:\Users\migue\AppData\Local\Google\Chrome\User Data")
+def pedir_captcha_manual(imagen_path):
+    root = tk.Tk()
+    root.title("Introduce el captcha")
+    root.resizable(False, False)
 
-        # options.add_argument(r"--user-data-dir=C:\Users\migue\AppData\Local\Google\Chrome\UserData1")  # Perfil 1
+    # Cargar y escalar imagen
+    img = Image.open(imagen_path)
+    img = img.resize((img.width * 2, img.height * 2), Image.LANCZOS)
+    tk_img = ImageTk.PhotoImage(img)
 
-        # options.debugger_address = "127.0.0.1:9222"
+    # Imagen del captcha
+    label_img = tk.Label(root, image=tk_img)
+    label_img.image = tk_img  # evitar que se borre
+    label_img.pack(pady=(10, 5))
 
-        options.add_argument(f"--user-data-dir={ruta_perfil_chrome}")  # <-- Asegurar que está bien escrito
+    # Entrada de texto
+    entry = tk.Entry(root, font=("Helvetica", 16), justify="center")
+    entry.pack(pady=(0, 10))
 
+    captcha_code = []
 
-        driver = uc.Chrome(options=options)
+    # Botón para enviar
+    def submit():
+        captcha_code.append(entry.get())
+        root.destroy()
 
-        return driver
+    button = tk.Button(root, text="Enviar", command=submit)
+    button.pack(pady=(0, 10))
 
-    def navegar_y_preparar(driver):
-        URL_INICIAL = 'https://tickets.alhambra-patronato.es/'
-        URL_RESERVAS_GENERAL = 'https://compratickets.alhambra-patronato.es/reservarEntradas.aspx?opc=142&gid=432&lg=es-ES&ca=0&m=GENERAL'
+    # Centrar ventana en pantalla
+    root.update_idletasks()
+    width = root.winfo_width()
+    height = root.winfo_height()
+    x = (root.winfo_screenwidth() // 2) - (width // 2)
+    y = (root.winfo_screenheight() // 2) - (height // 2)
+    root.geometry(f'{width}x{height}+{x}+{y}')
 
-        driver.get(URL_RESERVAS_GENERAL)
-        driver.delete_all_cookies()
-        driver.execute_script("window.localStorage.clear();")
-        driver.execute_script("window.sessionStorage.clear();")
-
-        # driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-
-        # Agregar cookies manualmente
-        # cookies = [
-        #     {"name": "ASP.NET_SessionId", "value": "zpfpldtiv50qxi52atqaljmv", "domain": "compratickets.alhambra-patronato.es"},
-        # ]
-        #
-        # driver.add_cookie({
-        #     "name": "_GRECAPTCHA",
-        #     "value": "09ALcxeyr0dRbO37ktxzd-VY5182PamvfSxR1ipGRhHY3FPQR0eVGKr-2YvCzQeLkD2xG57iXxhc_LgXCFC1Dml80",
-        #     "domain": "www.google.com"
-        # })
-        #
-        # for cookie in cookies:
-        #     driver.add_cookie(cookie)
-        #
-        # driver.refresh()  # Recargar la página con las cookies añadidas
-
-
-
-        # try:
-        #     WebDriverWait(driver, 5).until(
-        #         EC.element_to_be_clickable((By.CSS_SELECTOR, ".mgbutton.moove-gdpr-infobar-allow-all.gdpr-fbo-0"))
-        #     ).click()
-        #     print("Botón 'ACEPTAR TODO' pulsado.")
-        #     time.sleep(TIEMPO)
-        # except Exception:
-        #     print("Botón 'ACEPTAR TODO' no encontrado o ya aceptado.")
-        # #
-        # enlace = driver.find_element(By.XPATH,
-        #                              "//a[@href='https://tickets.alhambra-patronato.es/producto/alhambra-general/']")
-        # enlace.click()
-        # time.sleep(TIEMPO)
-        #
-        # try:
-        #     WebDriverWait(driver, 5).until(
-        #         EC.element_to_be_clickable((By.XPATH, f"//a[@href='{URL_RESERVAS_GENERAL}']"))
-        #     ).click()
-        #     print("Botón 'Reservas' pulsado.")
-        #     time.sleep(TIEMPO)
-        # except Exception:
-        #     print("Fallo al acceder a las reservas")
-        # time.sleep(TIEMPO)
-
-        try:
-            WebDriverWait(driver, 10).until(
-                EC.element_to_be_clickable((By.ID, "ctl00_lnkAceptarTodoCookies_Info"))
-            ).click()
-            print("Botón 'Aceptar cookies' pulsado.")
-            time.sleep(TIEMPO)
-        except Exception:
-            print("Botón de cookies no encontrado o ya aceptado.")
+    root.mainloop()
+    return captcha_code[0] if captcha_code else ""
 
 
-        # WebDriverWait(driver, 5).until(
-        #     EC.element_to_be_clickable((By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
-        # ).click()
-        # print("Botón 'Paso 1' pulsado.")
-
-        # time.sleep(TIEMPO)
-
-    driver = iniciar_navegador()
-    # minimizar_chrome(driver)  # Ocultar Chrome después de abrirlo
-
-    navegar_y_preparar(driver)
-
-    dias_tachados_inicial = cargar_dias_tachados()
-
-    # Si no hay días tachados guardados, intentar obtenerlos de la web hasta que haya al menos uno
-    if not dias_tachados_inicial:
-        intentos = 0
-        while True:
-            try:
-                # Comprobar si aparece el mensaje de muchas peticiones
-                mensaje_error = driver.find_elements(By.CSS_SELECTOR, "h3.es")
-                for elem in mensaje_error:
-                    if "Estamos recibiendo muchas peticiones" in elem.text:
-                        messagebox.showerror("Página no disponible",
-                                             "La web está recibiendo muchas peticiones. Intenta más tarde.")
-                        return []  # o None, según lo que manejes como fallo
-
-            except Exception as e:
-                print(f"Error obteniendo días tachados: {e}")
-                return []
-
-
-
-            try:
-                WebDriverWait(driver, 5).until(
-                    EC.element_to_be_clickable(
-                        (By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
-                ).click()
-                time.sleep(TIEMPO)
-            except Exception:
-                print("Botón de paso 1 ya pulsado.")
-
-            # time.sleep(TIEMPO)
-
-            dias_tachados_inicial = obtener_dias_tachados_completos(driver)
-            if dias_tachados_inicial:
-                break
-            # alerta_sonora_error()
-            intentos += 1
-            print(f"Intento {intentos}: No se encontraron días tachados. Recargando la página...")
-            # print(driver.page_source)  # Para ver si hay mensajes ocultos o errores
-
-            driver.refresh()
-            time.sleep(random.uniform(5, 7))  # Pausa para simular comportamiento humano o evitar bloqueos
-
-        guardar_dias_tachados(dias_tachados_inicial)
-
-    print(f"Días tachados inicialmente: {dias_tachados_inicial}")
-    logging.info(f"Días tachados inicialmente: {dias_tachados_inicial}")
-
-
-    counter = 1
-    counter_diasTachados = 1
-
+def iniciar_sesion_y_navegar(url_destino):
     try:
-        while not DETENER:
-            icon.icon = crear_icono_verde()
+        ruta_perfil = os.path.join(os.getenv("LOCALAPPDATA"), "Google", "Chrome", "User Data", "Perfil1")
+        options = Options()
+        options.add_argument(f"--user-data-dir={ruta_perfil}")
+        options.add_argument("--profile-directory=Perfil1")
 
-            print(f"\n Intento #{counter}")
-            logging.info(f"\n Intento #{counter}")
+        driver = webdriver.Chrome(service=Service(), options=options)
 
-            counter += 1
+        driver.get(url_destino)
+        time.sleep(2)
 
-            driver.refresh()
-            # time.sleep(TIEMPO)
+        # Verificamos si aparece el input de login, lo que indicaría que no hay sesión
+        try:
+            driver.find_element(By.XPATH, "//input[@placeholder='Login']")
+            sesion_activa = False
+        except:
+            sesion_activa = True
 
-            try:
-                WebDriverWait(driver, 5).until(
-                    EC.element_to_be_clickable((By.ID, "ctl00_lnkAceptarTodoCookies_Info"))
-                ).click()
-                print("Botón 'Aceptar cookies' pulsado.")
-                time.sleep(TIEMPO)
-            except Exception:
-                print("Botón de cookies no encontrado o ya aceptado.")
+        if not sesion_activa:
+            login_input = driver.find_element(By.XPATH, "//input[@placeholder='Login']")
+            password_input = driver.find_element(By.XPATH, "//input[@placeholder='Contraseña']")
 
+            login_input.send_keys("j.martinez")
+            password_input.send_keys("G616lSOpmcIT")
 
-            try:
-                boton = WebDriverWait(driver, 5).until(
-                    EC.element_to_be_clickable(
-                        (By.ID, "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_btnIrPaso1"))
-                )
-                driver.execute_script("arguments[0].click();", boton)
-                print("Botón 'Paso 1' pulsado.")
-                time.sleep(TIEMPO)
+            # Capturar captcha desde la web
+            captcha_img = driver.find_element(By.ID, "img_securitycode")
+            driver.execute_script("arguments[0].scrollIntoView();", captcha_img)
+            time.sleep(1)
 
-                # Verificamos que el calendario ha cargado
-                WebDriverWait(driver, 10).until(
-                    EC.presence_of_element_located((By.ID,
-                                                    "ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha"))
-                )
+            location = captcha_img.location
+            size = captcha_img.size
+            dpr = driver.execute_script("return window.devicePixelRatio")
+            time.sleep(0.5)
 
-                FALLOS_SEGUIDOS = 0  # reiniciar contador
-            except Exception as e:
-                print(f" Fallo al ir a Paso 1: {e}")
-                logging.info(f" Fallo al ir a Paso 1: {e}")
+            screenshot = driver.get_screenshot_as_png()
+            image = Image.open(io.BytesIO(screenshot))
+            image.save("pantalla_completa.png")
 
-                # alerta_sonora_error()
-                # notificar_popup("¡Error al ir al paso 1!")
-                FALLOS_SEGUIDOS += 1
+            # Recorte con ajuste de DPR
+            padding = 5
+            left = int(location['x'] * dpr) - padding
+            top = int(location['y'] * dpr) - padding
+            right = left + int(size['width'] * dpr) + padding * 2
+            bottom = top + int(size['height'] * dpr) + padding * 2
 
-                if FALLOS_SEGUIDOS >= MAX_FALLOS:
-                    icon.icon = crear_icono_amarillo()
-                    print(" Reiniciando navegador por múltiples fallos...")
-                    logging.info(" Reiniciando navegador por múltiples fallos...")
-                    # alerta_sonora_reinicio()
-                    # driver.quit()
-                    # driver = iniciar_navegador()
-                    # minimizar_chrome(driver)  # Ocultar Chrome después de abrirlo
-                    # driver.refresh()
+            captcha_crop = image.crop((left, top, right, bottom))
+            captcha_crop.save("captcha_crop.png")
 
-                    # navegar_y_preparar(driver)
+            # Procesar para OCR
+            captcha_image = captcha_crop.convert('L')
+            captcha_image = ImageOps.invert(captcha_image)
+            enhancer = ImageEnhance.Contrast(captcha_image)
+            captcha_image = enhancer.enhance(2.0)
+            captcha_image = captcha_image.point(lambda x: 0 if x < 120 else 255, '1')
+            captcha_image = captcha_image.resize((captcha_image.width * 2, captcha_image.height * 2), Image.LANCZOS)
+            captcha_image.save("captcha_processed.png")
 
-                    driver.delete_all_cookies()
-                    driver.execute_script("window.localStorage.clear();")
-                    driver.execute_script("window.sessionStorage.clear();")
-                    driver.get('https://compratickets.alhambra-patronato.es/reservarEntradas.aspx?opc=142&gid=432&lg=es-ES&ca=0&m=GENERAL')
+            captcha_code = pedir_captcha_manual("captcha_processed.png")
 
-                    FALLOS_SEGUIDOS = 0
-                    continue
-                else:
-                    continue
+            driver.find_element(By.ID, "securitycode").send_keys(captcha_code)
+            driver.find_element(By.CSS_SELECTOR, "input.button[type='submit']").click()
 
-            dias_tachados_actual = obtener_dias_tachados_completos(driver)
-            print(f"Días tachados actuales: {dias_tachados_actual}")
-            logging.info(f"Días tachados actuales: {dias_tachados_actual}")
+            time.sleep(3)
+        else:
+            print("Sesión ya activa, no es necesario loguearse.")
 
-            set_inicial = set(dias_tachados_inicial)
-            set_actual = set(dias_tachados_actual)
+        # Ir a la URL introducida por el usuario
+        driver.get(url_destino)
+        time.sleep(3)
 
+        # Encuentra todos los tr del tbody
+        rows = driver.find_elements(By.CSS_SELECTOR, "tbody tr")
 
-            dias_liberados = set_inicial - set_actual
+        # Diccionario con los campos que quieres extraer
+        campos_deseados = {
+            "Ref.": None,
+            "PAX Adultas": None,
+            "PAX Jubilado": None,
+            "PAX Infantil 3 a 11 años": None,
+            "PAX Infantil 12 a 15 años": None,
+            "Fecha de Visita": None,
+            "Tipo": None,
+            "Hora de Palacios": None,
+            "Hora de Palacios 2": None,
+        }
 
-            if (len(set_actual) == 0):
-                dias_tachados_actual = dias_tachados_inicial
+        # Ordenar las claves por longitud inversa para evitar conflictos (más largas primero)
+        claves_ordenadas = sorted(campos_deseados.keys(), key=lambda x: -len(x))
 
-            if dias_tachados_actual and len(set_actual) > 3:
-                dias_tachados_inicial = dias_tachados_actual
-                logging.info(f" Días tachados actualizados con tamaño: {len(set_actual)}")
+        # Recorremos las filas y asignamos valores
+        for row in rows:
+            columnas = row.find_elements(By.TAG_NAME, "td")
+            if len(columnas) >= 2:
+                campo = columnas[0].text.strip()
+                valor = columnas[1].text.strip()
+                for clave in claves_ordenadas:
+                    if campo.startswith(clave):
+                        campos_deseados[clave] = valor
+                        break  # Salimos del bucle tras encontrar la coincidencia correcta
 
+        # Mostrar resultados
+        for campo, valor in campos_deseados.items():
+            print(f"{campo}: {valor}")
 
-            if dias_liberados and dias_tachados_actual and len(set_actual) > 3:
-                print(f" ¡Días liberados: {dias_liberados}!")
-                logging.info(f" ¡Días liberados: {dias_liberados}!")
-                alerta_sonora_acierto()
-                # Cambiar el icono a rojo y comenzar a parpadear
-                icon.icon = crear_icono_verde()
-                parpadeo_evento.set()  # Activar el parpadeo
-                parpadear_icono(icon)  # Iniciar el parpadeo
+        # --- Localizar y abrir el PDF ---
 
-                enviar_telegram(f"¡Días liberados: {dias_liberados} en GENERAL detectados!")
+        # Paso 1: Obtener Ref. y Fecha
+        ref = campos_deseados["Ref."]
+        fecha_visita = campos_deseados["Fecha de Visita"]
 
-                # dias_tachados_inicial = dias_tachados_actual
+        # Paso 2: Formatear fecha
+        fecha_formateada = fecha_visita.replace("/", "-")  # 07/04/2025 -> 07-04-2025
 
-                # mensaje = "¡Días disponibles detectados!\nDías que ya no están tachados: " + ", ".join(
-                #     sorted(dias_liberados, key=int))
-                # notificar_popup(mensaje)
+        # Paso 3: Ruta absoluta al PDF
+        base_path = os.path.dirname(os.path.abspath(__file__))  # Ruta del script
+        ruta_pdf = os.path.join(base_path, "ENTRADAS", fecha_formateada, f"{ref}.pdf")
 
-            if DETENER:
-                print(" Deteniendo el script.")
-                break
+        # Paso 4: Comprobar si existe y abrirlo
+        if os.path.isfile(ruta_pdf):
+            print(f"Abriendo PDF: {ruta_pdf}")
+            subprocess.run(['start', '', ruta_pdf], shell=True)  # Abre el PDF con visor predeterminado
+        else:
+            print(f"PDF no encontrado: {ruta_pdf}")
 
-            espera = random.uniform(50, 60)
-            print(f" Esperando {espera:.2f} segundos antes de volver a intentar...")
-            time.sleep(espera)
-            parpadeo_evento.clear()  # Detener el parpadeo
-            icon.icon = crear_icono_verde()  # Restaurar el icono a su estado normal
+        # Leer el PDF y buscar los campos dentro del texto
+        try:
+            doc = fitz.open(ruta_pdf)
+            contenido_pdf = ""
+            for page in doc:
+                contenido_pdf += page.get_text()
 
-    finally:
-        driver.quit()
+            doc.close()
 
+            # Buscar los valores en el texto extraído
+            coincidencias = {
+                "Fecha de Visita": campos_deseados["Fecha de Visita"] in contenido_pdf,
+                "Tipo": campos_deseados["Tipo"] in contenido_pdf,
+                "Hora de Palacios": campos_deseados["Hora de Palacios"] in contenido_pdf,
+            }
 
-def iniciar(icon, item):
-    """Inicia el script en un hilo separado."""
-    print("Pulsado iniciar")
-    global DETENER, SCRIPT_THREAD
+            print("\n--- Verificación de campos en el PDF ---")
+            for campo, presente in coincidencias.items():
+                valor = campos_deseados[campo]
+                estado = "OK" if presente else "NO"
+                print(f"{campo} ({valor}): {estado}")
 
-    # Cambiar el icono a amarillo al iniciar
-    icon.icon = crear_icono_amarillo()
+        except Exception as e:
+            print(f"Error al leer el PDF: {e}")
 
-    if SCRIPT_THREAD is None or not SCRIPT_THREAD.is_alive():  # Verifica si el hilo no está corriendo
-        DETENER = False
-        SCRIPT_THREAD = threading.Thread(target=ejecutar_script, args=(icon,), daemon=True)
-        SCRIPT_THREAD.start()
-        print("Script iniciado.")
-    else:
-        print("El script ya está en ejecución.")
-
-
-def detener(icon, item):
-    """Detiene la ejecución del script y el parpadeo del icono."""
-    global DETENER
-    if not DETENER:
-        DETENER = True
-        parpadeo_evento.clear()  # Detener el parpadeo cuando se detiene el script
-
-        # Cambiar el icono a azul al detener
-        icon.icon = crear_icono_rojo()
-
-        print("Script detenido.")
-
-
-def salir(icon, item):
-    """Cierra completamente el programa."""
-    detener(icon, item)
-    borrar_archivo_estado()
-    icon.stop()
+        #TIEMPOOOO
+        # time.sleep(300000)
 
 
-# Menú para la bandeja del sistema
-menu = Menu(
-    MenuItem("Iniciar", iniciar),
-    MenuItem("Detener", detener),
-    MenuItem("Salir", salir),
-)
 
-icono = Icon("Alhambra Script", crear_icono(), "Gestor de Calendarios General", menu)
 
-iniciar(icono, None)
+    except Exception as e:
+        messagebox.showerror("Error", f"Ocurrió un error:\n{str(e)}")
+
+
+def lanzar_interfaz():
+    root = tk.Tk()
+    root.title("Login automático ERP")
+
+    tk.Label(root, text="Introduzca la URL del grupo:").pack(padx=20, pady=(20, 5))
+
+    url_entry = tk.Entry(root, width=80)
+    url_entry.pack(padx=20, pady=5)
+
+    def on_submit():
+        url = url_entry.get().strip()
+        if not url.startswith("http"):
+            messagebox.showwarning("URL inválida", "Por favor, introduzca una URL válida que empiece por http.")
+            return
+        root.destroy()
+        iniciar_sesion_y_navegar(url)
+
+    tk.Button(root, text="Iniciar sesión y navegar", command=on_submit).pack(pady=(10, 20))
+
+    root.mainloop()
+
 
 if __name__ == "__main__":
-    ruta_perfil_chrome = os.path.join(os.getenv("LOCALAPPDATA"), "Google", "Chrome", "User Data", "Perfil1")
-
-    options = uc.ChromeOptions()
-
-    # Otros flags útiles
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_argument("--no-first-run --no-service-autorun --password-store=basic")
-    #
-    # options.add_argument("--incognito")
-    options.add_argument("--start-maximized")
-    # options.add_argument("--window-size=1280,800")
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--disable-software-rasterizer")
-    # options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-extensions")
-    # # options.add_argument("Accept-Language: en-US,en;q=0.9")
-    # # options.add_argument("Accept-Encoding: gzip, deflate, br")
-    # options.add_argument("Connection: keep-alive")
-    # options.add_argument("--remote-debugging-port=9222")
-    options.add_argument("--disable-popup-blocking")
-    # options.add_argument("--start-minimized")
-    options.add_argument(f"--remote-debugging-port={random_port}")
-
-    options.add_argument(f"--user-data-dir={ruta_perfil_chrome}")  # <-- Asegurar que está bien escrito
-
-    driver = uc.Chrome(options=options)
-
-    # Ir al sitio web
-    driver.get("https://erp.adipatourviajes.com")
-    # Espera para que cargue la página
-    time.sleep(2)
-
-    # Buscar campos de login y contraseña por el placeholder
-    login_input = driver.find_element(By.XPATH, "//input[@placeholder='login']")
-    password_input = driver.find_element(By.XPATH, "//input[@placeholder='contraseña']")
-
-    # Introducir los datos
-    login_input.send_keys("j.martinez")
-    password_input.send_keys("G616lSOpmcIT")
-
-    # Leer el valor del captcha (texto junto al campo)
-    captcha_text = driver.find_element(By.XPATH, "//input[@placeholder='Código']/following-sibling::span").text
-
-    # Introducir el captcha
-    driver.find_element(By.XPATH, "//input[@placeholder='Código']").send_keys(captcha_text)
-
-    # Hacer clic en el botón "Conexión"
-    driver.find_element(By.XPATH, "//button[contains(text(), 'Conexión')]").click()
-
-    # Esperar para ver si se accedió correctamente
-    time.sleep(5)
-
-
-asdfasdfasdfasdfasdfasdfasdfasdfa
-
-    # Cerrar el navegador (opcional)
-    driver.quit()
+    lanzar_interfaz()
