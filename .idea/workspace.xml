@@ -23,11 +23,9 @@
       <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/warn-pyAlhambraNotificationsJardines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/warn-pyAlhambraNotificationsJardines.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/xref-pyAlhambraNotificationsJardines.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/xref-pyAlhambraNotificationsJardines.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dias_tachados_inicial_general.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dias_tachados_inicial_general.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dias_tachados_inicial_jardines.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dias_tachados_inicial_jardines.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/general.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/general.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/jardines.log" beforeDir="false" afterPath="$PROJECT_DIR$/dist/jardines.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pyAlhambraNotifications.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pyAlhambraNotificationsJardines.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pyAlhambraNotificationsJardinesV2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/pyAlhambraNotificationsJardinesV2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pyAlhambraNotificationsV2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/pyAlhambraNotificationsV2.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/general.log" beforeDir="false" afterPath="$PROJECT_DIR$/general.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jardines.log" beforeDir="false" afterPath="$PROJECT_DIR$/jardines.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyAlhambraNotifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyAlhambraNotifications.py" afterDir="false" />
@@ -196,147 +194,147 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>403</line>
+          <line>411</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>314</line>
+          <line>322</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>318</line>
+          <line>326</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>543</line>
+          <line>553</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>32</line>
+          <line>34</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>83</line>
+          <line>84</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>594</line>
+          <line>604</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>574</line>
+          <line>584</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>568</line>
+          <line>578</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>568</line>
+          <line>578</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>571</line>
+          <line>581</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>506</line>
+          <line>516</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>383</line>
+          <line>391</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>388</line>
+          <line>396</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>397</line>
+          <line>405</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>537</line>
+          <line>547</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>417</line>
+          <line>425</line>
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>385</line>
+          <line>393</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>372</line>
+          <line>380</line>
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>380</line>
+          <line>388</line>
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>420</line>
+          <line>428</line>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>237</line>
+          <line>244</line>
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>243</line>
+          <line>250</line>
           <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>181</line>
+          <line>182</line>
           <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>240</line>
+          <line>247</line>
           <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>576</line>
+          <line>586</line>
           <option name="timeStamp" value="102" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>277</line>
+          <line>285</line>
           <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>257</line>
+          <line>264</line>
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotificationsJardines.py</url>
-          <line>279</line>
+          <line>287</line>
           <option name="timeStamp" value="105" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -346,17 +344,17 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>429</line>
+          <line>437</line>
           <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>455</line>
+          <line>463</line>
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
-          <line>276</line>
+          <line>284</line>
           <option name="timeStamp" value="112" />
         </line-breakpoint>
       </breakpoints>

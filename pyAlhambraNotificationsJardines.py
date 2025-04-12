@@ -3,7 +3,8 @@ import tkinter as tk
 from tkinter import messagebox
 from datetime import datetime
 import calendar
-
+import pyautogui
+from selenium.common import StaleElementReferenceException
 
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -233,7 +234,13 @@ def obtener_dias_tachados_completos(driver, isViewState=0):
         print(f"No se pudieron cargar los días del mes actual: {e}")
         dias_mes_actual = []
 
-    dias_total.extend([f"{mes_actual_nombre}-{dia.text.strip()}" for dia in dias_mes_actual if dia.text.strip()])
+    try:
+        dias_total.extend([
+            f"{mes_actual_nombre}-{dia.text.strip()}"
+            for dia in dias_mes_actual if dia.text.strip()
+        ])
+    except StaleElementReferenceException:
+        print("Uno o más elementos se volvieron obsoletos (stale) al intentar leer el mes actual.")
 
     logging.info(f"Días extraído del mes actual (innerText): '{dias_total}'")
     print(f"Días extraído del mes actual (innerText): '{dias_total}'")
@@ -268,11 +275,12 @@ def obtener_dias_tachados_completos(driver, isViewState=0):
                                                       "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo")
 
             for dia in dias_mes_siguiente:
-                texto_dia = dia.get_attribute("innerText").strip()
-                logging.info(f"Día extraído del mes siguiente (innerText): '{texto_dia}'")
-                # print(f"Días extraído del mes siguiente (innerText): '{dias_total}'")
-                if texto_dia.isdigit():
-                    dias_total.append(f"{mes_siguiente_nombre}-{texto_dia}")
+                try:
+                    texto_dia = dia.get_attribute("innerText").strip()
+                    if texto_dia.isdigit():
+                        dias_total.append(f"{mes_siguiente_nombre}-{texto_dia}")
+                except StaleElementReferenceException:
+                    continue  # Ignorar elementos stale
         except Exception as e:
             print(f"No se pudo obtener fechas del mes siguiente: {e}")
             return []
@@ -482,6 +490,8 @@ def ejecutar_script(icon):
                     logging.info(mensaje_bloqueo)
                     enviar_telegram(mensaje_bloqueo, 1)  # Prioridad 1
                     time.sleep(2 * 60 * 60)  # Esperar 2 horas
+                    # Simular tecla Enter tras la espera
+                    pyautogui.press('enter')
                     continue  # Volver al inicio del bucle
 
                 viewState = 0
@@ -591,7 +601,7 @@ def ejecutar_script(icon):
                     parpadeo_evento.set()  # Activar el parpadeo
                     parpadear_icono(icon)  # Iniciar el parpadeo
 
-                    enviar_telegram(f"¡Días liberados: {dias_liberados} en JARDINES detectados!",0)
+                    enviar_telegram(f"¡Días liberados: {dias_liberados} en JARDINES detectados!", 0)
 
                     # dias_tachados_inicial = dias_tachados_actual
 

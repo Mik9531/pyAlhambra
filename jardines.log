@@ -62348,3 +62348,42 @@ Stacktrace:
 2025-04-11 23:58:11 - INFO - Días tachados actuales: ['April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7']
 2025-04-11 23:58:11 - INFO -  Días tachados actualizados con tamaño: 27
 2025-04-11 23:58:31 - INFO - Es 23:59, la página puede estar bloqueada. Esperando 2 horas...
+2025-04-12 01:58:31 - INFO - 
+ Intento #64
+2025-04-12 01:58:31 - ERROR - Error inesperado en el script.
+Traceback (most recent call last):
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 496, in ejecutar_script
+    driver.refresh()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 603, in refresh
+    self.execute(Command.REFRESH)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 228, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Session expirada/Expirated session
+Message: unexpected alert open: {Alert text : Session expirada/Expirated session}
+  (Session info: chrome=135.0.7049.85)
+Stacktrace:
+	GetHandleVerifier [0x011C80E3+60707]
+	GetHandleVerifier [0x011C8124+60772]
+	(No symbol) [0x00FF0683]
+	(No symbol) [0x0107F153]
+	(No symbol) [0x0105CE46]
+	(No symbol) [0x0102C5D3]
+	(No symbol) [0x0102D424]
+	GetHandleVerifier [0x0140BBC3+2435075]
+	GetHandleVerifier [0x01407163+2416035]
+	GetHandleVerifier [0x0142350C+2531660]
+	GetHandleVerifier [0x011DF1B5+155125]
+	GetHandleVerifier [0x011E5B5D+182173]
+	GetHandleVerifier [0x011CF9B8+91640]
+	GetHandleVerifier [0x011CFB60+92064]
+	GetHandleVerifier [0x011BA620+4704]
+	BaseThreadInitThunk [0x777A5D49+25]
+	RtlInitializeExceptionChain [0x77D8CF0B+107]
+	RtlGetAppContainerNamedObjectPath [0x77D8CE91+561]
+

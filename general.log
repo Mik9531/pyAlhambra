@@ -68366,3 +68366,77 @@ Stacktrace:
 2025-04-11 23:58:13 - INFO - Días tachados actuales: ['April-11', 'April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9', 'May-10', 'May-11', 'May-12', 'May-13', 'May-14', 'May-15', 'May-16']
 2025-04-11 23:58:13 - INFO -  Días tachados actualizados con tamaño: 36
 2025-04-11 23:58:33 - INFO - Es 23:59, la página puede estar bloqueada. Esperando 2 horas...
+2025-04-12 01:58:33 - INFO - 
+ Intento #65
+2025-04-12 01:58:45 - INFO - Días extraído del mes actual (innerText): '['April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30']'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '1'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '2'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '3'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '4'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '5'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '6'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '7'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '8'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '9'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '10'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '11'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '12'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '13'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '14'
+2025-04-12 01:58:50 - INFO - Día extraído del mes siguiente (innerText): '16'
+2025-04-12 01:58:50 - INFO - Días tachados actuales: ['April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9', 'May-10', 'May-11', 'May-12', 'May-13', 'May-14', 'May-16']
+2025-04-12 01:58:50 - INFO -  Días tachados actualizados con tamaño: 34
+2025-04-12 01:58:50 - INFO -  ¡Días liberados: {'May-15', 'April-11'}!
+2025-04-12 01:59:44 - INFO - 
+ Intento #66
+2025-04-12 01:59:52 - INFO - Días extraído del mes actual (innerText): '['April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30']'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '1'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '2'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '3'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '4'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '5'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '6'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '7'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '8'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '9'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '10'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '11'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '12'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '13'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '14'
+2025-04-12 01:59:57 - INFO - Día extraído del mes siguiente (innerText): '16'
+2025-04-12 01:59:57 - INFO - Días tachados actuales: ['April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9', 'May-10', 'May-11', 'May-12', 'May-13', 'May-14', 'May-16']
+2025-04-12 01:59:57 - INFO -  Días tachados actualizados con tamaño: 34
+2025-04-12 02:00:52 - INFO - 
+ Intento #67
+2025-04-12 02:01:00 - INFO - Días extraído del mes actual (innerText): '['April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30']'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '1'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '2'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '3'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '4'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '5'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '6'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '7'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '8'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '9'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '10'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '11'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '12'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '13'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '14'
+2025-04-12 02:01:05 - INFO - Día extraído del mes siguiente (innerText): '16'
+2025-04-12 02:01:05 - INFO - Días tachados actuales: ['April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9', 'May-10', 'May-11', 'May-12', 'May-13', 'May-14', 'May-16']
+2025-04-12 02:01:05 - INFO -  Días tachados actualizados con tamaño: 34
+2025-04-12 13:52:00 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-12 13:52:13 - INFO - Días extraído del mes actual (innerText): '['April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30']'
+2025-04-12 13:52:18 - INFO - Días tachados inicialmente: ['April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9', 'May-10', 'May-11', 'May-12', 'May-13', 'May-14', 'May-15', 'May-16']
+2025-04-12 13:52:18 - INFO - 
+ Intento #1
+2025-04-12 13:52:26 - INFO - Días extraído del mes actual (innerText): '['April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30']'
+2025-04-12 13:52:31 - INFO - Días tachados actuales: ['April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9', 'May-10', 'May-11', 'May-12', 'May-13', 'May-14', 'May-15', 'May-16']
+2025-04-12 13:52:31 - INFO -  Días tachados actualizados con tamaño: 35
+2025-04-12 13:53:24 - INFO - 
+ Intento #2
+2025-04-12 13:53:32 - INFO - Días extraído del mes actual (innerText): '['April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30']'
+2025-04-12 13:53:38 - INFO - Días tachados actuales: ['April-12', 'April-13', 'April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9', 'May-10', 'May-11', 'May-12', 'May-13', 'May-14', 'May-15', 'May-16']
+2025-04-12 13:53:38 - INFO -  Días tachados actualizados con tamaño: 35
