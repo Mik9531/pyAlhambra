@@ -6,32 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="51815375-9cfe-40cc-9c65-0dd7afb0c83a" name="Changes" comment="Cambios para comparar solo name y passport en todos los archivos probados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ENTRADAS/07-04-2025/15637.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotifications/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotifications/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotifications/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotifications/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotifications/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotifications/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotifications/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotifications/PYZ-00.pyz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotifications/PYZ-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotifications/PYZ-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotifications/pyAlhambraNotifications.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotifications/pyAlhambraNotifications.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotifications/warn-pyAlhambraNotifications.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotifications/warn-pyAlhambraNotifications.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotifications/xref-pyAlhambraNotifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotifications/xref-pyAlhambraNotifications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/pyAlhambraNotificationsJardines.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/pyAlhambraNotificationsJardines.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/warn-pyAlhambraNotificationsJardines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/pyAlhambraNotificationsJardines/warn-pyAlhambraNotificationsJardines.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2025/ALHAMBRA/ENTRADAS/07-04-2025/15637.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/captcha_crop.png" beforeDir="false" afterPath="$PROJECT_DIR$/captcha_crop.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/captcha_processed.png" beforeDir="false" afterPath="$PROJECT_DIR$/captcha_processed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dias_tachados_inicial_general.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dias_tachados_inicial_general.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dias_tachados_inicial_jardines.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dias_tachados_inicial_jardines.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pyAlhambraNotificaciones.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pyAlhambraNotificationsJardinesV2.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pyAlhambraNotificationsV2.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/general.log" beforeDir="false" afterPath="$PROJECT_DIR$/general.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jardines.log" beforeDir="false" afterPath="$PROJECT_DIR$/jardines.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pantalla_completa.png" beforeDir="false" afterPath="$PROJECT_DIR$/pantalla_completa.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyAlhambraNotifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyAlhambraNotifications.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyAlhambraNotificationsJardines.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyAlhambraNotificationsJardines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyVerificarGrupos.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyVerificarGrupos.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -320,11 +298,6 @@
           <line>264</line>
           <option name="timeStamp" value="104" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pyVerificarGrupos.py</url>
-          <line>223</line>
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
           <line>460</line>
@@ -344,6 +317,11 @@
           <url>file://$PROJECT_DIR$/pyAlhambraNotifications.py</url>
           <line>648</line>
           <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyVerificarGrupos.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="115" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
