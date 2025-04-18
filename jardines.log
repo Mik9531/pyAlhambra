@@ -62387,3 +62387,181 @@ Stacktrace:
 	RtlInitializeExceptionChain [0x77D8CF0B+107]
 	RtlGetAppContainerNamedObjectPath [0x77D8CE91+561]
 
+2025-04-13 02:05:37 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-13 02:05:50 - INFO - Días extraído del mes actual (innerText): '['April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30']'
+2025-04-13 02:05:55 - INFO - Días tachados inicialmente: ['April-14', 'April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7']
+2025-04-13 02:05:55 - INFO - Es 23:59, la página puede estar bloqueada. Esperando 2 horas...
+2025-04-13 02:36:56 - WARNING -  Alerta detectada: Session expirada/Expirated session
+2025-04-13 02:36:57 - INFO - Es 23:59, la página puede estar bloqueada. Esperando 2 horas...
+2025-04-15 18:59:20 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-15 18:59:34 - INFO - Días extraído del mes actual (innerText): '['April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30']'
+2025-04-15 19:00:48 - INFO - Días tachados inicialmente: ['April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9']
+2025-04-15 19:00:48 - INFO - 
+ Intento #1
+2025-04-15 19:00:58 - INFO - Días extraído del mes actual (innerText): '['April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30']'
+2025-04-15 19:01:03 - INFO - Días tachados actuales: ['April-15', 'April-16', 'April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9']
+2025-04-15 19:01:03 - INFO -  Días tachados actualizados con tamaño: 25
+2025-04-17 11:40:59 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-17 11:41:12 - INFO - Días extraído del mes actual (innerText): '['April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30']'
+2025-04-17 11:41:17 - INFO - Días tachados inicialmente: ['April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9']
+2025-04-17 11:41:17 - INFO - 
+ Intento #1
+2025-04-17 11:41:39 - ERROR - Error inesperado en el script.
+Traceback (most recent call last):
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 430, in ejecutar_script
+    driver = iniciar_navegador()
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 408, in iniciar_navegador
+    driver = uc.Chrome(options=options)
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\undetected_chromedriver\__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        service=service,
+        ^^^^^^^^^^^^^^^^
+        options=options,
+        ^^^^^^^^^^^^^^^^
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.CHROME["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 238, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\undetected_chromedriver\__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        capabilities
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 325, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 378, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 391, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 415, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 507, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\migue\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))
+2025-04-17 11:56:27 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-17 11:56:43 - INFO - Días extraído del mes actual (innerText): '['April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30']'
+2025-04-17 11:56:48 - INFO - Días tachados inicialmente: ['April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9']
+2025-04-17 11:56:48 - ERROR - Error inesperado en el script.
+Traceback (most recent call last):
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 514, in ejecutar_script
+    raise Exception("Simulación de error para probar el reinicio")
+Exception: Simulación de error para probar el reinicio
+2025-04-17 12:06:49 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-17 12:07:00 - INFO - Días tachados inicialmente: ['April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9']
+2025-04-17 12:07:00 - ERROR - Error inesperado en el script.
+Traceback (most recent call last):
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 514, in ejecutar_script
+    raise Exception("Simulación de error para probar el reinicio")
+Exception: Simulación de error para probar el reinicio
+2025-04-17 12:17:01 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-17 12:17:13 - INFO - Días tachados inicialmente: ['April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9']
+2025-04-17 12:17:13 - ERROR - Error inesperado en el script.
+Traceback (most recent call last):
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 514, in ejecutar_script
+    # --- Espera si son las 23:59 ---
+Exception: Simulación de error para probar el reinicio
+2025-04-17 13:10:54 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-17 13:11:06 - ERROR - Error inesperado en el script.
+Traceback (most recent call last):
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 464, in ejecutar_script
+    dias_tachados_inicial = obtener_dias_tachados_completos(driver, 0)
+  File "C:\Users\migue\Desktop\pyAlhambra\pyAlhambra\pyAlhambraNotificationsJardines.py", line 185, in obtener_dias_tachados_completos
+    raise Exception("Simulación de error para probar el reinicio")
+Exception: Simulación de error para probar el reinicio
+2025-04-17 13:14:27 - INFO - patching driver executable C:\Users\migue\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-17 13:14:40 - INFO - Días extraído del mes actual (innerText): '['April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30']'
+2025-04-17 13:14:45 - INFO - Días tachados inicialmente: ['April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9']
+2025-04-17 13:14:45 - INFO - 
+ Intento #1
+2025-04-17 13:14:54 - INFO - Días extraído del mes actual (innerText): '['April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30']'
+2025-04-17 13:14:59 - INFO - Días tachados actuales: ['April-17', 'April-18', 'April-19', 'April-20', 'April-21', 'April-22', 'April-23', 'April-24', 'April-25', 'April-26', 'April-27', 'April-28', 'April-29', 'April-30', 'May-1', 'May-2', 'May-3', 'May-4', 'May-5', 'May-6', 'May-7', 'May-8', 'May-9']
+2025-04-17 13:14:59 - INFO -  Días tachados actualizados con tamaño: 23

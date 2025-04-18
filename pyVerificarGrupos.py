@@ -7,8 +7,6 @@ import tkinter as tk
 from tkinter import messagebox
 import fitz  # PyMuPDF
 
-
-
 from PIL import Image, ImageEnhance, ImageOps, ImageTk
 import pytesseract
 import undetected_chromedriver as uc
@@ -166,20 +164,55 @@ def iniciar_sesion_y_navegar(url_destino):
         for campo, valor in campos_deseados.items():
             print(f"{campo}: {valor}")
 
+        # --- Ir a la pestaña "Docs. Asociados" y descargar el Excel ---
+        try:
+            # Hacer clic en la pestaña "Docs. Asociados"
+            docs_tab = driver.find_element(By.ID, "datos_documentos_asociados")
+            docs_tab.click()
+            time.sleep(3)  # Esperar que cargue la pestaña
+
+            # Esperar y hacer clic en el enlace del Excel
+            enlace_excel = driver.find_element(By.XPATH, "//a[contains(@href, '.xlsx')]")
+            href_excel = enlace_excel.get_attribute("href")
+            nombre_excel = enlace_excel.text.strip()
+            print(f"Descargando archivo: {nombre_excel}")
+            enlace_excel.click()
+
+            # Esperar que se descargue el archivo (ajustar si es necesario)
+            time.sleep(5)
+
+            # Ruta de descarga (asumiendo carpeta por defecto)
+            carpeta_descargas = os.path.join(os.path.expanduser("~"), "Downloads")
+            ruta_excel = os.path.join(carpeta_descargas, nombre_excel)
+
+            if os.path.isfile(ruta_excel):
+                print(f"Excel descargado correctamente: {ruta_excel}")
+                # Aquí puedes procesarlo más adelante
+            else:
+                print(f"No se encontró el archivo descargado: {ruta_excel}")
+
+        except Exception as e:
+            print(f"Error al descargar el Excel: {e}")
+
         # --- Localizar y abrir el PDF ---
+
+        from datetime import datetime
 
         # Paso 1: Obtener Ref. y Fecha
         ref = campos_deseados["Ref."]
         fecha_visita = campos_deseados["Fecha de Visita"]
 
         # Paso 2: Formatear fecha
-        fecha_formateada = fecha_visita.replace("/", "-")  # 07/04/2025 -> 07-04-2025
+        fecha_formateada = fecha_visita.replace("/", "-")  # Ej. 07/04/2025 -> 07-04-2025
 
-        # Paso 3: Ruta absoluta al PDF
+        # Paso 3: Obtener año actual
+        anio_actual = str(datetime.now().year)
+
+        # Paso 4: Construir nueva ruta absoluta al PDF
         base_path = os.path.dirname(os.path.abspath(__file__))  # Ruta del script
-        ruta_pdf = os.path.join(base_path, "ENTRADAS", fecha_formateada, f"{ref}.pdf")
+        ruta_pdf = os.path.join(base_path, anio_actual, "ALHAMBRA", "ENTRADAS", fecha_formateada, f"{ref}.pdf")
 
-        # Paso 4: Comprobar si existe y abrirlo
+        # Paso 5: Comprobar si existe y abrirlo
         if os.path.isfile(ruta_pdf):
             print(f"Abriendo PDF: {ruta_pdf}")
             subprocess.run(['start', '', ruta_pdf], shell=True)  # Abre el PDF con visor predeterminado
@@ -211,8 +244,8 @@ def iniciar_sesion_y_navegar(url_destino):
         except Exception as e:
             print(f"Error al leer el PDF: {e}")
 
-        #TIEMPOOOO
-        # time.sleep(300000)
+        # TIEMPOOOO
+        time.sleep(300000)
 
 
 
