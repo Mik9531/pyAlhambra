@@ -8,10 +8,9 @@ import tkinter as tk
 from PIL import Image, ImageEnhance, ImageOps, ImageTk
 import undetected_chromedriver as uc
 import fitz  # PyMuPDF
-import subprocess
 from selenium.webdriver.common.by import By
-import glob
 import re
+import glob
 
 
 def pedir_captcha_manual(imagen_path):
@@ -71,19 +70,14 @@ def iniciar_sesion_y_navegar(url, root):
     # Otros flags útiles
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument("--no-first-run --no-service-autorun --password-store=basic")
-    #
-    # options.add_argument("--incognito")
     options.add_argument("--start-maximized")
-    # options.add_argument("--window-size=1280,800")
     options.add_argument("--disable-blink-features=AutomationControlled")
-    # options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
     options.add_argument("--disable-software-rasterizer")
     options.add_argument("--disable-extensions")
 
     options.add_argument("--disable-popup-blocking")
-    # options.add_argument("--headless=new")
 
     options.add_argument(f"--user-data-dir={ruta_perfil_chrome}")  # <-- Asegurar que está bien escrito
 
@@ -141,10 +135,6 @@ def iniciar_sesion_y_navegar(url, root):
 
     time.sleep(3)
 
-    # Ir a la URL introducida por el usuario
-    # driver.get(url)
-    # time.sleep(3)
-
     claves_equivalentes = {
         "Ref.": "Ref.",
         "Localizador Original": "Localizador Original",
@@ -183,38 +173,72 @@ def iniciar_sesion_y_navegar(url, root):
         print(f"{campo}: {valor}")
 
     # --- Ir a la pestaña "Docs. Asociados" y descargar el Excel ---
-    try:
-        # Hacer clic en la pestaña "Docs. Asociados"
-        docs_tab = driver.find_element(By.ID, "datos_documentos_asociados")
-        docs_tab.click()
-        time.sleep(3)  # Esperar que cargue la pestaña
 
-        # Esperar y hacer clic en el enlace del Excel
-        enlace_excel = driver.find_element(By.XPATH, "//a[contains(@href, '.xlsx')]")
-        href_excel = enlace_excel.get_attribute("href")
-        nombre_excel = enlace_excel.text.strip()
-        print(f"Descargando archivo: {nombre_excel}")
-        enlace_excel.click()
+    # Hacer clic en la pestaña "Docs. Asociados"
+    docs_tab = driver.find_element(By.ID, "datos_documentos_asociados")
+    docs_tab.click()
+    time.sleep(3)  # Esperar que cargue la pestaña
 
-        # Esperar que se descargue el archivo (ajustar si es necesario)
-        time.sleep(5)
+    from datetime import datetime
 
-        # Ruta de descarga (asumiendo carpeta por defecto)
+    # Esperar y obtener todos los enlaces a Excels y sus fechas
+    filas = driver.find_elements(By.XPATH, "//table[contains(@class, 'border')]/tbody/tr[position()>1]")
+
+    excel_mas_reciente = None
+    fecha_mas_reciente = None
+
+    for fila in filas:
+        try:
+            enlaces = fila.find_elements(By.XPATH, ".//td[1]/a[contains(@href, '.xlsx')]")
+            if not enlaces:
+                continue  # Saltamos la fila si no hay enlaces .xlsx
+
+            enlace = enlaces[0]
+            fecha_texto = fila.find_element(By.XPATH, ".//td[2]").text.strip()
+            fecha_subida = datetime.strptime(fecha_texto, "%d/%m/%Y %H:%M:%S")
+
+            if fecha_mas_reciente is None or fecha_subida > fecha_mas_reciente:
+                fecha_mas_reciente = fecha_subida
+                excel_mas_reciente = enlace
+        except Exception as e:
+            print(f"Error al procesar fila: {e}")
+            continue
+
+    if excel_mas_reciente:
+        href_excel = excel_mas_reciente.get_attribute("href")
+        nombre_excel = excel_mas_reciente.text.strip()
+        print(f"Descargando archivo más reciente: {nombre_excel}")
+        excel_mas_reciente.click()
+
         carpeta_descargas = os.path.join(os.path.expanduser("~"), "Downloads")
+
+        # Esperamos hasta que no haya archivos .crdownload activos
+        tiempo_max_espera = 20  # segundos
+        inicio = time.time()
+
+        while True:
+            descargando = glob.glob(os.path.join(carpeta_descargas, "*.crdownload"))
+            if not descargando or (time.time() - inicio) > tiempo_max_espera:
+                break
+            time.sleep(1)
+
+        # Una vez finalizada la descarga, buscamos el Excel más reciente
         lista_excel = glob.glob(os.path.join(carpeta_descargas, "*.xlsx"))
         if lista_excel:
             ruta_excel = max(lista_excel, key=os.path.getctime)
             print(f"Último Excel detectado: {ruta_excel}")
-            df_excel = pd.read_excel(ruta_excel)
         else:
             print("No se encontró ningún archivo Excel en la carpeta de descargas.")
-
-    except Exception as e:
-        print(f"Error al descargar el Excel: {e}")
+        if lista_excel:
+            ruta_excel = max(lista_excel, key=os.path.getctime)
+            print(f"Último Excel detectado: {ruta_excel}")
+            # df_excel = pd.read_excel(ruta_excel)
+        else:
+            print("No se encontró ningún archivo Excel en la carpeta de descargas.")
+    else:
+        print("No se encontró ningún enlace a archivo Excel.")
 
     # --- Localizar y abrir el PDF ---
-
-    from datetime import datetime
 
     # Paso 1: Obtener Localizador y Fecha
     ref = campos_deseados["Localizador Original"]
@@ -228,16 +252,39 @@ def iniciar_sesion_y_navegar(url, root):
 
     # Paso 4: Construir nueva ruta absoluta al PDF
     base_path = os.path.dirname(os.path.abspath(__file__))  # Ruta del script
-    ruta_pdf = os.path.join(base_path, anio_actual, "ALHAMBRA", "ENTRADAS", fecha_formateada, f"{ref}.pdf")
 
-    # Paso 5: Comprobar si existe y abrirlo
-    if os.path.isfile(ruta_pdf):
-        print(f"Abriendo PDF: {ruta_pdf}")
+    # Paso 4: Construir ruta a la carpeta donde buscar los PDFs
+    carpeta_pdfs = os.path.join(base_path, anio_actual, "ALHAMBRA", "ENTRADAS", fecha_formateada)
+
+    # Buscar todos los PDFs que empiezan por el localizador
+    patron_pdf = os.path.join(carpeta_pdfs, f"{ref}*.pdf")
+    archivos_pdf = glob.glob(patron_pdf)
+
+    if archivos_pdf:
+        print(f"Se encontraron {len(archivos_pdf)} PDF(s): {archivos_pdf}")
+
+        contenido_pdf = ""
+        total_paginas_pdf = 0  # <--- Aquí guardarás las páginas
+        for ruta_pdf in archivos_pdf:
+            print(f"Abriendo PDF: {ruta_pdf}")
+            try:
+                doc = fitz.open(ruta_pdf)
+                total_paginas_pdf += len(doc)  # <--- Guarda páginas antes de cerrar
+                for page in doc:
+                    contenido_pdf += page.get_text()
+                doc.close()
+            except Exception as e:
+                print(f"Error al leer el PDF {ruta_pdf}: {e}")
+                tk.Label(root, text=f"Error al leer el PDF {os.path.basename(ruta_pdf)}: {e}", fg="red",
+                         font=("Helvetica", 12)).pack(pady=10)
+
+        # contenido_pdf_lower = contenido_pdf.lower()
+        # print(f"Abriendo PDF: {ruta_pdf}")
         try:
-            doc = fitz.open(ruta_pdf)
-            contenido_pdf = ""
-            for page in doc:
-                contenido_pdf += page.get_text()
+            # doc = fitz.open(ruta_pdf)
+            # contenido_pdf = ""
+            # for page in doc:
+            #     contenido_pdf += page.get_text()
 
             contenido_pdf_lower = contenido_pdf.lower()
 
@@ -308,13 +355,11 @@ def iniciar_sesion_y_navegar(url, root):
                         except ValueError:
                             pass  # Si no es número, ignoramos
 
-                numero_paginas_pdf = len(doc)
-                visitantes_en_pdf = numero_paginas_pdf // 2
+                visitantes_en_pdf = total_paginas_pdf // 2
 
                 coincide = total_pax == visitantes_en_pdf
                 color = "green" if coincide else "red"
-                texto = f"Número de visitantes ({total_pax}) vs páginas ({visitantes_en_pdf}): {'OK' if coincide else 'NO'}"
-
+                texto = f"Número de visitantes ({total_pax}) vs número de páginas total ({visitantes_en_pdf}): {'OK' if coincide else 'NO'}"
                 tk.Label(resultado_frame, text=texto, fg=color, font=("Helvetica", 12)).pack(anchor="w")
 
             except Exception as e:
@@ -389,16 +434,18 @@ def iniciar_sesion_y_navegar(url, root):
                          text=f"Error al procesar nombres y pasaportes desde Excel: {e}",
                          fg="red", font=("Helvetica", 11)).pack(anchor="w")
 
-            doc.close()
-
             driver.quit()  # Muy importante
 
             tk.Label(resultado_frame, text="Comparación completa", font=("Helvetica", 12), fg="green").pack(pady=10)
 
         except Exception as e:
+            print(f"Error al leer el PDF: {e}")
             tk.Label(root, text=f"Error al leer el PDF: {e}", fg="red", font=("Helvetica", 12)).pack(pady=10)
     else:
+        print(f"PDF no encontrado: {ruta_pdf}")
         tk.Label(root, text=f"PDF no encontrado: {ruta_pdf}", fg="red", font=("Helvetica", 12)).pack(pady=10)
+
+    # doc.close()
 
 
 def lanzar_interfaz():
