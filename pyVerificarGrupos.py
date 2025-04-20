@@ -405,7 +405,15 @@ def iniciar_sesion_y_navegar(url, root):
                              font=("Helvetica", 12, "bold")).pack(pady=(10, 0))
 
                     for idx, row in df_datos.iterrows():
-                        nombre_excel = str(row[col_nombre]).strip().lower()
+                        nombre_original = str(row[col_nombre]).strip()
+                        nombre_excel = nombre_original.lower()
+
+                        # Si tiene barra, asumimos formato APELLIDO/NOMBRE y lo invertimos
+                        if "/" in nombre_excel:
+                            partes = nombre_excel.split("/")
+                            if len(partes) == 2:
+                                nombre_excel = f"{partes[1]} {partes[0]}".strip()
+
                         pasaporte_excel = str(row[col_pasaporte]).strip().lower()
 
                         from itertools import permutations
@@ -417,6 +425,9 @@ def iniciar_sesion_y_navegar(url, root):
                         for i in range(2, len(partes) + 1):
                             for p in permutations(partes, i):
                                 combinaciones.add(" ".join(p))
+
+                        # También añadir el nombre exacto como aparece, por si acaso
+                        combinaciones.add(nombre_excel)
 
                         nombre_encontrado = any(c in contenido_pdf_lower for c in combinaciones)
                         pasaporte_encontrado = pasaporte_excel in contenido_pdf_lower
