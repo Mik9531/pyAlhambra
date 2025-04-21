@@ -58,8 +58,6 @@ def enviar_telegram(mensaje, onlyMiguel=0):
     else:
         chat_ids = chat_belen
 
-    if onlyMiguel:
-        chat_ids = chat_miguel
 
     for chat_id in chat_ids:
         datos = {"chat_id": str(chat_id), "text": mensaje}
@@ -366,7 +364,9 @@ def manejar_alerta_si_existe(driver):
 
 def convertir_a_fecha(fecha_str):
     try:
-        return datetime.datetime.strptime(fecha_str, "%B-%d").replace(year=datetime.datetime.now().year).date()
+        current_year = datetime.datetime.now().year
+        fecha_completa = f"{fecha_str}-{current_year}"  # Ej: "April-21-2025"
+        return datetime.datetime.strptime(fecha_completa, "%B-%d-%Y").date()
     except ValueError:
         return None
 
@@ -636,7 +636,7 @@ def ejecutar_script(icon):
                 if (len(set_actual) == 0):
                     dias_tachados_actual = dias_tachados_inicial
 
-                if dias_tachados_actual and len(set_actual) > 3 and len(dias_liberados) < 5:
+                if dias_tachados_actual and len(set_actual) >= 1 and len(dias_liberados) <= 20:
                     dias_tachados_inicial = dias_tachados_actual
                     logging.info(f" Días tachados actualizados con tamaño: {len(set_actual)}")
                     print(f" Días tachados actualizados con tamaño: {len(set_actual)}")
@@ -644,7 +644,8 @@ def ejecutar_script(icon):
                 # Filtrar días realmente útiles (mayores que hoy)
                 dias_utiles = [fecha for fecha in dias_liberados_fechas if fecha > fecha_hoy]
 
-                if dias_utiles and len(dias_liberados) < 5 and dias_tachados_actual and len(set_actual) > 3:
+                if dias_utiles and len(dias_liberados) <= 20 and dias_tachados_actual and len(set_actual) >= 1:
+                    # dias_tachados_inicial = dias_tachados_actual
                     print(f" ¡Días liberados: {dias_liberados}!")
                     logging.info(f" ¡Días liberados: {dias_liberados}!")
                     # alerta_sonora_acierto() #ACTVIAR EN EL FUTURO
