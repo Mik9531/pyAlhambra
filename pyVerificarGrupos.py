@@ -1,3 +1,4 @@
+import unicodedata
 from tkinterdnd2 import DND_FILES, TkinterDnD
 import pandas as pd
 from selenium.webdriver.support.ui import WebDriverWait
@@ -11,6 +12,10 @@ import fitz  # PyMuPDF
 from selenium.webdriver.common.by import By
 import re
 import glob
+from itertools import permutations
+
+
+# import unicodedata
 
 
 def pedir_captcha_manual(imagen_path):
@@ -278,13 +283,7 @@ def iniciar_sesion_y_navegar(url, root):
                 tk.Label(root, text=f"Error al leer el PDF {os.path.basename(ruta_pdf)}: {e}", fg="red",
                          font=("Helvetica", 12)).pack(pady=10)
 
-        # contenido_pdf_lower = contenido_pdf.lower()
-        # print(f"Abriendo PDF: {ruta_pdf}")
         try:
-            # doc = fitz.open(ruta_pdf)
-            # contenido_pdf = ""
-            # for page in doc:
-            #     contenido_pdf += page.get_text()
 
             contenido_pdf_lower = contenido_pdf.lower()
 
@@ -369,83 +368,72 @@ def iniciar_sesion_y_navegar(url, root):
             # --- Verificación de nombres y pasaportes desde Excel con búsqueda dinámica ---
             try:
                 def find_header_row(file, keywords):
-                    try:
-                        df = pd.read_excel(file, engine="openpyxl", nrows=10, header=None)
-                        for i, row in df.iterrows():
-                            if any(any(keyword.lower() in str(cell).lower() for keyword in keywords) for cell in
-                                   row):
-                                return i
-                    except Exception as e:
-                        print(f"Error al leer el archivo: {e}")
-                        return -1
+                    df = pd.read_excel(file, engine="openpyxl", nrows=10, header=None)
+                    for i, row in df.iterrows():
+                        if any(any(keyword.lower() in str(cell).lower() for keyword in keywords) for cell in row):
+                            return i
                     return -1
 
-                # Palabras clave
-                keywords_nombre = ["영문성", "영문명", "영문이름", "영문성함", "name", "nombre", "surname", "apellido"]
-                keywords_pasaporte = ["passport", "pasapor", "pass", "여권번호", "doc"]
+                keywords_nombre = ["name", "nombre", "영문명", "영문이름"]
+                keywords_pasaporte = ["passport", "pass", "pasaporte", "여권번호", "doc"]
 
-                # Buscar fila del encabezado
-                fila_headers = find_header_row(ruta_excel, keywords_nombre + keywords_pasaporte)
-                if fila_headers == -1:
-                    raise Exception("No se encontraron encabezados válidos en el Excel.")
+                fila_header = find_header_row(ruta_excel, keywords_nombre + keywords_pasaporte)
+                if fila_header == -1:
+                    raise Exception("No se encontró una fila de encabezado válida.")
 
-                df_excel_full = pd.read_excel(ruta_excel, engine="openpyxl", header=None)
-                df_datos = df_excel_full.iloc[fila_headers + 1:].copy()
-                headers = df_excel_full.iloc[fila_headers]
-                df_datos.columns = headers
+                df_excel = pd.read_excel(ruta_excel, engine="openpyxl", header=None)
+                header_row = df_excel.iloc[fila_header]
+                df_datos = df_excel.iloc[fila_header + 1:].reset_index(drop=True)
 
-                # Detectar nombres y pasaportes usando columnas con nombres cercanos
-                col_nombre = next((col for col in df_datos.columns if
-                                   any(k.lower() in str(col).lower() for k in keywords_nombre)), None)
-                col_pasaporte = next((col for col in df_datos.columns if
-                                      any(k.lower() in str(col).lower() for k in keywords_pasaporte)), None)
+                # Detectar columna NAME
+                col_name_idx = header_row[header_row.astype(str).str.contains("name", case=False)].index[0]
+                col_name_latino = col_name_idx + 1  # Justo a la derecha
 
-                if col_nombre and col_pasaporte:
-                    tk.Label(resultado_frame, text="--- Verificación desde Excel ---",
-                             font=("Helvetica", 12, "bold")).pack(pady=(10, 0))
+                # Detectar columna PASSPORT
+                col_pass_idx = header_row[header_row.astype(str).str.contains("pass", case=False)].index[0]
 
-                    for idx, row in df_datos.iterrows():
-                        nombre_original = str(row[col_nombre]).strip()
-                        nombre_excel = nombre_original.lower()
+                tk.Label(resultado_frame, text="--- Verificación desde Excel ---",
+                         font=("Helvetica", 12, "bold")).pack(pady=(10, 0))
 
-                        # Si tiene barra, asumimos formato APELLIDO/NOMBRE y lo invertimos
-                        if "/" in nombre_excel:
-                            partes = nombre_excel.split("/")
-                            if len(partes) == 2:
-                                nombre_excel = f"{partes[1]} {partes[0]}".strip()
+                for idx, row in df_datos.iterrows():
+                    # Extraer nombre y pasaporte
+                    nombre_raw = str(row[col_name_latino]).strip()
+                    pasaporte_raw = str(row[col_pass_idx]).strip()
 
-                        pasaporte_excel = str(row[col_pasaporte]).strip().lower()
+                    # Saltar si alguno es vacío o 'nan'
+                    if not nombre_raw or nombre_raw.lower() == 'nan' or not pasaporte_raw or pasaporte_raw.lower() == 'nan':
+                        continue
 
-                        from itertools import permutations
+                    nombre_excel = nombre_raw.lower()
 
-                        partes = nombre_excel.split()
-                        combinaciones = set()
+                    if "/" in nombre_excel:
+                        partes = nombre_excel.split("/")
+                        if len(partes) == 2:
+                            nombre_excel = f"{partes[1]} {partes[0]}".strip()
 
-                        # Combinaciones de todas las permutaciones posibles de hasta 3 palabras
-                        for i in range(2, len(partes) + 1):
-                            for p in permutations(partes, i):
-                                combinaciones.add(" ".join(p))
+                    partes = nombre_excel.split()
+                    combinaciones = set()
+                    for i in range(2, len(partes) + 1):
+                        for p in permutations(partes, i):
+                            combinaciones.add(" ".join(p))
+                    combinaciones.add(nombre_excel)
 
-                        # También añadir el nombre exacto como aparece, por si acaso
-                        combinaciones.add(nombre_excel)
+                    pasaporte_excel = pasaporte_raw.lower()
 
-                        nombre_encontrado = any(c in contenido_pdf_lower for c in combinaciones)
-                        pasaporte_encontrado = pasaporte_excel in contenido_pdf_lower
+                    nombre_encontrado = any(c in contenido_pdf_lower for c in combinaciones)
+                    pasaporte_encontrado = pasaporte_excel in contenido_pdf_lower
 
-                        ambos_ok = nombre_encontrado and pasaporte_encontrado
-                        color = "green" if ambos_ok else "red"
-                        texto = f"{row[col_nombre]} - {row[col_pasaporte]}: {'OK' if ambos_ok else 'NO'}"
-
-                        tk.Label(resultado_frame, text=texto, fg=color, font=("Helvetica", 11)).pack(anchor="w")
-                else:
-                    raise Exception("No se encontraron columnas de nombre o pasaporte en el Excel.")
+                    ambos_ok = nombre_encontrado and pasaporte_encontrado
+                    color = "green" if ambos_ok else "red"
+                    texto = f"{nombre_raw} - {pasaporte_raw}: {'OK' if ambos_ok else 'NO'}"
+                    tk.Label(resultado_frame, text=texto, fg=color, font=("Helvetica", 11)).pack(anchor="w")
 
             except Exception as e:
                 tk.Label(resultado_frame,
                          text=f"Error al procesar nombres y pasaportes desde Excel: {e}",
                          fg="red", font=("Helvetica", 11)).pack(anchor="w")
 
-            driver.quit()  # Muy importante
+            driver.quit()
 
             tk.Label(resultado_frame, text="Comparación completa", font=("Helvetica", 12), fg="green").pack(pady=10)
 
