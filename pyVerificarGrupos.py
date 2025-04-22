@@ -404,12 +404,18 @@ def iniciar_sesion_y_navegar(url, root):
                 header_row = df_excel.iloc[fila_header]
                 df_datos = df_excel.iloc[fila_header + 1:].reset_index(drop=True)
 
-                # Detectar columna NAME
-                col_name_idx = header_row[header_row.astype(str).str.contains("name", case=False)].index[0]
-                col_name_latino = col_name_idx + 1  # Justo a la derecha
+                # Detectar columna de nombre
+                col_name_idx = next(
+                    (i for i, val in enumerate(header_row) if any(k in str(val).lower() for k in keywords_nombre)),
+                    None)
 
-                # Detectar columna PASSPORT
-                col_pass_idx = header_row[header_row.astype(str).str.contains("pass", case=False)].index[0]
+                # Detectar columna de pasaporte
+                col_pass_idx = next(
+                    (i for i, val in enumerate(header_row) if any(k in str(val).lower() for k in keywords_pasaporte)),
+                    None)
+
+                if col_name_idx is None or col_pass_idx is None:
+                    raise Exception("No se encontraron columnas válidas de nombre o pasaporte.")
 
                 tk.Label(resultado_frame, text="--- Verificación desde Excel ---",
                          font=("Helvetica", 12, "bold")).pack(pady=(10, 0))
@@ -418,7 +424,7 @@ def iniciar_sesion_y_navegar(url, root):
 
                 for idx, row in df_datos.iterrows():
                     # Extraer nombre y pasaporte
-                    nombre_raw = str(row[col_name_latino]).strip()
+                    nombre_raw = str(row[col_name_idx]).strip()
                     pasaporte_raw = str(row[col_pass_idx]).strip()
 
                     # Saltar si alguno es vacío o 'nan'
