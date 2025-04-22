@@ -319,17 +319,12 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyVerificarGrupos.py</url>
-          <line>135</line>
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pyVerificarGrupos.py</url>
-          <line>163</line>
+          <line>210</line>
           <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyVerificarGrupos.py</url>
-          <line>292</line>
+          <line>339</line>
           <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -339,17 +334,17 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyVerificarGrupos.py</url>
-          <line>337</line>
+          <line>384</line>
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyVerificarGrupos.py</url>
-          <line>366</line>
+          <line>413</line>
           <option name="timeStamp" value="129" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyVerificarGrupos.py</url>
-          <line>388</line>
+          <line>435</line>
           <option name="timeStamp" value="130" />
         </line-breakpoint>
       </breakpoints>

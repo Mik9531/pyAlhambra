@@ -94,11 +94,10 @@ def iniciar_sesion_y_navegar(url, root):
 
     time.sleep(2)
 
-    login_input = driver.find_element(By.XPATH, "//input[@placeholder='Login']")
-    password_input = driver.find_element(By.XPATH, "//input[@placeholder='Contraseña']")
+    login_input = driver.find_element(By.ID, "username")
+    password_input = driver.find_element(By.ID, "password")
 
-    login_input.send_keys("j.martinez")
-    password_input.send_keys("G616lSOpmcIT")
+
 
     # Capturar captcha desde la web
     captcha_img = driver.find_element(By.ID, "img_securitycode")
@@ -124,21 +123,77 @@ def iniciar_sesion_y_navegar(url, root):
     captcha_crop = image.crop((left, top, right, bottom))
     captcha_crop.save("captcha_crop.png")
 
-    # Procesar para OCR
-    captcha_image = captcha_crop.convert('L')
-    captcha_image = ImageOps.invert(captcha_image)
-    enhancer = ImageEnhance.Contrast(captcha_image)
-    captcha_image = enhancer.enhance(2.0)
-    captcha_image = captcha_image.point(lambda x: 0 if x < 120 else 255, '1')
-    captcha_image = captcha_image.resize((captcha_image.width * 2, captcha_image.height * 2), Image.LANCZOS)
-    captcha_image.save("captcha_processed.png")
+    captcha_ok = False
+    intentos = 0
 
-    captcha_code = pedir_captcha_manual("captcha_processed.png")
+    login_input.send_keys("j.martinez")
+    password_input.send_keys("G616lSOpmcIT")
 
-    driver.find_element(By.ID, "securitycode").send_keys(captcha_code)
-    driver.find_element(By.CSS_SELECTOR, "input.button[type='submit']").click()
+    while not captcha_ok and intentos < 50:
 
-    time.sleep(3)
+        intentos += 1
+
+        try:
+            login_input = driver.find_element(By.ID, "username")
+            password_input = driver.find_element(By.ID, "password")
+            login_input.clear()
+            login_input.send_keys("j.martinez")
+            password_input.clear()
+            password_input.send_keys("G616lSOpmcIT")
+        except:
+            print(f"[Intento {intentos}] No se pudo encontrar los campos de login. ¿Quizá ya están rellenados?")
+
+        # Capturar captcha nuevamente
+        captcha_img = driver.find_element(By.ID, "img_securitycode")
+        driver.execute_script("arguments[0].scrollIntoView();", captcha_img)
+        time.sleep(1)
+
+        location = captcha_img.location
+        size = captcha_img.size
+        dpr = driver.execute_script("return window.devicePixelRatio")
+        time.sleep(0.5)
+
+        screenshot = driver.get_screenshot_as_png()
+        image = Image.open(io.BytesIO(screenshot))
+
+        # Recorte con ajuste de DPR
+        padding = 5
+        left = int(location['x'] * dpr) - padding
+        top = int(location['y'] * dpr) - padding
+        right = left + int(size['width'] * dpr) + padding * 2
+        bottom = top + int(size['height'] * dpr) + padding * 2
+
+        captcha_crop = image.crop((left, top, right, bottom))
+        captcha_crop.save("captcha_crop.png")
+
+        # Procesar imagen para OCR o visualización
+        captcha_image = captcha_crop.convert('L')
+        captcha_image = ImageOps.invert(captcha_image)
+        enhancer = ImageEnhance.Contrast(captcha_image)
+        captcha_image = enhancer.enhance(2.0)
+        captcha_image = captcha_image.point(lambda x: 0 if x < 120 else 255, '1')
+        captcha_image = captcha_image.resize((captcha_image.width * 2, captcha_image.height * 2), Image.LANCZOS)
+        captcha_image.save("captcha_processed.png")
+
+        # Pedir captcha manual
+        captcha_code = pedir_captcha_manual("captcha_processed.png")
+
+        # Rellenar captcha
+        captcha_input = driver.find_element(By.ID, "securitycode")
+        captcha_input.clear()
+        captcha_input.send_keys(captcha_code)
+
+        # Enviar formulario
+        driver.find_element(By.CSS_SELECTOR, "input.button[type='submit']").click()
+        time.sleep(2)
+
+        # Verificar si el captcha fue incorrecto
+        try:
+            error_element = driver.find_element(By.XPATH, "//*[contains(text(), 'incorrecto') or contains(text(), 'Incorrecto')]")
+            print(f"[Intento {intentos}] Captcha incorrecto, reintentando...")
+        except:
+            captcha_ok = True
+            print(f"[Intento {intentos}] Captcha correcto. Continuando...")
 
     claves_equivalentes = {
         "Ref.": "Ref.",
