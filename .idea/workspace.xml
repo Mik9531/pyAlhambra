@@ -8,13 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/captcha_crop.png" beforeDir="false" afterPath="$PROJECT_DIR$/captcha_crop.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/captcha_processed.png" beforeDir="false" afterPath="$PROJECT_DIR$/captcha_processed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dias_tachados_inicial_general.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dias_tachados_inicial_general.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dias_tachados_inicial_jardines.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dias_tachados_inicial_jardines.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/general.log" beforeDir="false" afterPath="$PROJECT_DIR$/general.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jardines.log" beforeDir="false" afterPath="$PROJECT_DIR$/jardines.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pantalla_completa.png" beforeDir="false" afterPath="$PROJECT_DIR$/pantalla_completa.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyAlhambraNotifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyAlhambraNotifications.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyAlhambraNotificationsJardines.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyAlhambraNotificationsJardines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyVerificarGrupos.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyVerificarGrupos.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +55,7 @@
     "Python.pyAlhambraNotifications.executor": "Run",
     "Python.pyAlhambraNotificationsJardines.executor": "Run",
     "Python.pyAlhambraTickets.executor": "Run",
-    "Python.pyVerificarGrupos.executor": "Debug",
+    "Python.pyVerificarGrupos.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",

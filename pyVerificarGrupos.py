@@ -424,7 +424,23 @@ def iniciar_sesion_y_navegar(url, root):
 
                 for idx, row in df_datos.iterrows():
                     # Extraer nombre y pasaporte
+
+
+                    def contiene_caracteres_coreanos(texto):
+                        return bool(re.search(r'[\uac00-\ud7af]', texto))
+
                     nombre_raw = str(row[col_name_idx]).strip()
+
+                    # Si hay otra columna a la derecha, se evalúa
+                    nombre_derecha = str(row[col_name_idx + 1]).strip() if col_name_idx + 1 < len(row) else ""
+
+                    # Si el nombre_raw tiene caracteres coreanos y hay algo a la derecha, preferimos ese
+                    if contiene_caracteres_coreanos(nombre_raw) and nombre_derecha and nombre_derecha.lower() != "nan":
+                        nombre_raw = nombre_derecha
+
+                    # Alternativa: concatenar y eliminar caracteres coreanos (puedes usar en su lugar si prefieres juntar ambos)
+                    # nombre_completo = f"{nombre_raw} {nombre_derecha}".strip()
+                    # nombre_raw = re.sub(r'[\uac00-\ud7af]', '', nombre_completo).strip()
                     pasaporte_raw = str(row[col_pass_idx]).strip()
 
                     # Saltar si alguno es vacío o 'nan'
