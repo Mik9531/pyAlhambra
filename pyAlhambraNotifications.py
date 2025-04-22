@@ -46,6 +46,7 @@ logging.basicConfig(
 
 
 def enviar_telegram(mensaje, onlyMiguel=0):
+    onlyMiguel = 1
     url = "https://api.telegram.org/bot7908020608:AAEGRux_wQ8tlKxPoMEGLR5vMtG1X3LW2WY/sendMessage"
     chat_belen = [8120620954, 7225762073]  # Belén (dos IDs diferentes)
     chat_miguel = [780778418]  # Miguel
@@ -724,6 +725,7 @@ def ejecutar_script_con_reintentos(icon):
             if DETENER:
                 break
             print("Esperando 10 minutos antes de reiniciar...")
+            enviar_telegram('Esperando 10 minutos antes de reiniciar',1)
             for i in range(600):
                 if DETENER:
                     print("Detención solicitada. Cancelando espera.")
