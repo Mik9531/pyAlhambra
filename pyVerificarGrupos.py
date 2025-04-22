@@ -269,7 +269,8 @@ def iniciar_sesion_y_navegar(url, root):
         print(f"Se encontraron {len(archivos_pdf)} PDF(s): {archivos_pdf}")
 
         contenido_pdf = ""
-        total_paginas_pdf = 0  # <--- Aquí guardarás las páginas
+        total_paginas_pdf = 0
+        extras_detectados = 0
         for ruta_pdf in archivos_pdf:
             print(f"Abriendo PDF: {ruta_pdf}")
             try:
@@ -277,6 +278,10 @@ def iniciar_sesion_y_navegar(url, root):
                 total_paginas_pdf += len(doc)  # <--- Guarda páginas antes de cerrar
                 for page in doc:
                     contenido_pdf += page.get_text()
+                    texto_pagina = page.get_text()
+                    contenido_pdf += texto_pagina
+                    if "extra1" in texto_pagina.lower():
+                        extras_detectados += 1
                 doc.close()
             except Exception as e:
                 print(f"Error al leer el PDF {ruta_pdf}: {e}")
@@ -342,6 +347,11 @@ def iniciar_sesion_y_navegar(url, root):
                 texto = f"{campo} ({valor_original}): {'OK' if encontrado else 'NO'}"
                 tk.Label(resultado_frame, text=texto, fg=color, font=("Helvetica", 11)).pack(anchor="w")
 
+            visitantes_no_encontrados = []
+
+            guia_detectado = False
+            nombre_guia = ""
+
             # Verificación de número de visitantes vs páginas del PDF
             try:
                 total_pax = 0
@@ -352,13 +362,22 @@ def iniciar_sesion_y_navegar(url, root):
                         try:
                             total_pax += int(valor)
                         except ValueError:
-                            pass  # Si no es número, ignoramos
+                            pass
 
-                visitantes_en_pdf = total_paginas_pdf // 2
+                paginas_reales = total_paginas_pdf // 2 - extras_detectados
+                # visitantes_en_pdf = paginas_reales // 2
 
-                coincide = total_pax == visitantes_en_pdf
+                coincide = total_pax == paginas_reales
                 color = "green" if coincide else "red"
-                texto = f"Número de visitantes ({total_pax}) vs número de páginas total ({visitantes_en_pdf}): {'OK' if coincide else 'NO'}"
+
+                extras_info = f"{extras_detectados} Extra{'s' if extras_detectados != 1 else ''}"
+                # if guia_detectado:
+                #     extras_info += " + 1 Guía"
+
+                texto = (
+                    f"Número de visitantes ({total_pax}) vs páginas reales ({paginas_reales}) "
+                    f"(+{extras_info}): {'OK' if coincide else 'NO'}"
+                )
                 tk.Label(resultado_frame, text=texto, fg=color, font=("Helvetica", 12)).pack(anchor="w")
 
             except Exception as e:
@@ -395,6 +414,8 @@ def iniciar_sesion_y_navegar(url, root):
                 tk.Label(resultado_frame, text="--- Verificación desde Excel ---",
                          font=("Helvetica", 12, "bold")).pack(pady=(10, 0))
 
+                visitantes_no_encontrados = []
+
                 for idx, row in df_datos.iterrows():
                     # Extraer nombre y pasaporte
                     nombre_raw = str(row[col_name_latino]).strip()
@@ -425,8 +446,25 @@ def iniciar_sesion_y_navegar(url, root):
 
                     ambos_ok = nombre_encontrado and pasaporte_encontrado
                     color = "green" if ambos_ok else "red"
+
                     texto = f"{nombre_raw} - {pasaporte_raw}: {'OK' if ambos_ok else 'NO'}"
+
                     tk.Label(resultado_frame, text=texto, fg=color, font=("Helvetica", 11)).pack(anchor="w")
+                    if not ambos_ok:
+                        visitantes_no_encontrados.append(nombre_raw)
+
+                    # Ahora sí: detectar posible guía
+                    guia_detectado = False
+                    nombre_guia = ""
+
+                    if "pendiente1" in contenido_pdf_lower and len(visitantes_no_encontrados) == 1:
+                        nombre_guia = visitantes_no_encontrados[0]
+                        guia_detectado = True
+                        texto = f"🧑‍🏫 Posible Guía → {nombre_guia}"
+                        tk.Label(resultado_frame, text=texto, fg="orange", font=("Helvetica", 11, "italic")).pack(
+                            anchor="w", pady=(5, 0))
+                        # extras_detectados += 1  #  SOLO aquí se suma
+
 
             except Exception as e:
                 tk.Label(resultado_frame,

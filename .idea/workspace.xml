@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="51815375-9cfe-40cc-9c65-0dd7afb0c83a" name="Changes" comment="Cambios para comparar solo name y passport en todos los archivos probados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/ALHAMBRA/ENTRADAS/TON 0409 14 LM_1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/ALHAMBRA/ENTRADAS/TON 0409 14 LM_2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/ALHAMBRA/ENTRADAS/TON 0409 14 LM_3.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/captcha_crop.png" beforeDir="false" afterPath="$PROJECT_DIR$/captcha_crop.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/captcha_processed.png" beforeDir="false" afterPath="$PROJECT_DIR$/captcha_processed.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pantalla_completa.png" beforeDir="false" afterPath="$PROJECT_DIR$/pantalla_completa.png" afterDir="false" />
@@ -332,7 +329,7 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyVerificarGrupos.py</url>
-          <line>287</line>
+          <line>292</line>
           <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -342,8 +339,13 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyVerificarGrupos.py</url>
-          <line>332</line>
+          <line>337</line>
           <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyVerificarGrupos.py</url>
+          <line>367</line>
+          <option name="timeStamp" value="129" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -359,6 +361,10 @@
         <watch expression="columnas_nombre_candidatas[0]" />
         <watch expression="df_datos.iterrows" />
         <watch expression="nombre_original" />
+        <watch expression="total_paginas_pdf / 2" />
+        <watch expression="total_paginas_pdf // 2" />
+        <watch expression="paginas_reales // 2" />
+        <watch expression="total_paginas_pdf - extras_detectados" />
       </configuration>
     </watches-manager>
   </component>
