@@ -335,7 +335,7 @@ def iniciar_sesion_y_navegar(url, root):
                     contenido_pdf += page.get_text()
                     texto_pagina = page.get_text()
                     contenido_pdf += texto_pagina
-                    if "extra1" in texto_pagina.lower():
+                    if "extra extra" in texto_pagina.lower():
                         extras_detectados += 1
                 doc.close()
             except Exception as e:
@@ -390,7 +390,11 @@ def iniciar_sesion_y_navegar(url, root):
             tk.Label(resultado_frame, text="--- Verificación de campos en el PDF ---",
                      font=("Helvetica", 12, "bold")).pack()
 
-            for campo in ["Fecha de Visita", "Tipo"]:
+            campos_a_verificar = ["Fecha de Visita", "Tipo"]
+            if campos_deseados.get("Tipo", "").upper() == "GENERAL":
+                campos_a_verificar.append("Hora de Palacios")
+
+            for campo in campos_a_verificar:
                 valor_original = campos_deseados[campo]
                 # Dividir en partes posibles (separadas por / o , por ejemplo)
                 partes = [parte.strip().lower() for parte in re.split(r'[/,;]', valor_original)]
@@ -565,7 +569,7 @@ def iniciar_sesion_y_navegar(url, root):
 def lanzar_interfaz():
     root = TkinterDnD.Tk()
     root.title("Comparador de reservas")
-    root.geometry("700x800")
+    root.state('zoomed')
     root.configure(bg="#f2f2f2")
     root.archivo_excel_path = None
 
