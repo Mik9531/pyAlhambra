@@ -47,7 +47,6 @@ logging.basicConfig(
 
 
 def enviar_telegram(mensaje, onlyMiguel=0):
-    onlyMiguel = 1
     url = "https://api.telegram.org/bot7908020608:AAEGRux_wQ8tlKxPoMEGLR5vMtG1X3LW2WY/sendMessage"
     chat_belen = [8120620954, 7225762073]  # Belén (dos IDs diferentes)
     chat_miguel = [780778418]  # Miguel
@@ -258,7 +257,6 @@ def obtener_dias_tachados_completos(driver, isViewState=0):
             driver.execute_script("arguments[0].click();", boton_mes_siguiente)
 
             # 🔹 Esperar a que los nuevos elementos se carguen después del cambio de mes
-            time.sleep(2)  # Pequeña pausa para asegurar la carga de la página
 
         except Exception as e:
             print(f"No se pudo avanzar al mes siguiente: {e}")
@@ -268,16 +266,38 @@ def obtener_dias_tachados_completos(driver, isViewState=0):
         mes_siguiente_num = mes_actual_num + 1 if mes_actual_num < 12 else 1  # Si es diciembre, pasa a enero
         mes_siguiente_nombre = calendar.month_name[mes_siguiente_num]
 
-        time.sleep(2)  # Pequeña pausa para asegurar la carga de la página
+        meses_es = {
+            "january": "enero", "february": "febrero", "march": "marzo",
+            "april": "abril", "may": "mayo", "june": "junio",
+            "july": "julio", "august": "agosto", "september": "septiembre",
+            "october": "octubre", "november": "noviembre", "december": "diciembre"
+        }
+
+        mes_siguiente_ingles = calendar.month_name[mes_siguiente_num].lower()
+        mes_siguiente_es = meses_es[mes_siguiente_ingles]
+
+        mes_siguiente_text = []
 
         try:
-            dias_mes_siguiente = driver.find_elements(By.CSS_SELECTOR,
-                                                      "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo")
+
+            WebDriverWait(driver, 15).until(
+                lambda d: mes_siguiente_es in d.find_element(By.CSS_SELECTOR,
+                                                             "td[align='center'][style='width:70%;']").text.lower()
+            )
+
+            dias_mes_siguiente = WebDriverWait(driver, 15).until(
+                EC.presence_of_all_elements_located((
+                    By.CSS_SELECTOR,
+                    "#ctl00_ContentMaster1_ucReservarEntradasBaseAlhambra1_ucCalendarioPaso1_calendarioFecha .calendario_padding.no-dispo"
+                ))
+            )
+
 
             for dia in dias_mes_siguiente:
                 try:
                     texto_dia = dia.get_attribute("innerText").strip()
                     if texto_dia.isdigit():
+                        mes_siguiente_text.append(f"{mes_siguiente_nombre}-{texto_dia}")
                         dias_total.append(f"{mes_siguiente_nombre}-{texto_dia}")
                 except StaleElementReferenceException:
                     continue  # Ignorar elementos stale
@@ -285,6 +305,8 @@ def obtener_dias_tachados_completos(driver, isViewState=0):
             print(f"No se pudo obtener fechas del mes siguiente: {e}")
             return []
 
+    logging.info(f"Días extraído del mes siguiente (innerText): '{mes_siguiente_text}'")
+    print(f"Días extraído del mes siguiente (innerText): '{mes_siguiente_text}'")
     return dias_total
 
 
@@ -637,7 +659,7 @@ def ejecutar_script(icon):
                 if (len(set_actual) == 0):
                     dias_tachados_actual = dias_tachados_inicial
 
-                if dias_tachados_actual and len(set_actual) >= 1 and len(dias_liberados) <= 20:
+                if True:
                     dias_tachados_inicial = dias_tachados_actual
                     logging.info(f" Días tachados actualizados con tamaño: {len(set_actual)}")
                     print(f" Días tachados actualizados con tamaño: {len(set_actual)}")
@@ -645,8 +667,7 @@ def ejecutar_script(icon):
                 # Filtrar días realmente útiles (mayores que hoy)
                 dias_utiles = [fecha for fecha in dias_liberados_fechas if fecha > fecha_hoy]
 
-                if dias_utiles and len(dias_liberados) <= 20 and dias_tachados_actual and len(set_actual) >= 1:
-                    # dias_tachados_inicial = dias_tachados_actual
+                if len(dias_utiles) > 0 and len (dias_liberados) > 0 and len(dias_liberados) <= 31 and dias_tachados_actual and len(set_actual) >= 1:
                     print(f" ¡Días liberados: {dias_liberados}!")
                     logging.info(f" ¡Días liberados: {dias_liberados}!")
                     # alerta_sonora_acierto() #ACTVIAR EN EL FUTURO

@@ -86,7 +86,7 @@ def iniciar_sesion_y_navegar(url, root):
 
     options.add_argument(f"--user-data-dir={ruta_perfil_chrome}")  # <-- Asegurar que está bien escrito
 
-    driver = uc.Chrome(options=options)
+    driver = uc.Chrome(options=options,headless=True)
 
     wait = WebDriverWait(driver, 30)
 
